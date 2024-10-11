@@ -6,12 +6,23 @@ import { BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
-    name: "Gigsdev",
-    description:
-      "Gigsdev is a tech hub providing training and mentorship programmes for individuals aspiring to thrive in tech.",
-    image: "/gigsdev_proj.png",
-    link: "https://codeklin.github.io/gigsdev.github.io/",
-    
+    name: "Dexter Tech Hub",
+    description: "A tech hub dedicated to empowering individuals with indemand tech skills, creating pathways to fulfilling careers and empowering communities.",
+    image: "/dexter_proj.png",
+    link: "https://dexterhubinitiative.vercel.app/",
+  },
+  {
+    name: "Hemo Dashboard",
+    description: "Hemo is a health management web application dashboard currently in development for tracking health products.",
+    image: "/hemo.png",
+    link: "/#",
+  },
+  
+  {
+    name: "Personal Portfolio",
+    description: "My personal fullstack developer portfolio website.",
+    image: "/jlive_proj.png",
+    link: "https://jdev-live.vercel.app/",
   },
   {
     name: "Kidscon",
@@ -20,13 +31,15 @@ const projects = [
     link: "https://kidscon.net/",
   },
   {
-    name: "",
+    name: "Gigsdev",
     description:
-      "Hemo is a health management web application dashboard currently in development for tracking health products.",
-    image: "/hemo.png",
-    github: "/#",
-    link: "/#",
+      "Gigsdev is a tech hub providing training and mentorship programmes for individuals aspiring to thrive in tech.",
+    image: "/gigsdev_proj.png",
+    link: "https://codeklin.github.io/gigsdev.github.io/",
+    
   },
+  
+  
 ]
 
 const ProjectsSection = () => {
