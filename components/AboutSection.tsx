@@ -1,25 +1,7 @@
 import React from "react"
 import Image from "next/image"
 
-const skills = [
-  { skill: "HTML" },
-  { skill: "CSS" },
-  { skill: "JavaScript" },
-  { skill: "React" },
-  { skill: "Next.js" },
-  { skill: "Tailwind CSS" },
-  { skill: "Bootsrap" },
-  { skill: "TypeScript" },
-  { skill: "Redux" },
-  { skill: "NodeJs" },
-  { skill: "Express" },
-  { skill: "Postman" },
-  { skill: "Postgres" },
-  { skill: "Python" },
-  { skill: "Git" },
-  { skill: "GitHub" },
 
-]
 
 const AboutSection = () => {
   return (
@@ -59,23 +41,21 @@ Creating web applications and mobile apps, writing engaging online content, maki
           <div className="text-center md:w-1/2 md:text-left">
             <h1 className="text-2xl font-bold mb-6 text-stone-600">My Skills</h1>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
-              {skills.map((item, idx) => {
-                return (
-                  <p
-                    key={idx}
-                    className="bg-pink-200 px-4 py-2 mr-2 mt-2 text-blue-800 rounded font-semibold"
-                  >
-                    {item.skill}
-                  </p>
-                )
-              })}
-              <Image
-              src="/skills.jpg"
-              alt=""
-              width={300}
-              height={200}
-              className="hidden mt-6 md:block md:relative md:bottom-4  md:z-0"
-            />
+              
+              <Image src="/html5.svg" alt="html5" width={50} height={50} className=" mt-6 md:block md:relative md:bottom-4  md:z-0"/>
+              <Image src="/css.svg" alt="css" width={50} height={50} className=" mt-6 md:block md:relative md:bottom-4  md:z-0"/>
+              <Image src="/next.svg" alt="next" width={50} height={50} className=" mt-6 md:block md:relative md:bottom-4  md:z-0"/>
+              <Image src="/react.svg" alt="react" width={50} height={50} className=" mt-6 md:block md:relative md:bottom-4  md:z-0"/>
+              <Image src="/typescript.svg" alt="typescript" width={50} height={50} className=" mt-6 md:block md:relative md:bottom-4  md:z-0"/>
+              <Image src="/nodejs.svg" alt="nodejs" width={50} height={50} className=" mt-6 md:block md:relative md:bottom-4  md:z-0"/>
+              <Image src="/github.svg" alt="github" width={50} height={50} className=" mt-6 md:block md:relative md:bottom-4  md:z-0"/>
+              <Image src="/tailwindcss.svg" alt="tailwindcss" width={50} height={50} className=" mt-6 md:block md:relative md:bottom-4  md:z-0"/>
+              <Image src="/git.svg" alt="git" width={50} height={50} className=" mt-6 md:block md:relative md:bottom-4  md:z-0"/>
+              <Image src="/javascript.svg" alt="javascript" width={50} height={50} className=" mt-6 md:block md:relative md:bottom-4  md:z-0"/>
+              <Image src="/bootstrap.svg" alt="bootstrap" width={50} height={50} className=" mt-6 md:block md:relative md:bottom-4  md:z-0"/>
+              <Image src="/python.svg" alt="python" width={50} height={50} className=" mt-6 md:block md:relative md:bottom-4  md:z-0"/>
+              <Image src="/postman-api.svg" alt="postman-api" width={50} height={50} className=" mt-6 md:block md:relative md:bottom-4  md:z-0"/>
+              <Image src="/postgresql.svg" alt="postgresql" width={50} height={50} className=" mt-6 md:block md:relative md:bottom-4  md:z-0"/>
             </div>
             
           </div>
