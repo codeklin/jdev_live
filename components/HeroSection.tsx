@@ -17,7 +17,7 @@ const HeroSection = () => {
               Software Engineer{" "}
             </span>. I design and I create mobile apps, fullstack web applications, and dashboard solutions. 
           </p>
-          <Link
+          <Link 
             to="projects"
             className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
             activeClass="active"
@@ -26,7 +26,7 @@ const HeroSection = () => {
             offset={-100}
             duration={500}
           >
-            Download CV
+            Projects
           </Link>
         </div>
         <div className="md:mt-2 md:w-1/2">
