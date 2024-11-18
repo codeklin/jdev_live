@@ -1,8 +1,7 @@
 import React from "react"
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaSquareWhatsapp } from "react-icons/fa6";
 import {
   AiOutlineGithub,
-  AiOutlineTwitter,
   AiOutlineLinkedin,
   
 } from "react-icons/ai"
@@ -44,16 +43,16 @@ const Footer = () => {
           </a>
 
           
-        {/*}  <a
-            href="https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA"
+          <a
+            href="https://wa.me/+2347031098097"
             rel="noreferrer"
             target="_blank"
           >
-            <AiOutlineYoutube
+            <FaSquareWhatsapp 
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
               size={30}
             />
-          </a>*/}
+          </a>
         </div>
       </div>
     </footer>
