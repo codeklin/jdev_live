@@ -28,7 +28,7 @@ const projects = [
     name: "Kidscon",
     description: "A nonprofit organization empowering underprivileged, and homeless children through life-skills development programs.",
     image: "/kidscon_proj.png",
-    link: "https://kidscon.net/",
+    link: "https://codeklin.github.io/kidscon.github.io/",
   },
   {
     name: "Gigsdev",
