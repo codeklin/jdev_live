@@ -14,7 +14,7 @@ const HeroSection = () => {
           <p className="text-lg mt-4 mb-6 md:text-2xl">
             I&#39;m a{" "}
             <span className="font-semibold text-teal-600">
-              Software Engineer{" "}
+              Cybersecurity Expert & a Software Engineer{" "}
             </span>. I design and I create mobile apps, fullstack web applications, and dashboard solutions. 
           </p>
           <Link 

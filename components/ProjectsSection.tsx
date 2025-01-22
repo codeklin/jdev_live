@@ -6,6 +6,12 @@ import { BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "Dazzling Grits",
+    description: "An international grief coaching platform based in the USA.",
+    image: "/daz.png",
+    link: "https://dazzlinggrit.com/",
+  },
+  {
     name: "Dexter Tech Hub",
     description: "A tech hub dedicated to empowering individuals with indemand tech skills, creating pathways to fulfilling careers and empowering communities.",
     image: "/dexter_proj.png",

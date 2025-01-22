@@ -29,6 +29,7 @@ const AboutSection = () => {
             </p>
             <br />
             <span className="font-bold text-teal-600">{" My Roles:"}</span>
+            <br/>Cybersecurity Instructor (Nextgen Tech Training Project)
             <br/>Tech Leader at Gigsdev (a software company)
             <br/>Founder of LivrMedia (a media company)
             <br/>Community Leader at Gigsdev (Connecting freelancers)
@@ -43,8 +44,8 @@ const AboutSection = () => {
               <h1 className="text-2xl font-bold mb-1 text-stone-600">My Skills</h1>
               <div className="flex flex-wrap  rounded-2xl bg-slate-100 justify-around md:justify-center lg:gap-5 md:gap-5 x-6 py-6">
                 <div className="grid grid-cols-1 gap-x-4 sm:grid-cols-2 md:grid-cols-2 text-center">
-                  <div className=" text-xl font-light mb-6 text-slate-500"> <span className="text-blue-600 text-4xl font-semibold ">6+</span> <br/>Years of Experience</div>
-                  <div className=" text-xl text-slate-500 font-light mb-2"><span className="text-blue-600 text-4xl font-semibold">5+</span> <br/>Projects</div>
+                  <div className=" text-xl font-light mb-6 text-slate-500"> <span className="text-blue-600 text-4xl font-semibold ">10+</span> <br/>Years of Experience</div>
+                  <div className=" text-xl text-slate-500 font-light mb-2"><span className="text-blue-600 text-4xl font-semibold">15+</span> <br/>Projects</div>
                 </div>
               </div>
               <div className="flex flex-wrap flex-row gap-1 rounded-2xl bg-slate-100 lg:col-span-3 justify-center z-10 md:justify-center px-6 py-6">
