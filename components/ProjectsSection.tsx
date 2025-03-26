@@ -6,8 +6,14 @@ import { BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "RunPhisher",
+    description: "A phishing link detection fullstack web application. RunPhisher helps you identify malicious links and protect you from phishing attacks.",
+    image: "/runph.png",
+    link: "https://run-phisher.vercel.app/",
+  },
+  {
     name: "Dazzling Grits",
-    description: "An international grief coaching platform based in the USA.",
+    description: "An international grief coaching platform based in the USA. Built using wordpress development",
     image: "/daz.png",
     link: "https://dazzlinggrit.com/",
   },
