@@ -6,16 +6,16 @@ import { BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "GCRisker App",
+    description: "A risk analysis toolz for assessing the risk of a given project. It provides a comprehensive analysis of the project's risk profile, helping users make informed decisions.",
+    image: "/riskapng.png",
+    link: "https://riska-app.vercel.app/",
+  },
+  {
     name: "RunPhisher",
     description: "A phishing link detection fullstack web application. RunPhisher helps you identify malicious links and protect you from phishing attacks.",
     image: "/runph.png",
     link: "https://run-phisher.vercel.app/",
-  },
-  {
-    name: "Dazzling Grits",
-    description: "An international grief coaching platform based in the USA. Built using wordpress development",
-    image: "/daz.png",
-    link: "https://dazzlinggrit.com/",
   },
   {
     name: "Dexter Tech Hub",
