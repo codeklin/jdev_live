@@ -6,6 +6,19 @@ import { BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "Secquiz App",
+    description: "A cybersecurity quizzes app to test user cybersecurity knowledge, improve skills, and prep for cybersecurity certifications",
+    image: "/secquiz.png",
+    link: "https://secquiz.app",
+  },
+  {
+    name: "Noisy AI App",
+    description: "A viral content generation web app. Users generates a month's worth of content for thier products and social media activities",
+    image: "/noisy.png",
+    link: "https://noisyng.com",
+  },
+
+  {
     name: "GCRisker App",
     description: "A risk analysis toolz for assessing the risk of a given project. It provides a comprehensive analysis of the project's risk profile, helping users make informed decisions.",
     image: "/riskapng.png",
