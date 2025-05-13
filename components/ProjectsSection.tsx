@@ -8,7 +8,7 @@ const projects = [
   {
     name: "Secquiz App",
     description: "A cybersecurity quizzes app to test user cybersecurity knowledge, improve skills, and prep for cybersecurity certifications",
-    image: "/secquiz.png",
+    image: "/secquiz.PNG",
     link: "https://secquiz.app",
   },
   {
@@ -42,7 +42,7 @@ const projects = [
     image: "/hemo.png",
     link: "/#",
   },
-  
+
   {
     name: "Personal Portfolio",
     description: "My personal fullstack developer portfolio website.",
@@ -61,10 +61,10 @@ const projects = [
       "Gigsdev is a tech hub providing training and mentorship programmes for individuals aspiring to thrive in tech.",
     image: "/gigsdev_proj.png",
     link: "https://codeklin.github.io/gigsdev.github.io/",
-    
+
   },
-  
-  
+
+
 ]
 
 const ProjectsSection = () => {
@@ -98,7 +98,7 @@ const ProjectsSection = () => {
                       {project.description}
                     </p>
                     <div className=" flex justify-center sm:justify-start align-bottom space-x-4">
-                     
+
                       <Link href={project.link} target="_blank">
                         <BsArrowUpRightSquare
                           size={30}
@@ -112,7 +112,7 @@ const ProjectsSection = () => {
             </div>
           )
         })}
-        
+
       </div>
     </section>
   )
