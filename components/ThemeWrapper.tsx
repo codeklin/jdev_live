@@ -6,11 +6,8 @@ export default function ThemeWrapper({
 }: {
   children: React.ReactNode
 }) {
-  // We don't need to manually add classes to body anymore
-  // The ThemeProvider will handle this with the attribute="class" prop
-
   return (
-    <ThemeProvider enableSystem={true} attribute="class">
+    <ThemeProvider enableSystem={true} attribute="class" defaultTheme="system">
       {children}
     </ThemeProvider>
   )
