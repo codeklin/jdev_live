@@ -33,11 +33,10 @@ const HeroSection = () => {
           <Image
             src="/headshot.png"
             alt="Olajide's headshot"
-            width={400}
-            height={400}
+            width={600}
+            height={600}
             priority
-            className="rounded-3xl shadow-2xl"
-            style={{ width: 'auto', height: 'auto' }}
+            className="rounded-3xl shadow-2xl w-80 h-80 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] object-cover"
           />
         </div>
       </div>
