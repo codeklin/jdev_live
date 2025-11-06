@@ -6,18 +6,31 @@ import { BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "Panaceuticss",
+    description: "Panaceutics is a biotechnology-driven company committed to advancing wellness through science-backed, plant-based formulations.",
+    image: "/panaceutics1.png",
+    link: "https://panaceutics.org",
+  },
+  {
+    name: "NoisyPay",
+    description: "A modern, mobile-first web application for online training course payments with instant WhatsApp group access.",
+    image: "/noisypay.png",
+    link: "https://noisyng.com",
+  },
+
+  {
     name: "Secquiz App",
     description: "A cybersecurity quizzes app to test user cybersecurity knowledge, improve skills, and prep for cybersecurity certifications",
     image: "/secquiz.PNG",
     link: "https://secquiz.app",
   },
   {
-    name: "Noisy AI App",
+    name: "Noisy Viral AI Content Creation Tool",
     description: "A viral content generation web app. Users generates a month's worth of content for thier products and social media activities",
     image: "/noisy.png",
-    link: "https://noisyng.com",
+    link: "https://noisyng.vercel.app/",
   },
-
+  
   {
     name: "GCRisker App",
     description: "A risk analysis toolz for assessing the risk of a given project. It provides a comprehensive analysis of the project's risk profile, helping users make informed decisions.",
@@ -30,12 +43,7 @@ const projects = [
     image: "/runph.png",
     link: "https://run-phisher.vercel.app/",
   },
-  {
-    name: "Dexter Tech Hub",
-    description: "A tech hub dedicated to empowering individuals with indemand tech skills, creating pathways to fulfilling careers and empowering communities.",
-    image: "/dexter_proj.png",
-    link: "https://dexterhubinitiative.vercel.app/",
-  },
+
   {
     name: "Hemo Dashboard",
     description: "Hemo is a health management web application dashboard currently in development for tracking health products.",
