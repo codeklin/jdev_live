@@ -12,6 +12,12 @@ const projects = [
     link: "https://panaceutics.org",
   },
   {
+    name: "Tizzle Shop",
+    description: "A modern e-commerce platform for quality UK-used and premium products in Nigeria, featuring an integrated talent marketplace.",
+    image: "/tizzle.png",
+    link: "https://tizzleshop.vercel.app/",
+  },
+  {
     name: "NoisyPay",
     description: "A modern, mobile-first web application for online training course payments with instant WhatsApp group access.",
     image: "/noisypay.png",
