@@ -14,8 +14,8 @@ const HeroSection = () => {
           <p className="text-lg mt-4 mb-6 md:text-2xl">
             I&#39;m a{" "}
             <span className="font-semibold text-teal-600">
-              Cybersecurity Expert & a Fullstack Software Engineer{" "}
-            </span>. I design and I create fullstack web applications, mobile apps,and dashboard solutions.
+              Cybersecurity Expert, Data Analyst & a Fullstack Software Developer{" "}
+            </span>. I work with data, design and I create fullstack web applications, mobile apps,and dashboard solutions.
           </p>
           <Link
             to="projects"

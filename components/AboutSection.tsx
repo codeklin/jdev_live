@@ -24,12 +24,13 @@ const AboutSection = () => {
               <span className="font-bold text-pink-500">{"Fullstack Web Developer"}</span>, and a 
               <span className="font-bold text-blue-600">{" Cybersecurity Lead Trainer/Mentor"}</span>.
               I help individuals & businesses succeed through innovative solutions. My skills include:
-              Creating web applications and mobile apps, writing engaging online content, making videos and short films, designing websites and managing social media.
+              Creating web applications and mobile apps, training individuals, writing engaging online content, making videos and short films, and designing websites.
 
             </p>
             <br />
             <span className="font-bold text-teal-600">{" My Roles:"}</span>
             <br/>Cybersecurity Instructor (Nextgen Tech Training Project)
+            <br/>Data Analyst
             <br/>Tech Leader at Gigsdev (a software company)
             <br/>Founder of LivrMedia (a media company)
             <br/>Community Leader at Gigsdev (Connecting freelancers)
