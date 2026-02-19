@@ -164,17 +164,14 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Link>
             
-            <Link
-              to="about"
-              className="px-8 py-4 border-2 border-teal-600 text-teal-600 dark:text-teal-400 dark:border-teal-400 font-semibold rounded-full hover:bg-teal-600 hover:text-white dark:hover:bg-teal-400 dark:hover:text-gray-900 transition-all duration-300 cursor-pointer"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
+            <a
+              href="https://wa.me/2347031098097"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 border-2 border-teal-600 text-teal-600 dark:text-teal-400 dark:border-teal-400 font-semibold rounded-full hover:bg-teal-600 hover:text-white dark:hover:bg-teal-400 dark:hover:text-gray-900 transition-all duration-300"
             >
-              Learn More
-            </Link>
+              Hire Me
+            </a>
           </div>
         </div>
 
