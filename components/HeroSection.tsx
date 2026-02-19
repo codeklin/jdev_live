@@ -18,55 +18,10 @@ const HeroSection = () => {
     "Tech Innovator"
   ]
 
-  // Initialize audio on mount
+  // Initialize on mount
   useEffect(() => {
     setIsMounted(true)
   }, [])
-
-  // Play realistic keyboard typing sound
-  const playTypeSound = () => {
-    if (!isMounted || typeof window === 'undefined') return
-
-    try {
-      const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)()
-      
-      // Create multiple oscillators for a more realistic keyboard sound
-      const oscillator1 = audioContext.createOscillator()
-      const oscillator2 = audioContext.createOscillator()
-      const gainNode = audioContext.createGain()
-      const filter = audioContext.createBiquadFilter()
-      
-      // Mix two frequencies for a more mechanical sound
-      oscillator1.connect(filter)
-      oscillator2.connect(filter)
-      filter.connect(gainNode)
-      gainNode.connect(audioContext.destination)
-      
-      // Set frequencies to create a "clack" sound
-      oscillator1.frequency.value = 150 + Math.random() * 50 // Random variation
-      oscillator2.frequency.value = 800 + Math.random() * 200
-      oscillator1.type = 'square'
-      oscillator2.type = 'triangle'
-      
-      // Filter for sharper sound
-      filter.type = 'bandpass'
-      filter.frequency.value = 1000
-      filter.Q.value = 1
-      
-      // Quick attack and decay for mechanical feel
-      const now = audioContext.currentTime
-      gainNode.gain.setValueAtTime(0.15, now)
-      gainNode.gain.exponentialRampToValueAtTime(0.01, now + 0.08)
-      
-      oscillator1.start(now)
-      oscillator2.start(now)
-      oscillator1.stop(now + 0.08)
-      oscillator2.stop(now + 0.08)
-    } catch (error) {
-      // Silently fail if audio context is not available
-      console.log('Audio not available')
-    }
-  }
 
   useEffect(() => {
     if (!isMounted) return
@@ -80,11 +35,6 @@ const HeroSection = () => {
         : fullText.substring(0, text.length + 1)
 
       setText(newText)
-
-      // Play sound only when typing (not deleting) and text is changing
-      if (!isDeleting && newText.length > text.length) {
-        playTypeSound()
-      }
 
       setTypingSpeed(isDeleting ? 50 : 150)
 
