@@ -9,6 +9,7 @@ const HeroSection = () => {
   const [isDeleting, setIsDeleting] = useState(false)
   const [loopNum, setLoopNum] = useState(0)
   const [typingSpeed, setTypingSpeed] = useState(150)
+  const [isMounted, setIsMounted] = useState(false)
 
   const roles = [
     "Cybersecurity Expert",
@@ -17,16 +18,73 @@ const HeroSection = () => {
     "Tech Innovator"
   ]
 
+  // Initialize audio on mount
   useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  // Play realistic keyboard typing sound
+  const playTypeSound = () => {
+    if (!isMounted || typeof window === 'undefined') return
+
+    try {
+      const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)()
+      
+      // Create multiple oscillators for a more realistic keyboard sound
+      const oscillator1 = audioContext.createOscillator()
+      const oscillator2 = audioContext.createOscillator()
+      const gainNode = audioContext.createGain()
+      const filter = audioContext.createBiquadFilter()
+      
+      // Mix two frequencies for a more mechanical sound
+      oscillator1.connect(filter)
+      oscillator2.connect(filter)
+      filter.connect(gainNode)
+      gainNode.connect(audioContext.destination)
+      
+      // Set frequencies to create a "clack" sound
+      oscillator1.frequency.value = 150 + Math.random() * 50 // Random variation
+      oscillator2.frequency.value = 800 + Math.random() * 200
+      oscillator1.type = 'square'
+      oscillator2.type = 'triangle'
+      
+      // Filter for sharper sound
+      filter.type = 'bandpass'
+      filter.frequency.value = 1000
+      filter.Q.value = 1
+      
+      // Quick attack and decay for mechanical feel
+      const now = audioContext.currentTime
+      gainNode.gain.setValueAtTime(0.15, now)
+      gainNode.gain.exponentialRampToValueAtTime(0.01, now + 0.08)
+      
+      oscillator1.start(now)
+      oscillator2.start(now)
+      oscillator1.stop(now + 0.08)
+      oscillator2.stop(now + 0.08)
+    } catch (error) {
+      // Silently fail if audio context is not available
+      console.log('Audio not available')
+    }
+  }
+
+  useEffect(() => {
+    if (!isMounted) return
+
     const handleType = () => {
       const i = loopNum % roles.length
       const fullText = roles[i]
 
-      setText(
-        isDeleting
-          ? fullText.substring(0, text.length - 1)
-          : fullText.substring(0, text.length + 1)
-      )
+      const newText = isDeleting
+        ? fullText.substring(0, text.length - 1)
+        : fullText.substring(0, text.length + 1)
+
+      setText(newText)
+
+      // Play sound only when typing (not deleting) and text is changing
+      if (!isDeleting && newText.length > text.length) {
+        playTypeSound()
+      }
 
       setTypingSpeed(isDeleting ? 50 : 150)
 
@@ -40,7 +98,7 @@ const HeroSection = () => {
 
     const timer = setTimeout(handleType, typingSpeed)
     return () => clearTimeout(timer)
-  }, [text, isDeleting, loopNum, typingSpeed, roles])
+  }, [text, isDeleting, loopNum, typingSpeed, roles, isMounted])
 
   return (
     <section id="home" className="relative overflow-hidden">
@@ -68,8 +126,14 @@ const HeroSection = () => {
           {/* Typewriter effect */}
           <div className="h-20 md:h-24 flex items-center justify-center md:justify-start">
             <h2 className="text-2xl md:text-4xl font-semibold text-gray-700 dark:text-gray-300">
-              <span className="inline-block min-w-[20px]">{text}</span>
-              <span className="animate-blink text-teal-600">|</span>
+              {isMounted ? (
+                <>
+                  <span className="inline-block min-w-[20px]">{text}</span>
+                  <span className="animate-blink text-teal-600">|</span>
+                </>
+              ) : (
+                <span className="inline-block min-w-[20px]">Cybersecurity Expert</span>
+              )}
             </h2>
           </div>
 
