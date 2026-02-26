@@ -7,7 +7,7 @@ import { BsArrowUpRightSquare } from "react-icons/bs"
 const projects = [
   {
     name: "Soprep",
-    description: "Pass JAMB in one attempt! A JAMB quiz preparation app for schools and students. Practice with JAMB past questions, get explaanations, and track your progress. ",
+    description: "Pass JAMB in one attempt! A JAMB quiz preparation app for schools and students. Practice with JAMB past questions, get explanations, and track your progress. ",
     image: "/soprep.png",
     link: "https://soprep.app",
   },
