@@ -6,6 +6,12 @@ import { BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "Soprep",
+    description: "Pass JAMB in one attempt! A JAMB quiz preparation app for schools and students. Practice with JAMB past questions, get explaanations, and track your progress. ",
+    image: "/soprep.png",
+    link: "https://soprep.app",
+  },
+  {
     name: "Panaceuticss",
     description: "Panaceutics is a biotechnology-driven company committed to advancing wellness through science-backed, plant-based formulations.",
     image: "/panaceutics1.png",
