@@ -2,6 +2,18 @@ import SlideUp from "./SlideUp"
 
 const services = [
   {
+    title: "Web Development & Digital Solutions",
+    desc: "Fast, secure, mobile-first websites and web apps built to grow your business online.",
+    border: "border-t-[#0d9488]",
+    btn: "bg-[#0d9488] hover:bg-teal-700",
+  },
+  {
+    title: "Cybersecurity Training & Mentorship",
+    desc: "Hands-on training, certifications prep & mentorship for individuals and organisations in Nigeria.",
+    border: "border-t-[#3b82f6]",
+    btn: "bg-[#3b82f6] hover:bg-blue-600",
+  },
+  {
     title: "Social Media Content Creation",
     desc: "Reels, carousels, captions & strategy that stop the scroll and grow your audience fast.",
     border: "border-t-[#ef4444]",
@@ -31,18 +43,7 @@ const services = [
     border: "border-t-pink-500",
     btn: "bg-pink-500 hover:bg-pink-600",
   },
-  {
-    title: "Web Development & Digital Solutions",
-    desc: "Fast, secure, mobile-first websites and web apps built to grow your business online.",
-    border: "border-t-[#0d9488]",
-    btn: "bg-[#0d9488] hover:bg-teal-700",
-  },
-  {
-    title: "Cybersecurity Training & Mentorship",
-    desc: "Hands-on training, certifications prep & mentorship for individuals and organisations in Nigeria.",
-    border: "border-t-[#3b82f6]",
-    btn: "bg-[#3b82f6] hover:bg-blue-600",
-  },
+  
 ]
 
 const ServicesSection = () => {
