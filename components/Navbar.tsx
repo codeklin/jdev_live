@@ -1,8 +1,6 @@
-"use client" // this is a client component
-import React from "react"
-import { useState } from "react"
+"use client"
+import React, { useState } from "react"
 import { Link } from "react-scroll/modules"
-import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
@@ -12,92 +10,116 @@ interface NavItem {
   page: string
 }
 
-const NAV_ITEMS: Array<NavItem> = [
-  {
-    label: "Home",
-    page: "home",
-  },
-  {
-    label: "About",
-    page: "about",
-  },
-  {
-    label: "Projects",
-    page: "projects",
-  },
+const NAV_ITEMS: NavItem[] = [
+  { label: "Home", page: "home" },
+  { label: "About", page: "about" },
+  { label: "Services", page: "services" },
+  { label: "Projects", page: "projects" },
 ]
 
 export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme()
   const currentTheme = theme === "system" ? systemTheme : theme
-  const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
-  return (
-    <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
-      <div className="justify-between md:items-center md:flex">
-        <div>
-          <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link to="home">
-              <div className="container flex items-center space-x-2">
-                <h2 className="text-2xl font-bold">{"<J/Dev>"} {" "}</h2>
-              </div>
-            </Link>
-            <div className="md:hidden">
-              <button
-                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                onClick={() => setNavbar(!navbar)}
-              >
-                {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
-              </button>
-            </div>
-          </div>
-        </div>
 
-        <div>
-          <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-              navbar ? "block" : "hidden"
-            }`}
+  return (
+    <header className="w-full fixed top-0 z-50 bg-white dark:bg-[#0a0a0a] border-b border-gray-100 dark:border-white/10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+        {/* Logo */}
+        <Link to="home" className="cursor-pointer">
+          <span className="text-xl font-black tracking-tight text-[#0a0a0a] dark:text-white">
+            {"<J/Dev>"}
+          </span>
+        </Link>
+
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex items-center gap-8">
+          {NAV_ITEMS.map((item) => (
+            <Link
+              key={item.page}
+              to={item.page}
+              className="text-sm font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 hover:text-[#0d9488] dark:hover:text-[#0d9488] cursor-pointer transition-colors duration-200"
+              activeClass="!text-[#0d9488]"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+            >
+              {item.label}
+            </Link>
+          ))}
+          <button
+            onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
+            className="p-2 rounded-xl bg-gray-100 dark:bg-white/10 hover:bg-gray-200 dark:hover:bg-white/20 transition-colors"
+            aria-label="Toggle theme"
           >
-            <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              {NAV_ITEMS.map((item, idx) => {
-                return (
-                  <Link
-                    key={idx}
-                    to={item.page}
-                    className={
-                      "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100 cursor-pointer"
-                    }
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={500}
-                    onClick={() => setNavbar(!navbar)}
-                  >
-                    {item.label}
-                  </Link>
-                )
-              })}
-              {currentTheme === "dark" ? (
-                <button
-                  onClick={() => setTheme("light")}
-                  className="bg-slate-100 p-2 rounded-xl"
-                >
-                  <RiSunLine size={25} color="black" />
-                </button>
-              ) : (
-                <button
-                  onClick={() => setTheme("dark")}
-                  className="bg-slate-100 p-2 rounded-xl"
-                >
-                  <RiMoonFill size={25} />
-                </button>
-              )}
-            </div>
-          </div>
+            {currentTheme === "dark" ? (
+              <RiSunLine size={20} className="text-white" />
+            ) : (
+              <RiMoonFill size={20} className="text-[#0a0a0a]" />
+            )}
+          </button>
+          <a
+            href="https://wa.me/2347031098097"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2 bg-[#0d9488] text-white text-sm font-bold rounded-2xl hover:bg-[#0b7a70] transition-colors"
+          >
+            Hire Me
+          </a>
+        </nav>
+
+        {/* Mobile controls */}
+        <div className="flex items-center gap-3 md:hidden">
+          <button
+            onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
+            className="p-2 rounded-xl bg-gray-100 dark:bg-white/10"
+            aria-label="Toggle theme"
+          >
+            {currentTheme === "dark" ? (
+              <RiSunLine size={18} className="text-white" />
+            ) : (
+              <RiMoonFill size={18} />
+            )}
+          </button>
+          <button
+            onClick={() => setNavbar(!navbar)}
+            className="p-2 text-[#0a0a0a] dark:text-white"
+            aria-label="Toggle menu"
+          >
+            {navbar ? <IoMdClose size={26} /> : <IoMdMenu size={26} />}
+          </button>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {navbar && (
+        <div className="md:hidden bg-white dark:bg-[#0a0a0a] border-t border-gray-100 dark:border-white/10 px-4 pb-6 pt-4 space-y-4">
+          {NAV_ITEMS.map((item) => (
+            <Link
+              key={item.page}
+              to={item.page}
+              className="block text-base font-bold uppercase tracking-widest text-gray-600 dark:text-gray-300 hover:text-[#0d9488] cursor-pointer transition-colors"
+              activeClass="!text-[#0d9488]"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={500}
+              onClick={() => setNavbar(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
+          <a
+            href="https://wa.me/2347031098097"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full text-center px-5 py-3 bg-[#0d9488] text-white font-bold rounded-2xl hover:bg-[#0b7a70] transition-colors"
+          >
+            Hire Me
+          </a>
+        </div>
+      )}
     </header>
   )
 }
