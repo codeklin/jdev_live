@@ -41,7 +41,7 @@ const AboutSection = () => {
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
                 I&apos;m <span className="font-black text-white">Olajide Igbalaye</span> — a Fullstack Developer,
-                Cybersecurity Expert, Social Media Content Creator, and Photography &amp; Videography professional based in Lagos, Nigeria.
+                Cybersecurity Expert, Social Media Content Creator, and Photography &amp; Videography professional based in Nigeria.
               </p>
               <p className="text-base text-gray-400 leading-relaxed">
                 I help individuals and businesses succeed through innovative digital solutions — from building secure web apps

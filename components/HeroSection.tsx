@@ -81,7 +81,7 @@ const HeroSection = () => {
 
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-lg leading-relaxed">
               I build digital products, secure systems, create compelling content,
-              and capture moments that tell powerful stories — all from Lagos, Nigeria.
+              and capture moments that tell powerful stories — all from Nigeria.
             </p>
 
             {/* Stats row */}
@@ -149,7 +149,7 @@ const HeroSection = () => {
             {/* Floating tag */}
             <div className="absolute -bottom-5 -left-5 bg-white dark:bg-[#111] border border-gray-100 dark:border-white/10 rounded-2xl px-4 py-3 shadow-xl">
               <p className="text-xs font-bold uppercase tracking-widest text-gray-400">Based in</p>
-              <p className="text-sm font-black text-[#0a0a0a] dark:text-white">Lagos, Nigeria 🇳🇬</p>
+              <p className="text-sm font-black text-[#0a0a0a] dark:text-white">Nigeria 🇳🇬</p>
             </div>
           </div>
         </div>
