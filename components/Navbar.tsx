@@ -15,6 +15,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: "About", page: "about" },
   { label: "Services", page: "services" },
   { label: "Projects", page: "projects" },
+  { label: "Media", page: "media" },
 ]
 
 export default function Navbar() {
