@@ -8,13 +8,13 @@ import SlideUp from "./SlideUp"
 //     YouTube auto-thumbnail URL: https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg
 const videos = [
   {
-    title: "Brand Video — Gigsdev",
-    description: "A cinematic brand video showcasing Gigsdev's mission and community.",
+    title: "AI Animation Video — Gigsdev",
+    description: "A cinematic artificial inteligence training advert video showcasing Gigsdev's training course.",
     youtubeId: "YOUR_YOUTUBE_VIDEO_ID_1", // replace with real ID
     thumbnail: "", // leave "" to use YouTube auto-thumbnail
   },
   {
-    title: "Event Coverage — Tech Summit",
+    title: "A first aid lesson on attending to seizure crisis  — Health Project",
     description: "Full event coverage of a major tech summit in Nigeria.",
     youtubeId: "YOUR_YOUTUBE_VIDEO_ID_2",
     thumbnail: "",
@@ -36,7 +36,7 @@ const catalogues = [
     description: "A curated collection of brand identity, print, and digital design work.",
     thumbnail: "/catalogue1-mockup.png", // add your mockup image to /public
     googleDriveUrl: "https://drive.google.com/file/d/YOUR_FILE_ID/view", // replace
-    issuuUrl: "https://issuu.com/YOUR_ISSUU_USERNAME/docs/YOUR_DOC_SLUG",   // replace
+    issuuUrl: "https://issuu.com/jdevpro/docs/home_interior_product_catalogue",   // replace
   },
   {
     title: "Graphics Design Catalogue Vol. 2",
