@@ -14,7 +14,7 @@ const videos = [
     id: "ai-animation-gigsdev",
     title: "AI Animation Video — Gigsdev",
     description: "A cinematic artificial inteligence training advert video showcasing Gigsdev's training course.",
-    youtubeId: "YOUR_YOUTUBE_VIDEO_ID_1", // replace with real ID
+    youtubeId: "vXRLIVOi_hs",
     thumbnail: "", // leave "" to use YouTube auto-thumbnail
   },
   {
