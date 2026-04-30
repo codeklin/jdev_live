@@ -11,13 +11,12 @@ const projects = [
   { id: "soprep", name: "Soprep", description: "Pass JAMB in one attempt! A JAMB quiz prep app with past questions, explanations, and progress tracking.", image: "/soprep.png", link: "https://soprep.app" },
   { id: "panaceutics", name: "Panaceutics", description: "A biotech-driven company advancing wellness through science-backed, plant-based formulations.", image: "/panaceutics1.png", link: "https://panaceutics.org" },
   { id: "tizzle-shop", name: "Tizzle Shop", description: "Modern e-commerce for quality UK-used and premium products in Nigeria, with an integrated talent marketplace.", image: "/tizzle.png", link: "https://tizzleshop.vercel.app/" },
-  { id: "noisypay", name: "NoisyPay", description: "Mobile-first web app for online training course payments with instant WhatsApp group access.", image: "/noisypay.png", link: "https://noisypay.vercel.app/" },
+  /*{ id: "noisypay", name: "NoisyPay", description: "Mobile-first web app for online training course payments with instant WhatsApp group access.", image: "/noisypay.png", link: "https://noisypay.vercel.app/" },*/
   { id: "secquiz", name: "Secquiz App", description: "A cybersecurity quiz app to test knowledge, improve skills, and prep for certifications.", image: "/secquiz.PNG", link: "https://secquizz.vercel.app/" },
-  { id: "noisy-viral", name: "Noisy Viral AI Tool", description: "Viral content generation web app — generate a month's worth of social media content instantly.", image: "/noisy.png", link: "https://noisyng.vercel.app/" },
+  /*{ id: "noisy-viral", name: "Noisy Viral AI Tool", description: "Viral content generation web app — generate a month's worth of social media content instantly.", image: "/noisy.png", link: "https://noisyng.vercel.app/" },
   { id: "gcrisker", name: "GCRisker App", description: "Risk analysis tool for assessing project risk profiles and helping users make informed decisions.", image: "/riskapng.png", link: "https://riska-app.vercel.app/" },
   { id: "runphisher", name: "RunPhisher", description: "Phishing link detection fullstack web app — identify malicious links and stay protected.", image: "/runph.png", link: "https://run-phisher.vercel.app/" },
-  { id: "hemo-dashboard", name: "Hemo Dashboard", description: "Health management web app dashboard for tracking health products — currently in development.", image: "/hemo.png", link: "/#" },
-  { id: "personal-portfolio", name: "Personal Portfolio", description: "My personal fullstack developer portfolio website.", image: "/jlive_proj.png", link: "https://jdev-live.vercel.app/" },
+  { id: "personal-portfolio", name: "Personal Portfolio", description: "My personal fullstack developer portfolio website.", image: "/jlive_proj.png", link: "https://jdev-live.vercel.app/" },*/
   { id: "kidscon", name: "Kidscon", description: "A nonprofit empowering underprivileged children through life-skills development programs.", image: "/kidscon_proj.png", link: "https://codeklin.github.io/kidscon.github.io/" },
   { id: "gigsdev", name: "Gigsdev", description: "A tech hub providing training and mentorship for individuals aspiring to thrive in tech.", image: "/gigsdev_proj.png", link: "https://codeklin.github.io/gigsdev.github.io/" },
 ]
