@@ -8,7 +8,7 @@ import { BsArrowUpRightSquare } from "react-icons/bs"
 import { FiShare2 } from "react-icons/fi"
 
 const projects = [
-  { id: "phytogenix", name: "Phytogenix", description: "PhytoGenix is a digital herbal clinical research platform. inspired by the collaborative work between Afe Babalola University and the Nigerian Institute of Medical Research.", image: "/phyto.PNG", link: "https://phytogenix.org" },
+  { id: "phytogenix", name: "Phytogenix", description: "PhytoGenix is a digital herbal clinical research platform. inspired by the collaborative work between Afe Babalola University and the Nigerian Institute of Medical Research.", image: "/phyto.png", link: "https://phytogenix.org" },
   { id: "secacad", name: "Secacad", description: "Secacad is a cybersecurity skills assessment platform for individuals and organizations in Nigeria.", image: "/secacad.png", link: "https://secacad.vercel.app" },
   { id: "panaceutics", name: "Panaceutics", description: "A biotech-driven company advancing wellness through science-backed, plant-based formulations.", image: "/panaceutics1.png", link: "https://panaceutics.org" },
   { id: "soprep", name: "Soprep", description: "Pass JAMB in one attempt! A JAMB quiz prep app with past questions, explanations, and progress tracking.", image: "/soprep.png", link: "https://soprep.app" },
