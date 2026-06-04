@@ -4,11 +4,12 @@ import Image from "next/image"
 import { Link } from "react-scroll/modules"
 
 const roles = [
+  "AI Developer & Agent Builder",
+  "AI Commercial & UGC Creator",
   "Fullstack Developer",
   "Cybersecurity Expert",
-  "Content Creator",
+  "Content Creator & Educator",
   "Photographer & Videographer",
-  "Tech Innovator",
 ]
 
 const HeroSection = () => {
@@ -74,14 +75,14 @@ const HeroSection = () => {
                 </p>
               ) : (
                 <p className="text-xl sm:text-2xl font-bold text-gray-500 dark:text-gray-400">
-                  Fullstack Developer
+                  AI Developer & Agent Builder
                 </p>
               )}
             </div>
 
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-lg leading-relaxed">
-              I build digital products, secure systems, create compelling content,
-              and capture moments that tell powerful stories — all from Nigeria.
+              I build secure digital products, develop intelligent AI agents, create
+              cinematic AI-generated commercials & UGC, and train creators to launch powerful brand promotions.
             </p>
 
             {/* Stats row */}

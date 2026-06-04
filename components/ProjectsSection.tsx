@@ -8,11 +8,13 @@ import { BsArrowUpRightSquare } from "react-icons/bs"
 import { FiShare2 } from "react-icons/fi"
 
 const projects = [
-  { id: "soprep", name: "Soprep", description: "Pass JAMB in one attempt! A JAMB quiz prep app with past questions, explanations, and progress tracking.", image: "/soprep.png", link: "https://soprep.app" },
+  { id: "phytogenix", name: "Phytogenix", description: "PhytoGenix is a digital herbal clinical research platform. inspired by the collaborative work between Afe Babalola University and the Nigerian Institute of Medical Research.", image: "/phyto.PNG", link: "https://phytogenix.org" },
+  { id: "secacad", name: "Secacad", description: "Secacad is a cybersecurity skills assessment platform for individuals and organizations in Nigeria.", image: "/secacad.png", link: "https://secacad.vercel.app" },
   { id: "panaceutics", name: "Panaceutics", description: "A biotech-driven company advancing wellness through science-backed, plant-based formulations.", image: "/panaceutics1.png", link: "https://panaceutics.org" },
+  { id: "soprep", name: "Soprep", description: "Pass JAMB in one attempt! A JAMB quiz prep app with past questions, explanations, and progress tracking.", image: "/soprep.png", link: "https://soprep.app" },
   { id: "tizzle-shop", name: "Tizzle Shop", description: "Modern e-commerce for quality UK-used and premium products in Nigeria, with an integrated talent marketplace.", image: "/tizzle.png", link: "https://tizzleshop.vercel.app/" },
   /*{ id: "noisypay", name: "NoisyPay", description: "Mobile-first web app for online training course payments with instant WhatsApp group access.", image: "/noisypay.png", link: "https://noisypay.vercel.app/" },*/
-  { id: "secquiz", name: "Secquiz App", description: "A cybersecurity quiz app to test knowledge, improve skills, and prep for certifications.", image: "/secquiz.PNG", link: "https://secquizz.vercel.app/" },
+  { id: "secquiz", name: "Secquiz App", description: "A cybersecurity quiz app to test knowledge, improve skills, and prep for certifications.", image: "/secquiz.png", link: "https://secquizz.vercel.app/" },
   /*{ id: "noisy-viral", name: "Noisy Viral AI Tool", description: "Viral content generation web app — generate a month's worth of social media content instantly.", image: "/noisy.png", link: "https://noisyng.vercel.app/" },
   { id: "gcrisker", name: "GCRisker App", description: "Risk analysis tool for assessing project risk profiles and helping users make informed decisions.", image: "/riskapng.png", link: "https://riska-app.vercel.app/" },
   { id: "runphisher", name: "RunPhisher", description: "Phishing link detection fullstack web app — identify malicious links and stay protected.", image: "/runph.png", link: "https://run-phisher.vercel.app/" },
@@ -25,7 +27,7 @@ const ProjectsSection = () => {
   const shareProject = (project: typeof projects[0]) => {
     const shareUrl = `${typeof window !== 'undefined' ? window.location.origin : ''}/#project-${project.id}`
     const shareText = `Check out ${project.name}: ${project.description}`
-    
+
     if (navigator.share) {
       navigator.share({
         title: project.name,

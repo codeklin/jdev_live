@@ -2,48 +2,59 @@ import SlideUp from "./SlideUp"
 
 const services = [
   {
-    title: "Web Development & Digital Solutions",
-    desc: "Fast, secure, mobile-first websites and web apps built to grow your business online.",
+    title: "AI Agent Development & Automation",
+    desc: "Custom AI assistants, autonomous bots, and intelligent workflow automations built to streamline operations and scale business efficiency.",
     border: "border-t-[#0d9488]",
     btn: "bg-[#0d9488] hover:bg-teal-700",
   },
   {
-    title: "Cybersecurity Training & Mentorship",
-    desc: "Hands-on training, certifications prep & mentorship for individuals and organisations in Nigeria.",
-    border: "border-t-[#3b82f6]",
-    btn: "bg-[#3b82f6] hover:bg-blue-600",
+    title: "AI Commercials & UGC Production",
+    desc: "High-impact, cinematic AI-generated advertisements, user-generated content (UGC), and product promo campaigns that capture attention.",
+    border: "border-t-pink-500",
+    btn: "bg-pink-500 hover:bg-pink-600",
   },
   {
-    title: "Social Media Content Creation",
-    desc: "Reels, carousels, captions & strategy that stop the scroll and grow your audience fast.",
-    border: "border-t-[#ef4444]",
-    btn: "bg-[#ef4444] hover:bg-red-600",
-  },
-  {
-    title: "Photography",
-    desc: "Portrait, event, product & brand photography that makes your business look world-class.",
-    border: "border-t-purple-500",
-    btn: "bg-purple-500 hover:bg-purple-600",
-  },
-  {
-    title: "Videography",
-    desc: "Event coverage, brand videos, short films & YouTube content — cinematic quality, every time.",
-    border: "border-t-[#3b82f6]",
-    btn: "bg-[#3b82f6] hover:bg-blue-600",
-  },
-  {
-    title: "Video Editing & Post-Production",
-    desc: "Professional cuts, colour grading, motion graphics & sound design for any platform.",
+    title: "AI-Generated Media & UGC Training",
+    desc: "Step-by-step training and mentorship for brands and creators on how to script, prompt, edit, and launch promotions using generative AI tools.",
     border: "border-t-yellow-500",
     btn: "bg-yellow-500 hover:bg-yellow-600",
   },
   {
-    title: "Content Strategy & Brand Storytelling",
-    desc: "A clear content roadmap that positions your brand, builds trust, and converts followers to customers.",
-    border: "border-t-pink-500",
-    btn: "bg-pink-500 hover:bg-pink-600",
+    title: "Web Development & AI Solutions",
+    desc: "Fast, secure, mobile-first websites and web applications integrated with AI capabilities to grow your business online.",
+    border: "border-t-[#3b82f6]",
+    btn: "bg-[#3b82f6] hover:bg-blue-600",
   },
-  
+  {
+    title: "Cybersecurity Training & Mentorship",
+    desc: "Hands-on training, certification prep, and security mentorship for individuals and organizations in Nigeria.",
+    border: "border-t-[#ef4444]",
+    btn: "bg-[#ef4444] hover:bg-red-600",
+  },
+  {
+    title: "Social Media Content Creation",
+    desc: "Reels, carousels, captions, and viral campaigns that stop the scroll, build trust, and scale your organic reach.",
+    border: "border-t-orange-500",
+    btn: "bg-orange-500 hover:bg-orange-600",
+  },
+  {
+    title: "Photography & Visual Branding",
+    desc: "Portrait, event, product, and brand photography that makes your business look world-class and professional.",
+    border: "border-t-purple-500",
+    btn: "bg-purple-500 hover:bg-purple-600",
+  },
+  {
+    title: "Videography & Film Production",
+    desc: "Event coverage, brand videos, short films, and high-quality YouTube content — cinematic quality, every time.",
+    border: "border-t-teal-500",
+    btn: "bg-teal-500 hover:bg-teal-600",
+  },
+  {
+    title: "Video Editing & Post-Production",
+    desc: "Professional cuts, color grading, motion graphics, and sound design powered by standard and AI-assisted tools.",
+    border: "border-t-[#3b82f6]",
+    btn: "bg-[#3b82f6] hover:bg-blue-600",
+  },
 ]
 
 const ServicesSection = () => {
