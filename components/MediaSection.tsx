@@ -119,6 +119,7 @@ const MediaSection = () => {
                           src={thumb}
                           alt={v.title}
                           fill
+                          unoptimized={thumb.startsWith("http")}
                           className="object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                         {/* Play button overlay */}
