@@ -70,10 +70,10 @@ const AboutSection = () => {
               {/* Stats */}
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { num: "10+", label: "Years Experience" },
-                  { num: "30+", label: "Businesses Helped" },
-                  { num: "500+", label: "Students Trained" },
-                  { num: "3", label: "Companies Founded" },
+                  { num: "20+", label: "Lead Systems Built" },
+                  { num: "15+", label: "Automations Deployed" },
+                  { num: "10+", label: "Funnels Created" },
+                  { num: "30+", label: "Businesses Supported" },
                 ].map((s) => (
                   <div key={s.label} className="bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/10 rounded-2xl p-6">
                     <p className="text-3xl font-black text-[#0a0a0a] dark:text-white leading-none">{s.num}</p>

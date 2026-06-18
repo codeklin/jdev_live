@@ -43,10 +43,10 @@ const HeroSection = () => {
             {/* Trust indicators */}
             <div className="flex flex-wrap gap-6 py-1">
               {[
-                { num: "10+", label: "Years Building" },
-                { num: "30+", label: "Businesses Helped" },
-                { num: "₦0→₦M", label: "Revenue Added" },
-                { num: "3", label: "Companies Founded" },
+                { num: "20+", label: "Lead Systems Built" },
+                { num: "15+", label: "Automations Deployed" },
+                { num: "10+", label: "Funnels Created" },
+                { num: "30+", label: "Businesses Supported" },
               ].map((s) => (
                 <div key={s.label}>
                   <p className="text-2xl font-black text-[#0a0a0a] dark:text-white leading-none">
