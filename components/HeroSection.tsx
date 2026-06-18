@@ -78,10 +78,8 @@ const HeroSection = () => {
             {/* Social proof strip */}
             <div className="flex items-center gap-3 pt-1">
               <div className="flex -space-x-2">
-                {["bg-teal-500","bg-blue-500","bg-orange-500","bg-purple-500"].map((c, i) => (
-                  <div key={i} className={`w-8 h-8 rounded-full ${c} border-2 border-white dark:border-[#0a0a0a] flex items-center justify-center text-white text-xs font-black`}>
-                    {["R","S","C","B"][i]}
-                  </div>
+                {["/pers1.png","/pers2.png","/pers3.png","/pers4.png"].map((src, i) => (
+                  <Image key={i} src={src} alt={`Client ${i + 1}`} width={32} height={32} className="w-8 h-8 rounded-full object-cover border-2 border-white dark:border-[#0a0a0a]" />
                 ))}
               </div>
               <p className="text-xs text-gray-500 dark:text-gray-400">
