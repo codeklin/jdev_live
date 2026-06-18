@@ -11,26 +11,35 @@ import SlideUp from "./SlideUp"
 //     YouTube auto-thumbnail URL: https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg
 const videos = [
   {
+    id: "children-animation-project",
+    title: "Daniel Said No",
+    description: "Parent resourse for teaching children life and educational lessons",
+    youtubeId: "fxXBZ857YDo",
+    thumbnail: "/daniel.jpg",
+  },
+
+  {
+    id: "AI-Training-Video",
+    title: "Learn AI Before Its Too Late",
+    description: "An AI training course for complete beginners.",
+    youtubeId: "G0MD4wkhmak",
+    thumbnail: "",
+  },
+  {
+    id: "animated-logo",
+    title: "Cinematic Animation Intro Video — Livr Media",
+    description: "A cinematic Pixar animated intro logo.",
+    youtubeId: "k9eR9D2s3YY",
+    thumbnail: "/livranim.png", // uses public/livranim.png
+  },
+   {
     id: "ai-animation-gigsdev",
     title: "AI Animation Video — Gigsdev",
     description: "A cinematic artificial inteligence training advert video showcasing Gigsdev's training course.",
     youtubeId: "vXRLIVOi_hs",
     thumbnail: "", // leave "" to use YouTube auto-thumbnail
   },
-  {
-    id: "first-aid-health-project",
-    title: "A first aid lesson on attending to seizure crisis  — Health Project",
-    description: "Full event coverage of a major tech summit in Nigeria.",
-    youtubeId: "YOUR_YOUTUBE_VIDEO_ID_2",
-    thumbnail: "",
-  },
-  {
-    id: "short-film-reel",
-    title: "Short Film — Content Reel",
-    description: "A highlight reel of content creation and photography work.",
-    youtubeId: "YOUR_YOUTUBE_VIDEO_ID_3",
-    thumbnail: "",
-  },
+  
 ]
 
 // ─── PDF CATALOGUES ───────────────────────────────────────────────────────────
