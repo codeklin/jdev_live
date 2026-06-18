@@ -65,9 +65,7 @@ const getYoutubeThumbnail = (id: string) =>
     : `https://img.youtube.com/vi/${id}/maxresdefault.jpg`
 
 const getCatalogueThumbnail = (path: string) =>
-  path.includes("catalogue") && !path.startsWith("/public")
-    ? "/skills.jpg" // local fallback until real mockup is added
-    : path
+  path && path.startsWith("/") ? path : "/noisy.png"
 
 const shareItem = (itemType: 'video' | 'catalogue', itemId: string, title: string, description: string) => {
   const shareUrl = `${typeof window !== 'undefined' ? window.location.origin : ''}/#${itemType}-${itemId}`

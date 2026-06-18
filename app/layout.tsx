@@ -11,9 +11,9 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: "Olajide — Developer, Creator & Cybersecurity Expert",
+  title: "Olajide — Customer Acquisition & AI Automation Specialist",
   description:
-    "Olajide Igbalaye — Fullstack Developer, Cybersecurity Expert, Content Creator, Photographer & Videographer",
+    "I help Nigerian businesses get more paying customers using AI, content & automation. Book a free growth audit today.",
 }
 
 export default function RootLayout({

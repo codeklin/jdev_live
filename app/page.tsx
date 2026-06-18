@@ -1,17 +1,23 @@
 import HeroSection from "../components/HeroSection"
-import AboutSection from "../components/AboutSection"
+import ProblemSection from "../components/ProblemSection"
+import SolutionSection from "../components/SolutionSection"
+import CaseStudiesSection from "../components/CaseStudiesSection"
 import ServicesSection from "../components/ServicesSection"
-import ProjectsSection from "../components/ProjectsSection"
-import MediaSection from "../components/MediaSection"
+import LeadMagnetSection from "../components/LeadMagnetSection"
+import AboutSection from "../components/AboutSection"
+import CTASection from "../components/CTASection"
 
 export default function Home() {
   return (
     <main className="pt-16">
       <HeroSection />
-      <AboutSection />
+      <ProblemSection />
+      <SolutionSection />
+      <CaseStudiesSection />
       <ServicesSection />
-      <ProjectsSection />
-      <MediaSection />
+      <LeadMagnetSection />
+      <AboutSection />
+      <CTASection />
     </main>
   )
 }
