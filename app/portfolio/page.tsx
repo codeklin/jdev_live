@@ -55,7 +55,7 @@ export default function PortfolioPage() {
             {/* Stats row */}
             <div className="flex flex-wrap gap-8 pt-2">
               {[
-                { num: "10+", label: "Web Apps Built" },
+                { num: "70+", label: "Web Apps Built" },
                 { num: "50+", label: "Design Catalogues" },
                 { num: "30+", label: "Video Projects" },
                 { num: "60+→Shipped", label: "Every Single Time" },
