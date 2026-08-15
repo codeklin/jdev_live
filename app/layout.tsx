@@ -11,9 +11,9 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: "Olajide — Customer Acquisition & AI Automation Specialist",
+  title: "Olajide Igbalaye · Email Systems Designer & Fullstack Developer",
   description:
-    "I help Nigerian businesses get more paying customers using AI, content & automation. Book a free growth audit today.",
+    "I design and build email marketing systems that drive revenue, using Klaviyo, Figma, and fullstack development. Available remotely worldwide.",
 }
 
 export default function RootLayout({

@@ -11,8 +11,8 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <p className="text-2xl font-black text-white">{"<J/Dev>"}</p>
-            <p className="text-xs text-gray-500 mt-1 max-w-xs">
-              Customer Acquisition & AI Automation Specialist — helping Nigerian businesses get more paying customers.
+            <p className="text-xs text-gray-500 mt-1 max-w-xs leading-relaxed">
+              Email Systems Designer & Fullstack Developer, available remotely, worldwide.
             </p>
           </div>
 
@@ -20,11 +20,12 @@ const Footer = () => {
           <nav className="flex flex-wrap gap-6">
             {[
               { label: "Home", to: "home" },
-              { label: "Problem", to: "problem" },
-              { label: "Services", to: "services" },
-              { label: "Case Studies", to: "cases" },
+              { label: "What I Do", to: "services" },
+              { label: "Email Work", to: "email-work" },
+              { label: "Process", to: "process" },
+              { label: "Projects", to: "projects" },
               { label: "About", to: "about" },
-              { label: "Free Audit", to: "contact" },
+              { label: "Contact", to: "contact" },
             ].map((link) => (
               <a
                 key={link.to}
@@ -41,6 +42,18 @@ const Footer = () => {
               Portfolio ↗
             </Link>
           </nav>
+        </div>
+
+        {/* Availability strip */}
+        <div className="flex flex-wrap gap-3 mb-8">
+          {["Full-time Remote", "Contract", "Freelance", "Worldwide"].map((tag) => (
+            <span
+              key={tag}
+              className="px-3 py-1 bg-[#0d9488]/10 border border-[#0d9488]/20 text-[#0d9488] text-[10px] font-bold uppercase tracking-widest rounded-lg"
+            >
+              {tag}
+            </span>
+          ))}
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">

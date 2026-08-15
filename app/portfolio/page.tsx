@@ -3,9 +3,9 @@ import MediaSection from "../../components/MediaSection"
 import Link from "next/link"
 
 export const metadata = {
-  title: "Portfolio — Olajide Igbalaye",
+  title: "Portfolio · Olajide Igbalaye",
   description:
-    "A collection of websites, apps, video content, and design work built by Olajide Igbalaye over 10+ years.",
+    "A collection of email campaigns, web apps, AI tools, and design work built by Olajide Igbalaye over 10+ years.",
 }
 
 export default function PortfolioPage() {
@@ -49,7 +49,7 @@ export default function PortfolioPage() {
             </h1>
 
             <p className="text-base sm:text-lg text-gray-400 leading-relaxed max-w-2xl">
-              From full-stack web apps and AI-powered platforms to product design, video content, and graphic catalogues — here&apos;s a selection of what I&apos;ve built across the years.
+              From full-stack web apps and AI-powered platforms to product design, video content, and graphic catalogues, here&apos;s a selection of what I&apos;ve built across the years.
             </p>
 
             {/* Stats row */}
@@ -58,7 +58,7 @@ export default function PortfolioPage() {
                 { num: "70+", label: "Web Apps Built" },
                 { num: "50+", label: "Design Catalogues" },
                 { num: "30+", label: "Video Projects" },
-                { num: "60+→Shipped", label: "Every Single Time" },
+                { num: "10+", label: "Years Shipping" },
               ].map((s) => (
                 <div key={s.label}>
                   <p className="text-2xl font-black text-white leading-none">{s.num}</p>
@@ -82,24 +82,24 @@ export default function PortfolioPage() {
       <section className="bg-[#0a0a0a] border-t border-white/10 py-20 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="text-3xl sm:text-4xl font-black text-white leading-tight">
-            Need a system that actually{" "}
-            <span className="text-[#0d9488]">gets you customers?</span>
+            See what I can build{" "}
+            <span className="text-[#0d9488]">for your business.</span>
           </h2>
           <p className="text-gray-400 text-base">
-            The portfolio shows what I can build. The homepage shows what I can do for your revenue.
+            The portfolio shows the craft. The homepage shows what it does for revenue.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/"
               className="px-7 py-4 border-2 border-white/20 text-white font-bold rounded-2xl hover:border-[#0d9488] hover:text-[#0d9488] transition-all text-sm uppercase tracking-wider"
             >
-              ← Back to Main Site
+              Back to Main Site
             </Link>
             <Link
               href="/#contact"
               className="px-7 py-4 bg-[#0d9488] text-white font-black rounded-2xl hover:bg-[#0b7a70] transition-all text-sm uppercase tracking-wider shadow-lg shadow-[#0d9488]/30"
             >
-              Book a Free Growth Audit
+              Start a Conversation
             </Link>
           </div>
         </div>

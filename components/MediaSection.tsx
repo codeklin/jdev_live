@@ -208,7 +208,7 @@ const MediaSection = () => {
                     <h3 className="text-lg font-black text-[#0a0a0a] dark:text-white mb-2">{c.title}</h3>
                     <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-5">{c.description}</p>
 
-                    {/* CTA buttons — view links and share */}
+                    {/* CTA buttons: view links and share */}
                     <div className="flex flex-wrap gap-2 items-center">
                       <div className="flex flex-wrap gap-2 flex-1">
                         {c.googleDriveUrl && (

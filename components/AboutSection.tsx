@@ -2,16 +2,20 @@
 import SlideUp from "./SlideUp"
 
 const tools = [
-  "WhatsApp Business API",
-  "GoHighLevel CRM",
-  "Notion CRM",
+  "Klaviyo",
+  "Figma",
+  "Mailchimp",
+  "ActiveCampaign",
+  "HubSpot",
   "Make (Integromat)",
   "Zapier",
   "OpenAI API",
-  "LangChain",
   "Next.js",
+  "React",
   "Tailwind CSS",
-  "Midjourney",
+  "TypeScript",
+  "GoHighLevel CRM",
+  "LangChain",
   "ElevenLabs",
   "Runway ML",
 ]
@@ -25,40 +29,51 @@ const AboutSection = () => {
           {/* Left */}
           <SlideUp offset="-150px 0px -150px 0px">
             <div className="space-y-6">
+
               <div>
-                <span className="inline-block px-3 py-1 bg-[#0d9488]/10 border border-[#0d9488]/30 text-[#0d9488] text-xs font-black uppercase tracking-widest rounded-full mb-4">
-                  Who I Am
-                </span>
+                <p className="text-xs font-semibold uppercase tracking-widest text-[#0d9488] mb-3">05 — About</p>
                 <h2 className="text-4xl sm:text-5xl font-black text-[#0a0a0a] dark:text-white leading-tight">
-                  I Build Systems. <br />
-                  <span className="text-[#0d9488]">Not Just Websites.</span>
+                  The Dev Who Gets{" "}
+                  <br />
+                  <span className="text-[#0d9488]">Email Marketing.</span>
                 </h2>
               </div>
+
               <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
-                I&apos;m <span className="font-black text-[#0a0a0a] dark:text-white">Olajide Igbalaye</span> — a Customer Acquisition Specialist helping Nigerian SMEs, realtors, schools, and clinics build the systems they need to grow predictably.
-              </p>
-              <p className="text-base text-gray-500 dark:text-gray-400 leading-relaxed">
-                I don&apos;t just build pretty websites. I architect the full pipeline: from the moment someone discovers your business online to the moment they become a paying customer — and then a repeat one.
-              </p>
-              <p className="text-base text-gray-500 dark:text-gray-400 leading-relaxed">
-                With 10+ years building digital products and AI automations, I combine technical depth with a commercial mindset. I understand both the code and the customer journey.
+                I&apos;m <span className="font-black text-[#0a0a0a] dark:text-white">Olajide Igbalaye</span>, an Email Systems Designer and Fullstack Developer. Most email specialists can&apos;t code. Most developers don&apos;t understand email marketing. I live at the intersection of both.
               </p>
 
-              {/* CTA */}
-              <div className="flex flex-wrap gap-4 pt-2">
+              <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+                I design email flows in Figma, build and deploy them in Klaviyo, then connect everything to your stack with code. From welcome series to post-purchase sequences, I own the full pipeline.
+              </p>
+
+              <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+                With 10+ years building digital products and marketing systems, I combine technical depth with a commercial mindset. I understand both the code and the customer journey.
+              </p>
+
+              {/* CTAs */}
+              <div className="flex flex-wrap gap-3 pt-2">
                 <a
                   href="#contact"
-                  className="px-7 py-3.5 bg-[#0d9488] text-white font-black rounded-2xl hover:bg-[#0b7a70] transition-colors text-sm uppercase tracking-wider"
+                  className="px-6 py-3 bg-[#0d9488] text-white font-bold rounded-lg hover:bg-[#0b7a70] transition-colors text-sm"
                 >
                   Work With Me
                 </a>
                 <a
-                  href="https://wa.me/2347031098097"
+                  href="https://www.linkedin.com/in/olajide-igbalaye/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-7 py-3.5 border-2 border-gray-200 dark:border-white/20 text-gray-600 dark:text-gray-300 font-bold rounded-2xl hover:border-[#0d9488] hover:text-[#0d9488] transition-colors text-sm uppercase tracking-wider"
+                  className="px-6 py-3 border border-gray-300 dark:border-white/20 text-gray-700 dark:text-gray-300 font-medium rounded-lg hover:border-[#0d9488] hover:text-[#0d9488] transition-colors text-sm"
                 >
-                  WhatsApp Me
+                  LinkedIn
+                </a>
+                <a
+                  href="https://github.com/codeklin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 border border-gray-300 dark:border-white/20 text-gray-700 dark:text-gray-300 font-medium rounded-lg hover:border-[#0d9488] hover:text-[#0d9488] transition-colors text-sm"
+                >
+                  GitHub
                 </a>
               </div>
             </div>
@@ -66,53 +81,56 @@ const AboutSection = () => {
 
           {/* Right */}
           <SlideUp offset="-150px 0px -150px 0px">
-            <div className="space-y-8">
-              {/* Stats */}
-              <div className="grid grid-cols-2 gap-4">
+            <div className="space-y-10">
+
+              {/* Stats — plain border-top style, no cards */}
+              <div className="grid grid-cols-2 gap-y-6 gap-x-8 pt-2 border-t-2 border-[#0d9488]">
                 {[
-                  { num: "20+", label: "Lead Systems Built" },
-                  { num: "15+", label: "Automations Deployed" },
-                  { num: "10+", label: "Funnels Created" },
-                  { num: "30+", label: "Businesses Supported" },
+                  { num: "3+", label: "Klaviyo Flows Built" },
+                  { num: "42%", label: "Avg. Open Rate" },
+                  { num: "20+", label: "Automations Deployed" },
+                  { num: "10+", label: "Web Apps Shipped" },
                 ].map((s) => (
-                  <div key={s.label} className="bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/10 rounded-2xl p-6">
-                    <p className="text-3xl font-black text-[#0a0a0a] dark:text-white leading-none">{s.num}</p>
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mt-2">{s.label}</p>
+                  <div key={s.label}>
+                    <p className="text-3xl font-black text-[#0a0a0a] dark:text-white leading-none tabular-nums">{s.num}</p>
+                    <p className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mt-1.5">{s.label}</p>
                   </div>
                 ))}
               </div>
 
-              {/* What I focus on */}
-              <div className="space-y-3">
-                <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">My Focus Areas</p>
-                {[
-                  { label: "AI & Automation", color: "bg-[#0d9488]" },
-                  { label: "Lead Generation Systems", color: "bg-blue-500" },
-                  { label: "CRM & Pipeline Management", color: "bg-purple-500" },
-                  { label: "WhatsApp Marketing", color: "bg-green-500" },
-                  { label: "Revenue Funnels", color: "bg-orange-500" },
-                ].map((f) => (
-                  <div key={f.label} className="flex items-center gap-3">
-                    <span className={`w-2 h-2 rounded-full ${f.color} flex-shrink-0`} />
-                    <span className="text-sm font-bold text-gray-700 dark:text-gray-300">{f.label}</span>
-                  </div>
-                ))}
+              {/* Focus areas — clean list, no dots */}
+              <div>
+                <p className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-3">Focus Areas</p>
+                <ul className="space-y-1.5">
+                  {[
+                    "Email Marketing Systems",
+                    "Klaviyo Flow Design & Deployment",
+                    "Figma Email & Workflow Design",
+                    "Fullstack Web Development",
+                    "AI & Marketing Automation",
+                  ].map((f) => (
+                    <li key={f} className="text-sm text-gray-600 dark:text-gray-300 border-l border-gray-200 dark:border-white/10 pl-3 hover:border-[#0d9488] hover:text-[#0a0a0a] dark:hover:text-white transition-colors">
+                      {f}
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               {/* Tools */}
               <div>
-                <p className="text-[10px] font-black uppercase tracking-widest text-gray-400 mb-3">Tools I Use</p>
+                <p className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-3">Tools</p>
                 <div className="flex flex-wrap gap-2">
                   {tools.map((t) => (
                     <span
                       key={t}
-                      className="px-3 py-1.5 bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-xl text-xs font-bold text-gray-600 dark:text-gray-400 hover:border-[#0d9488] hover:text-[#0d9488] transition-colors"
+                      className="px-2.5 py-1 bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-md text-xs font-medium text-gray-600 dark:text-gray-400 hover:border-[#0d9488] hover:text-[#0d9488] transition-colors"
                     >
                       {t}
                     </span>
                   ))}
                 </div>
               </div>
+
             </div>
           </SlideUp>
         </div>
