@@ -13,7 +13,7 @@ const projects = [
     name: "Yawdesh",
     description: "Designed and developed Yadesh, a digital reading platform that delivers short Christian readings designed for users with limited time.",
     image: "/yadesh.png",
-    link: "https://yawdesh.vercel.app",
+    link: "https://yadesh.vercel.app",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
