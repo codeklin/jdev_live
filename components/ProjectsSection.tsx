@@ -9,6 +9,14 @@ import { FiShare2 } from "react-icons/fi"
 
 const projects = [
   {
+    id: "yawdesh",
+    name: "Yawdesh",
+    description: "Designed and developed Yadesh, a digital reading platform that delivers short Christian readings designed for users with limited time.",
+    image: "/yadesh.png",
+    link: "https://yawdesh.vercel.app",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+  },
+  {
     id: "phytogenix",
     name: "Phytogenix",
     description: "Digital herbal clinical research platform bridging university research and medical institutions. Research submission, peer review, and publication workflows.",
@@ -104,6 +112,7 @@ const ProjectsSection = () => {
                       alt={project.name}
                       width={600}
                       height={400}
+                      loading={idx === 0 ? "eager" : "lazy"}
                       unoptimized={project.image.includes("?")}
                       className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
                     />

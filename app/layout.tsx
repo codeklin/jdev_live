@@ -14,6 +14,11 @@ export const metadata = {
   title: "Olajide Igbalaye · Email Systems Designer & Fullstack Developer",
   description:
     "I design and build email marketing systems that drive revenue, using Klaviyo, Figma, and fullstack development. Available remotely worldwide.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({

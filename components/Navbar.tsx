@@ -20,6 +20,7 @@ const NAV_ITEMS: NavItem[] = [
 
 export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
   const currentTheme = theme === "system" ? systemTheme : theme
   const [open, setOpen] = useState(false)
   const pathname = usePathname()
@@ -30,6 +31,10 @@ export default function Navbar() {
   // Close on Escape key
   const handleKey = useCallback((e: KeyboardEvent) => {
     if (e.key === "Escape") setOpen(false)
+  }, [])
+
+  useEffect(() => {
+    setMounted(true)
   }, [])
 
   useEffect(() => {
@@ -90,7 +95,7 @@ export default function Navbar() {
               className="p-2 rounded-md text-gray-500 hover:text-[#0a0a0a] dark:hover:text-white hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
               aria-label="Toggle theme"
             >
-              {currentTheme === "dark" ? <RiSunLine size={17} /> : <RiMoonFill size={17} />}
+              {mounted && (currentTheme === "dark" ? <RiSunLine size={17} /> : <RiMoonFill size={17} />)}
             </button>
             <a
               href={getHref("contact")}
@@ -107,7 +112,7 @@ export default function Navbar() {
               className="p-2 rounded-md text-gray-500 hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
               aria-label="Toggle theme"
             >
-              {currentTheme === "dark" ? <RiSunLine size={17} className="text-white" /> : <RiMoonFill size={17} />}
+              {mounted && (currentTheme === "dark" ? <RiSunLine size={17} className="text-white" /> : <RiMoonFill size={17} />)}
             </button>
 
             {/* Hamburger — 3 lines that animate to X */}
