@@ -17,6 +17,14 @@ const projects = [
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
+    id: "remobryg",
+    name: "RemoBryg",
+    description: "A platform connecting people to AI training and weekly remote earning opportunities.",
+    image: "/remo.png",
+    link: "https://remobryg.vercel.app",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+  },
+  {
     id: "phytogenix",
     name: "Phytogenix",
     description: "Digital herbal clinical research platform bridging university research and medical institutions. Research submission, peer review, and publication workflows.",
