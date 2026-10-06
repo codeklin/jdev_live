@@ -100,9 +100,13 @@ export const WORK_ITEMS: WorkItem[] = [
     category: "catalog",
     title: "Home & Interior Catalogue",
     description: "Editorial-style product catalogue with warm layouts and precise typography.",
-    thumbnail: "/home.png",
-    pages: ["/home.png"],
-    pageCount: 1,
+    thumbnail: "/catalogs/home-interior/Interiro-images-0.jpg",
+    pages: [
+      "/catalogs/home-interior/Interiro-images-0.jpg",
+      "/catalogs/home-interior/Interiro-images-1.jpg",
+      "/catalogs/home-interior/Interiro-images-2.jpg",
+    ],
+    pageCount: 3,
   },
   {
     id: "auto-tools",
