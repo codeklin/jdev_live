@@ -20,11 +20,7 @@ const Footer = () => {
           <nav className="flex flex-wrap gap-6">
             {[
               { label: "Home", to: "home" },
-              { label: "What I Do", to: "services" },
-              { label: "Email Work", to: "email-work" },
-              { label: "Process", to: "process" },
-              { label: "Projects", to: "projects" },
-              { label: "About", to: "about" },
+              { label: "Work", to: "work" },
               { label: "Contact", to: "contact" },
             ].map((link) => (
               <a

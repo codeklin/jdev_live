@@ -1,51 +1,97 @@
 "use client"
 
-const CTASection = () => {
+import { useState } from "react"
+import { FaWhatsapp } from "react-icons/fa"
+
+export default function CTASection() {
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    const text = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+    const url = `https://wa.me/2347031098097?text=${encodeURIComponent(text)}`
+    window.open(url, "_blank", "noopener,noreferrer")
+  }
+
+  const inputClass =
+    "w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-[#25D366] transition-colors"
+  const labelClass = "block text-left text-sm text-gray-400 mb-1.5"
+
   return (
-    <section className="bg-[#0a0a0a] py-24 px-4 sm:px-6 relative overflow-hidden">
-      {/* Hard top border instead of glow — more editorial */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-[#0d9488]/60" />
+    <section
+      id="contact"
+      className="bg-[#0a0a0a] py-24 px-4 sm:px-6 border-t border-white/10"
+    >
+      <div className="max-w-2xl mx-auto text-center">
+        {/* Header */}
+        <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+          Let&apos;s build something.
+        </h2>
+        <p className="text-gray-400 text-base leading-relaxed mb-10">
+          Open to remote work — full-time, contract, or freelance.
+          Fill in the form and I&apos;ll get your message on WhatsApp.
+        </p>
 
-      <div className="relative max-w-4xl mx-auto">
-
-        {/* Left-aligned, not centered — less templated */}
-        <div className="space-y-7">
-          <p className="text-xs font-semibold uppercase tracking-widest text-[#0d9488]">
-            Ready to work together
-          </p>
-
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight max-w-3xl">
-            Your email channel is a revenue stream.{" "}
-            <span className="text-[#0d9488]">Let's make it perform.</span>
-          </h2>
-
-          <p className="text-base text-gray-400 max-w-2xl leading-relaxed">
-            Whether you need a full Klaviyo build, a Figma-designed email system, a fullstack web app, or a developer who understands marketing, I&apos;m available remotely, worldwide.
-          </p>
-
-          <div className="flex flex-wrap gap-3 pt-2">
-            <a
-              href="#contact"
-              className="px-7 py-4 bg-[#0d9488] text-white font-bold text-sm rounded-lg hover:bg-[#0b7a70] transition-colors"
-            >
-              Start a conversation
-            </a>
-            <a
-              href="#email-work"
-              className="px-7 py-4 border border-white/20 text-white font-medium text-sm rounded-lg hover:border-white/50 transition-colors"
-            >
-              See my work first
-            </a>
+        {/* Form */}
+        <form onSubmit={handleSubmit} className="space-y-4 text-left">
+          <div>
+            <label htmlFor="cta-name" className={labelClass}>
+              Name
+            </label>
+            <input
+              id="cta-name"
+              type="text"
+              required
+              placeholder="Your name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className={inputClass}
+            />
           </div>
 
-          <p className="text-xs text-gray-600">
-            Remote · Full-time · Contract · Freelance · Worldwide
-          </p>
-        </div>
+          <div>
+            <label htmlFor="cta-email" className={labelClass}>
+              Email
+            </label>
+            <input
+              id="cta-email"
+              type="email"
+              required
+              placeholder="your@email.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className={inputClass}
+            />
+          </div>
 
+          <div>
+            <label htmlFor="cta-message" className={labelClass}>
+              Message
+            </label>
+            <textarea
+              id="cta-message"
+              rows={4}
+              required
+              placeholder="Tell me about your project…"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              className={`${inputClass} resize-none`}
+            />
+          </div>
+
+          <div className="flex justify-center pt-2">
+            <button
+              type="submit"
+              className="flex items-center gap-2 px-6 py-3 bg-[#25D366] hover:bg-[#1ebe57] text-white font-bold rounded-lg transition-colors text-sm tracking-wide"
+            >
+              <FaWhatsapp size={18} />
+              Send via WhatsApp
+            </button>
+          </div>
+        </form>
       </div>
     </section>
   )
 }
-
-export default CTASection

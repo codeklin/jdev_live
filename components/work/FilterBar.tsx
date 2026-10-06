@@ -1,0 +1,50 @@
+"use client";
+
+import { WorkCategory } from "../../lib/workData";
+
+// ─── Types ────────────────────────────────────────────────────────────────────
+
+type FilterValue = WorkCategory | "all";
+
+interface FilterBarProps {
+  active: FilterValue;
+  onChange: (v: FilterValue) => void;
+}
+
+// ─── Pill definitions ────────────────────────────────────────────────────────
+
+const PILLS: { label: string; value: FilterValue }[] = [
+  { label: "All",     value: "all"     },
+  { label: "Catalog", value: "catalog" },
+  { label: "Social",  value: "social"  },
+  { label: "Email",   value: "email"   },
+  { label: "Web",     value: "web"     },
+];
+
+// ─── Component ───────────────────────────────────────────────────────────────
+
+export default function FilterBar({ active, onChange }: FilterBarProps) {
+  return (
+    <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide mb-10">
+      {PILLS.map(({ label, value }) => {
+        const isActive = active === value;
+
+        return (
+          <button
+            key={value}
+            onClick={() => onChange(value)}
+            aria-pressed={isActive}
+            className={[
+              "rounded-full px-4 py-1.5 text-sm whitespace-nowrap flex-shrink-0",
+              isActive
+                ? "bg-white text-[#0a0a0a] font-bold"
+                : "border border-white/20 text-gray-400 hover:border-white/40 hover:text-white transition-all duration-200",
+            ].join(" ")}
+          >
+            {label}
+          </button>
+        );
+      })}
+    </div>
+  );
+}

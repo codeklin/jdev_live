@@ -11,10 +11,7 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { label: "What I Do", page: "services" },
-  { label: "Email Work", page: "email-work" },
-  { label: "Projects", page: "projects" },
-  { label: "About", page: "about" },
+  { label: "Work",    page: "work"    },
   { label: "Contact", page: "contact" },
 ]
 
@@ -76,16 +73,6 @@ export default function Navbar() {
                 {item.label}
               </a>
             ))}
-            <Link
-              href="/portfolio"
-              className={`text-xs font-semibold uppercase tracking-widest transition-colors ${
-                pathname === "/portfolio"
-                  ? "text-[#0d9488]"
-                  : "text-gray-500 dark:text-gray-400 hover:text-[#0a0a0a] dark:hover:text-white"
-              }`}
-            >
-              Portfolio
-            </Link>
           </nav>
 
           {/* Desktop right controls */}
@@ -191,18 +178,6 @@ export default function Navbar() {
             </a>
           ))}
 
-          <Link
-            href="/portfolio"
-            onClick={() => setOpen(false)}
-            className={`flex items-center justify-between py-3 text-sm font-semibold border-b border-gray-100 dark:border-white/10 transition-colors group ${
-              pathname === "/portfolio"
-                ? "text-[#0d9488]"
-                : "text-gray-500 dark:text-gray-400 hover:text-[#0a0a0a] dark:hover:text-white"
-            }`}
-          >
-            Portfolio
-            <span className="text-xs text-[#0d9488]">↗</span>
-          </Link>
         </nav>
 
         {/* Panel footer — CTA */}
