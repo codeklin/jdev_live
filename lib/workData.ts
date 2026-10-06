@@ -138,8 +138,8 @@ export const WORK_ITEMS: WorkItem[] = [
     title: "Daniel Said No!",
     description: "AI-generated kids safety video teaching children the rules that keep them safe. Produced entirely with AI visuals, voice, and animation.",
     thumbnail: "/daniel.jpg",
-    youtubeId: "REPLACE_WITH_YOUTUBE_VIDEO_ID",
-    aspectRatio: "16/9",
+    youtubeId: "qwauV3B9E4I",
+    aspectRatio: "9/16",
     tags: ["AI Video", "YouTube", "Kids Content"],
   },
 
