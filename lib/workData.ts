@@ -113,9 +113,13 @@ export const WORK_ITEMS: WorkItem[] = [
     category: "catalog",
     title: "Automobile Tools Catalogue",
     description: "Technical product data transformed into a clean, high-end brand asset.",
-    thumbnail: "/tools.png",
-    pages: ["/tools.png"],
-    pageCount: 1,
+    thumbnail: "/catalogs/auto-tools/NowTuBroCure_compressed-images-0.jpg",
+    pages: [
+      "/catalogs/auto-tools/NowTuBroCure_compressed-images-0.jpg",
+      "/catalogs/auto-tools/NowTuBroCure_compressed-images-1.jpg",
+      "/catalogs/auto-tools/NowTuBroCure_compressed-images-2.jpg",
+    ],
+    pageCount: 3,
   },
 
 
