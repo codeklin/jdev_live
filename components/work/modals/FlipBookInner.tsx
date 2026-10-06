@@ -17,7 +17,7 @@ export interface PageFlipHandle {
   flipPrev: () => void
 }
 
-// ─── Mobile swipe viewer ──────────────────────────────────────────────────────
+// ─── Mobile swipe viewer with flip animation ─────────────────────────────────
 function MobileViewer({
   pages,
   title,
@@ -28,14 +28,45 @@ function MobileViewer({
   onReady: (api: PageFlipHandle) => void
 }) {
   const [index, setIndex] = useState(0)
+  // "left" = flipping forward, "right" = flipping back, null = idle
+  const [flipDir, setFlipDir] = useState<"left" | "right" | null>(null)
+  const [displayIndex, setDisplayIndex] = useState(0)
   const touchStartX = useRef<number | null>(null)
 
-  const prev = useCallback(() => setIndex((i) => Math.max(0, i - 1)), [])
-  const next = useCallback(() => setIndex((i) => Math.min(pages.length - 1, i + 1)), [pages.length])
+  const flip = useCallback((dir: "left" | "right", nextIdx: number) => {
+    if (flipDir !== null) return           // already animating
+    setFlipDir(dir)
+    setTimeout(() => {
+      setIndex(nextIdx)
+      setDisplayIndex(nextIdx)
+      setFlipDir(null)
+    }, 350)
+  }, [flipDir])
+
+  const prev = useCallback(() => {
+    setIndex((i) => {
+      const next = Math.max(0, i - 1)
+      if (next !== i) flip("right", next)
+      return i
+    })
+  }, [flip])
+
+  const next = useCallback(() => {
+    setIndex((i) => {
+      const next = Math.min(pages.length - 1, i + 1)
+      if (next !== i) flip("left", next)
+      return i
+    })
+  }, [flip, pages.length])
 
   useEffect(() => {
     onReady({ flipNext: next, flipPrev: prev })
   }, [next, prev, onReady])
+
+  // Flip keyframes via inline style — avoids needing new Tailwind config
+  const flipStyle: React.CSSProperties = flipDir === null ? {} : {
+    animation: `mobilePageFlip${flipDir === "left" ? "Forward" : "Back"} 0.35s ease-in-out forwards`,
+  }
 
   return (
     <div
@@ -48,24 +79,41 @@ function MobileViewer({
         touchStartX.current = null
       }}
     >
+      {/* Inject flip keyframes once */}
+      <style>{`
+        @keyframes mobilePageFlipForward {
+          0%   { transform: perspective(1200px) rotateY(0deg);   opacity: 1; }
+          50%  { transform: perspective(1200px) rotateY(-90deg); opacity: 0.4; }
+          100% { transform: perspective(1200px) rotateY(0deg);   opacity: 1; }
+        }
+        @keyframes mobilePageFlipBack {
+          0%   { transform: perspective(1200px) rotateY(0deg);  opacity: 1; }
+          50%  { transform: perspective(1200px) rotateY(90deg); opacity: 0.4; }
+          100% { transform: perspective(1200px) rotateY(0deg);  opacity: 1; }
+        }
+      `}</style>
+
       <p className="text-sm text-gray-400 mb-3 tabular-nums select-none">
         {index + 1} / {pages.length}
       </p>
 
-      {/* Full-width image */}
-      <div className="relative w-full" style={{ aspectRatio: "3/4" }}>
+      {/* Page with flip animation */}
+      <div
+        className="relative w-full rounded-lg overflow-hidden shadow-2xl"
+        style={{ aspectRatio: "3/4", ...flipStyle }}
+      >
         <Image
-          src={pages[index]}
-          alt={`${title} page ${index + 1}`}
+          src={pages[displayIndex]}
+          alt={`${title} page ${displayIndex + 1}`}
           fill
           className="object-contain"
           sizes="100vw"
-          priority={index === 0}
+          priority={displayIndex === 0}
         />
       </div>
 
       <p className="text-[11px] text-gray-600 mt-3 select-none">
-        Swipe left / right to turn pages
+        Swipe or use arrows to turn pages
       </p>
     </div>
   )
