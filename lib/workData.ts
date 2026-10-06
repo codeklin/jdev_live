@@ -51,8 +51,11 @@ export interface WebProjectItem extends WorkItemBase {
 
 export interface VideoItem extends WorkItemBase {
   category: "video"
-  videoSrc: string        // path to the video file, e.g. /videos/ad-01.mp4
-  aspectRatio?: "16/9" | "9/16" | "1/1"   // defaults to 16/9
+  /** Local file path e.g. /videos/ad.mp4 — use this OR youtubeId, not both */
+  videoSrc?: string
+  /** YouTube video ID (the part after ?v=) — embed player shown in modal */
+  youtubeId?: string
+  aspectRatio?: "16/9" | "9/16" | "1/1"
 }
 
 // ─── Union ───────────────────────────────────────────────────────────────────
@@ -130,22 +133,14 @@ export const WORK_ITEMS: WorkItem[] = [
 
   // ── AI Videos ─────────────────────────────────────────────────────────────
   {
-    id: "ai-video-1",
+    id: "daniel-said-no",
     category: "video",
-    title: "AI Product Ad",
-    description: "AI-generated video ad built for social — scroll-stopping visuals with motion and voice.",
-    thumbnail: "/videos/ai-video-1-thumb.jpg",
-    videoSrc: "/videos/ai-video-1.mp4",
-    aspectRatio: "9/16",
-  },
-  {
-    id: "ai-video-2",
-    category: "video",
-    title: "AI Brand Film",
-    description: "Short-form brand film produced entirely with AI tools — concept, visuals, and audio.",
-    thumbnail: "/videos/ai-video-2-thumb.jpg",
-    videoSrc: "/videos/ai-video-2.mp4",
+    title: "Daniel Said No!",
+    description: "AI-generated kids safety video teaching children the rules that keep them safe. Produced entirely with AI visuals, voice, and animation.",
+    thumbnail: "/daniel.jpg",
+    youtubeId: "REPLACE_WITH_YOUTUBE_VIDEO_ID",
     aspectRatio: "16/9",
+    tags: ["AI Video", "YouTube", "Kids Content"],
   },
 
   // ── Web Projects ──────────────────────────────────────────────────────────

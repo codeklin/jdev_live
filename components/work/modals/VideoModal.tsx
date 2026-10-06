@@ -15,12 +15,12 @@ export default function VideoModal({ item, onClose, triggerRef }: Props) {
   const modalRef = useRef<HTMLDivElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
 
-  // Focus close button on open
+  const isYouTube = Boolean(item.youtubeId)
+
   useEffect(() => {
     closeButtonRef.current?.focus()
-    // Autoplay when modal opens
-    videoRef.current?.play()
-  }, [])
+    if (!isYouTube) videoRef.current?.play()
+  }, [isYouTube])
 
   // Focus trap
   useEffect(() => {
@@ -43,9 +43,7 @@ export default function VideoModal({ item, onClose, triggerRef }: Props) {
 
   // Escape to close
   useEffect(() => {
-    const handleKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") handleClose()
-    }
+    const handleKey = (e: KeyboardEvent) => { if (e.key === "Escape") handleClose() }
     document.addEventListener("keydown", handleKey)
     return () => document.removeEventListener("keydown", handleKey)
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -64,11 +62,9 @@ export default function VideoModal({ item, onClose, triggerRef }: Props) {
     [handleClose]
   )
 
-  // Portrait (9/16) or landscape (16/9) or square
   const isPortrait = item.aspectRatio === "9/16"
-  const isSquare = item.aspectRatio === "1/1"
-
-  const videoContainerClass = isPortrait
+  const isSquare   = item.aspectRatio === "1/1"
+  const containerClass = isPortrait
     ? "w-full max-w-sm mx-auto"
     : isSquare
     ? "w-full max-w-lg mx-auto"
@@ -110,25 +106,39 @@ export default function VideoModal({ item, onClose, triggerRef }: Props) {
 
         {/* Video area */}
         <div className="flex-1 flex items-center justify-center px-4 py-6 overflow-hidden">
-          <div className={videoContainerClass}>
-            <video
-              ref={videoRef}
-              src={item.videoSrc}
-              controls
-              playsInline
-              className="w-full rounded-xl shadow-2xl"
-              style={{ aspectRatio: item.aspectRatio ?? "16/9" }}
-            >
-              Your browser does not support video playback.
-            </video>
+          <div className={containerClass}>
+            {isYouTube ? (
+              /* YouTube embed */
+              <div
+                className="w-full rounded-xl overflow-hidden shadow-2xl"
+                style={{ aspectRatio: item.aspectRatio ?? "16/9" }}
+              >
+                <iframe
+                  src={`https://www.youtube.com/embed/${item.youtubeId}?autoplay=1&rel=0`}
+                  title={item.title}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full border-0"
+                />
+              </div>
+            ) : (
+              /* Local MP4 */
+              <video
+                ref={videoRef}
+                src={item.videoSrc}
+                controls
+                playsInline
+                className="w-full rounded-xl shadow-2xl"
+                style={{ aspectRatio: item.aspectRatio ?? "16/9" }}
+              >
+                Your browser does not support video playback.
+              </video>
+            )}
           </div>
         </div>
 
-        {/* Footer hint */}
         <div className="shrink-0 pb-3 text-center">
-          <p className="text-[11px] text-gray-600 select-none">
-            Esc to close
-          </p>
+          <p className="text-[11px] text-gray-600 select-none">Esc to close</p>
         </div>
       </div>
     </div>,
