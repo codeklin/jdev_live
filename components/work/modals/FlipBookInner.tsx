@@ -53,7 +53,8 @@ export default function FlipBookInner({ item, onReady }: Props) {
         width: dims.w,
         height: dims.h,
         size: "fixed",         // fixed = use exact w/h, no stretching
-        showCover: false,
+        showCover: true,
+        startPage: 0,
         mobileScrollSupport: true,
         drawShadow: true,
         flippingTime: 600,
