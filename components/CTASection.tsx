@@ -27,24 +27,24 @@ export default function CTASection() {
       <div className="max-w-2xl mx-auto text-center">
         {/* Header */}
         <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
-          Let&apos;s build something.
+          Got a project in mind?
         </h2>
         <p className="text-gray-400 text-base leading-relaxed mb-10">
-          Open to remote work — full-time, contract, or freelance.
-          Fill in the form and I&apos;ll get your message on WhatsApp.
+          Whether you need a brand that stops the scroll, an app that actually ships,
+          or both, I want to hear about it. Fill in the form and I&apos;ll reply on WhatsApp.
         </p>
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-4 text-left">
           <div>
             <label htmlFor="cta-name" className={labelClass}>
-              Name
+              Your name
             </label>
             <input
               id="cta-name"
               type="text"
               required
-              placeholder="Your name"
+              placeholder="Jane Smith"
               value={name}
               onChange={(e) => setName(e.target.value)}
               className={inputClass}
@@ -53,13 +53,13 @@ export default function CTASection() {
 
           <div>
             <label htmlFor="cta-email" className={labelClass}>
-              Email
+              Your email
             </label>
             <input
               id="cta-email"
               type="email"
               required
-              placeholder="your@email.com"
+              placeholder="jane@company.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className={inputClass}
@@ -68,13 +68,13 @@ export default function CTASection() {
 
           <div>
             <label htmlFor="cta-message" className={labelClass}>
-              Message
+              What do you need help with?
             </label>
             <textarea
               id="cta-message"
               rows={4}
               required
-              placeholder="Tell me about your project…"
+              placeholder="Tell me what you're building, what's broken, or what you wish existed."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               className={`${inputClass} resize-none`}

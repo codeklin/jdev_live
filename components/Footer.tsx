@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <p className="text-2xl font-black text-white">{"<J/Dev>"}</p>
             <p className="text-xs text-gray-500 mt-1 max-w-xs leading-relaxed">
-              Email Systems Designer & Fullstack Developer, available remotely, worldwide.
+              Design and code, end to end. Available remotely, worldwide.
             </p>
           </div>
 

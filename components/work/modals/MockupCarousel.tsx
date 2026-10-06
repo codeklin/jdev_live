@@ -220,7 +220,7 @@ export default function MockupCarousel({ item, onClose, triggerRef }: Props) {
                       src={slide}
                       fill
                       className="object-cover rounded-[2.2rem]"
-                      alt={`${item.title} — slide ${i + 1} of ${item.slides.length}`}
+                      alt={`${item.title}, slide ${i + 1} of ${item.slides.length}`}
                       sizes="280px"
                     />
                   </div>
@@ -277,7 +277,7 @@ export default function MockupCarousel({ item, onClose, triggerRef }: Props) {
         {/* ── Footer hint ──────────────────────────────────────────────────── */}
         <div className="shrink-0 pb-3 text-center">
           <p className="text-[11px] text-gray-600 select-none">
-            Use ← → arrow keys or buttons to navigate · Esc to close
+            Arrow keys or buttons to navigate. Esc to close.
           </p>
         </div>
       </div>

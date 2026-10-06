@@ -27,9 +27,9 @@ const HeroSection = () => {
 
             {/* Bio */}
             <p className="text-base text-gray-500 dark:text-gray-400 max-w-xl leading-relaxed">
-              I create visual identities that convert — email campaigns, social media graphics,
-              and product catalogs — then bring them to life with fullstack engineering in
-              Next.js and TypeScript. From marketing strategy to deployed product, all in one place.
+              Most businesses lose clients because their brand looks unfinished or their tech
+              stack can&apos;t keep up. I fix both. Visual design that earns trust on first glance,
+              built on Next.js so it actually scales.
             </p>
 
             {/* Single CTA */}
@@ -38,7 +38,7 @@ const HeroSection = () => {
                 href="#work"
                 className="px-6 py-3 bg-[#0d9488] text-white font-bold rounded-lg hover:bg-[#0b7a70] transition-colors text-sm tracking-wide"
               >
-                See My Work  ↓
+                See My Work ↓
               </a>
             </div>
           </div>
@@ -50,17 +50,17 @@ const HeroSection = () => {
 
             <Image
               src="/headshot.png"
-              alt="Olajide Igbalaye, Email Systems Designer and Fullstack Developer"
+              alt="Olajide Igbalaye, Designer and Fullstack Developer"
               width={420}
               height={500}
               priority
               className="relative rounded-2xl object-cover w-64 h-72 sm:w-72 sm:h-[340px] lg:w-80 lg:h-[420px] border border-gray-200 dark:border-white/10"
             />
 
-            {/* Role label — top left, smaller, plain */}
+            {/* Role label */}
             <div className="absolute -top-3 -left-3 bg-white dark:bg-[#111] border border-gray-200 dark:border-white/10 rounded-lg px-3 py-2 shadow-md">
-              <p className="text-[11px] font-black text-[#0a0a0a] dark:text-white leading-none">Email Systems</p>
-              <p className="text-[10px] text-gray-400 mt-0.5">& Fullstack Dev</p>
+              <p className="text-[11px] font-black text-[#0a0a0a] dark:text-white leading-none">Design</p>
+              <p className="text-[10px] text-gray-400 mt-0.5">and Dev</p>
             </div>
           </div>
 

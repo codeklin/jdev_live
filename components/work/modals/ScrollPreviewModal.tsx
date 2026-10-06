@@ -206,7 +206,7 @@ export default function ScrollPreviewModal({ item, onClose, triggerRef }: Props)
         {/* ── Footer hint ───────────────────────────────────────────────────── */}
         <div className="shrink-0 pt-3 text-center">
           <p className="text-[11px] text-gray-600 select-none">
-            Hover to pause scroll · Esc to close
+            Hover or tap to pause. Esc to close.
           </p>
         </div>
       </div>

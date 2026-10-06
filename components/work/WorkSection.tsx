@@ -54,7 +54,7 @@ export default function WorkSection() {
         <SlideUp>
           <div className="mb-10">
             <p className="text-sm font-semibold text-[#0d9488] tracking-widest uppercase mb-2">
-              04 — Work
+              04 · Work
             </p>
             <h2 className="text-4xl sm:text-5xl font-black text-white">
               All My Work

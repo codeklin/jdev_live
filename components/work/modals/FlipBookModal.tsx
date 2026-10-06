@@ -101,7 +101,7 @@ export default function FlipBookModal({ item, onClose, triggerRef }: Props) {
       className="fixed inset-0 z-50 bg-black/95 flex flex-col"
       role="dialog"
       aria-modal="true"
-      aria-label={`${item.title} — Flipbook viewer`}
+      aria-label={`${item.title}: Flipbook viewer`}
       onClick={handleBackdropClick}
     >
       {/* Inner container — stops backdrop-click propagation for non-backdrop clicks */}
