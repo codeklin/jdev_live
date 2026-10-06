@@ -40,7 +40,7 @@ function MobileViewer({
       setIndex(nextIdx)
       setDisplayIndex(nextIdx)
       setFlipDir(null)
-    }, 350)
+    }, 500)
   }, [flipDir])
 
   const prev = useCallback(() => {
@@ -64,8 +64,11 @@ function MobileViewer({
   }, [next, prev, onReady])
 
   // Flip keyframes via inline style — avoids needing new Tailwind config
-  const flipStyle: React.CSSProperties = flipDir === null ? {} : {
-    animation: `mobilePageFlip${flipDir === "left" ? "Forward" : "Back"} 0.35s ease-in-out forwards`,
+  const flipStyle: React.CSSProperties = flipDir === null ? {
+    boxShadow: "0 4px 24px rgba(0,0,0,0.4)",
+  } : {
+    animation: `pageCurl${flipDir === "left" ? "Forward" : "Back"} 0.5s cubic-bezier(0.25,0.46,0.45,0.94) forwards`,
+    transformOrigin: flipDir === "left" ? "left center" : "right center",
   }
 
   return (
@@ -79,17 +82,21 @@ function MobileViewer({
         touchStartX.current = null
       }}
     >
-      {/* Inject flip keyframes once */}
+      {/* Page curl keyframes — skew + scale + shadow simulates paper bending */}
       <style>{`
-        @keyframes mobilePageFlipForward {
-          0%   { transform: perspective(1200px) rotateY(0deg);   opacity: 1; }
-          50%  { transform: perspective(1200px) rotateY(-90deg); opacity: 0.4; }
-          100% { transform: perspective(1200px) rotateY(0deg);   opacity: 1; }
+        @keyframes pageCurlForward {
+          0%   { transform: perspective(1200px) rotateY(0deg)   skewY(0deg)   scaleX(1);    box-shadow: 0 4px 24px rgba(0,0,0,0.4); }
+          25%  { transform: perspective(1200px) rotateY(-45deg) skewY(2deg)   scaleX(0.92); box-shadow: -12px 8px 32px rgba(0,0,0,0.6); }
+          50%  { transform: perspective(1200px) rotateY(-90deg) skewY(4deg)   scaleX(0.7);  box-shadow: -20px 8px 40px rgba(0,0,0,0.7); opacity: 0.5; }
+          75%  { transform: perspective(1200px) rotateY(-45deg) skewY(-2deg)  scaleX(0.92); box-shadow: -8px 6px 28px rgba(0,0,0,0.5); opacity: 0.8; }
+          100% { transform: perspective(1200px) rotateY(0deg)   skewY(0deg)   scaleX(1);    box-shadow: 0 4px 24px rgba(0,0,0,0.4); opacity: 1; }
         }
-        @keyframes mobilePageFlipBack {
-          0%   { transform: perspective(1200px) rotateY(0deg);  opacity: 1; }
-          50%  { transform: perspective(1200px) rotateY(90deg); opacity: 0.4; }
-          100% { transform: perspective(1200px) rotateY(0deg);  opacity: 1; }
+        @keyframes pageCurlBack {
+          0%   { transform: perspective(1200px) rotateY(0deg)  skewY(0deg)   scaleX(1);    box-shadow: 0 4px 24px rgba(0,0,0,0.4); }
+          25%  { transform: perspective(1200px) rotateY(45deg) skewY(-2deg)  scaleX(0.92); box-shadow: 12px 8px 32px rgba(0,0,0,0.6); }
+          50%  { transform: perspective(1200px) rotateY(90deg) skewY(-4deg)  scaleX(0.7);  box-shadow: 20px 8px 40px rgba(0,0,0,0.7); opacity: 0.5; }
+          75%  { transform: perspective(1200px) rotateY(45deg) skewY(2deg)   scaleX(0.92); box-shadow: 8px 6px 28px rgba(0,0,0,0.5); opacity: 0.8; }
+          100% { transform: perspective(1200px) rotateY(0deg)  skewY(0deg)   scaleX(1);    box-shadow: 0 4px 24px rgba(0,0,0,0.4); opacity: 1; }
         }
       `}</style>
 
