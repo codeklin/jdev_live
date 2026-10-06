@@ -2,41 +2,41 @@
 
 // ─── Category ─────────────────────────────────────────────────────────────────
 
-export type WorkCategory = "catalog" | "social" | "email" | "web"
+export type WorkCategory = "catalog" | "social" | "email" | "web" | "video"
 
 // ─── Base ────────────────────────────────────────────────────────────────────
 
 interface WorkItemBase {
-  id: string            // kebab-case, used in anchor links and asset paths
+  id: string
   category: WorkCategory
   title: string
-  description: string   // ≤2 lines shown on grid card
-  thumbnail: string     // path relative to /public — shown in the grid card
-  tags?: string[]       // optional tech/tool tags shown on card
+  description: string
+  thumbnail: string
+  tags?: string[]
 }
 
 // ─── Catalog ─────────────────────────────────────────────────────────────────
 
 export interface CatalogItem extends WorkItemBase {
   category: "catalog"
-  pages: string[]       // ordered array of image paths
-  pageCount: number     // convenience — length of pages[]
+  pages: string[]
+  pageCount: number
 }
 
 // ─── Social Media ────────────────────────────────────────────────────────────
 
 export interface SocialItem extends WorkItemBase {
   category: "social"
-  slides: string[]      // ordered image paths for the carousel
-  clientName?: string   // optional brand label shown in carousel header
+  slides: string[]
+  clientName?: string
 }
 
 // ─── Email ───────────────────────────────────────────────────────────────────
 
 export interface EmailItem extends WorkItemBase {
   category: "email"
-  fullImagePath: string             // path to full-height email PNG
-  frameType: "browser" | "phone"   // which device frame to render
+  fullImagePath: string
+  frameType: "browser" | "phone"
 }
 
 // ─── Web Project ─────────────────────────────────────────────────────────────
@@ -44,12 +44,20 @@ export interface EmailItem extends WorkItemBase {
 export interface WebProjectItem extends WorkItemBase {
   category: "web"
   liveUrl: string
-  tags: string[]        // required for web items
+  tags: string[]
+}
+
+// ─── AI Video ────────────────────────────────────────────────────────────────
+
+export interface VideoItem extends WorkItemBase {
+  category: "video"
+  videoSrc: string        // path to the video file, e.g. /videos/ad-01.mp4
+  aspectRatio?: "16/9" | "9/16" | "1/1"   // defaults to 16/9
 }
 
 // ─── Union ───────────────────────────────────────────────────────────────────
 
-export type WorkItem = CatalogItem | SocialItem | EmailItem | WebProjectItem
+export type WorkItem = CatalogItem | SocialItem | EmailItem | WebProjectItem | VideoItem
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
@@ -118,6 +126,26 @@ export const WORK_ITEMS: WorkItem[] = [
     thumbnail: "/emails/email-promo-thumb.png",
     fullImagePath: "/emails/email-promo.png",
     frameType: "browser",
+  },
+
+  // ── AI Videos ─────────────────────────────────────────────────────────────
+  {
+    id: "ai-video-1",
+    category: "video",
+    title: "AI Product Ad",
+    description: "AI-generated video ad built for social — scroll-stopping visuals with motion and voice.",
+    thumbnail: "/videos/ai-video-1-thumb.jpg",
+    videoSrc: "/videos/ai-video-1.mp4",
+    aspectRatio: "9/16",
+  },
+  {
+    id: "ai-video-2",
+    category: "video",
+    title: "AI Brand Film",
+    description: "Short-form brand film produced entirely with AI tools — concept, visuals, and audio.",
+    thumbnail: "/videos/ai-video-2-thumb.jpg",
+    videoSrc: "/videos/ai-video-2.mp4",
+    aspectRatio: "16/9",
   },
 
   // ── Web Projects ──────────────────────────────────────────────────────────

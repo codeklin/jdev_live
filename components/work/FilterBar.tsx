@@ -1,34 +1,28 @@
-"use client";
+"use client"
 
-import { WorkCategory } from "../../lib/workData";
+import { WorkCategory } from "../../lib/workData"
 
-// ─── Types ────────────────────────────────────────────────────────────────────
-
-type FilterValue = WorkCategory | "all";
+type FilterValue = WorkCategory | "all"
 
 interface FilterBarProps {
-  active: FilterValue;
-  onChange: (v: FilterValue) => void;
+  active: FilterValue
+  onChange: (v: FilterValue) => void
 }
-
-// ─── Pill definitions ────────────────────────────────────────────────────────
 
 const PILLS: { label: string; value: FilterValue }[] = [
   { label: "All",     value: "all"     },
   { label: "Catalog", value: "catalog" },
   { label: "Social",  value: "social"  },
   { label: "Email",   value: "email"   },
+  { label: "Video",   value: "video"   },
   { label: "Web",     value: "web"     },
-];
-
-// ─── Component ───────────────────────────────────────────────────────────────
+]
 
 export default function FilterBar({ active, onChange }: FilterBarProps) {
   return (
     <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide mb-10">
       {PILLS.map(({ label, value }) => {
-        const isActive = active === value;
-
+        const isActive = active === value
         return (
           <button
             key={value}
@@ -43,8 +37,8 @@ export default function FilterBar({ active, onChange }: FilterBarProps) {
           >
             {label}
           </button>
-        );
+        )
       })}
     </div>
-  );
+  )
 }
