@@ -67,6 +67,35 @@ export type WorkItem = CatalogItem | SocialItem | EmailItem | WebProjectItem | V
 export const WORK_ITEMS: WorkItem[] = [
   // ── Catalogs ──────────────────────────────────────────────────────────────
   {
+    id: "panaceutics-catalog",
+    category: "catalog",
+    title: "Panaceutics Product Catalogue",
+    description: "High-end brand catalogue for a biotech wellness company — science-backed design with clean layouts.",
+    thumbnail: "/catalogs/panaceutics/pANACEUTICS_final-1_page-0001.jpg",
+    pages: [
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0001.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0002.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0003.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0004.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0005.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0006.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0007.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0008.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0009.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0010.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0011.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0012.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0013.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0014.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0015.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0016.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0017.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0018.jpg",
+    "/catalogs/panaceutics/pANACEUTICS_final-1_page-0019.jpg",
+    ],
+    pageCount: 19,
+  },
+  {
     id: "home-interior",
     category: "catalog",
     title: "Home & Interior Catalogue",
@@ -84,6 +113,7 @@ export const WORK_ITEMS: WorkItem[] = [
     pages: ["/tools.png"],
     pageCount: 1,
   },
+
 
   // ── Social Media ──────────────────────────────────────────────────────────
   {
