@@ -143,6 +143,17 @@ export const WORK_ITEMS: WorkItem[] = [
     tags: ["AI Video", "YouTube", "Kids Content"],
   },
 
+  {
+    id: "ai-income-class",
+    category: "video",
+    title: "AI Income Class",
+    description: "Learn how to build real income streams using AI tools and animation. Practical steps anyone can start today.",
+    thumbnail: "/ai_training.png",
+    youtubeId: "qwauV3B9E4I",
+    aspectRatio: "9/16",
+    tags: ["AI Video", "YouTube", "Animation"],
+  },
+
   // ── Web Projects ──────────────────────────────────────────────────────────
   {
     id: "yawdesh",
