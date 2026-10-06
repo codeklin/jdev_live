@@ -139,7 +139,7 @@ export const WORK_ITEMS: WorkItem[] = [
     description: "AI-generated kids safety video teaching children the rules that keep them safe. Produced entirely with AI visuals, voice, and animation.",
     thumbnail: "/daniel.jpg",
     youtubeId: "qwauV3B9E4I",
-    aspectRatio: "9/16",
+    aspectRatio: "16/9",
     tags: ["AI Video", "YouTube", "Kids Content"],
   },
 
