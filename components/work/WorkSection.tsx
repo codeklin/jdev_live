@@ -64,11 +64,11 @@ export default function WorkSection() {
               04 · Work
             </p>
             <h2 className="text-4xl sm:text-5xl font-black text-white leading-tight">
-              Work that paid the bills.<br className="hidden sm:block" />
-              <span className="text-gray-400"> And solved real problems.</span>
+              Real clients. Real problems.<br className="hidden sm:block" />
+              <span className="text-gray-400"> Here is how we solved them.</span>
             </h2>
             <p className="mt-4 text-gray-400 text-base sm:text-lg max-w-2xl leading-relaxed">
-              Every project here started with a client who had a real problem — an email that wasn't converting, a catalogue that looked nothing like the brand, a website that was losing people on page one. Here's how we fixed that.
+              Every project here started with a client who had a real problem. An email that wasn't converting, a catalogue that looked nothing like the brand, a website that was losing people on page one. Here is how we fixed that.
             </p>
           </div>
         </SlideUp>
