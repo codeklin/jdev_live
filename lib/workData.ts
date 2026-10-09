@@ -37,6 +37,8 @@ export interface EmailItem extends WorkItemBase {
   category: "email"
   fullImagePath: string
   frameType: "browser" | "phone"
+  /** Optional Figma prototype/design link */
+  figmaUrl?: string
 }
 
 // ─── Web Project ─────────────────────────────────────────────────────────────
@@ -151,22 +153,41 @@ export const WORK_ITEMS: WorkItem[] = [
 
   // ── Email Designs ─────────────────────────────────────────────────────────
   {
-    id: "email-welcome",
+    id: "email-h2booster",
     category: "email",
-    title: "Welcome Series Email",
-    description: "Klaviyo welcome flow email — high-contrast, mobile-first layout.",
-    thumbnail: "/emails/email-welcome-thumb.png",
-    fullImagePath: "/emails/email-welcome.png",
+    title: "H2Booster Product Email",
+    description: "Dutch-language e-commerce email for a hydrogen wellness brand. Product grid, benefit blocks, and a strong CTA — built to convert.",
+    thumbnail: "/emails/1.png",
+    fullImagePath: "/emails/1.png",
     frameType: "browser",
   },
   {
-    id: "email-promo",
+    id: "email-mammie",
     category: "email",
-    title: "Promotional Campaign Email",
-    description: "Conversion-focused promotional email with bold visuals and clear CTAs.",
-    thumbnail: "/emails/email-promo-thumb.png",
-    fullImagePath: "/emails/email-promo.png",
+    title: "Mammie Motherhood Email",
+    description: "Warm, story-led product email for a baby gear brand. Leads with emotion, converts with product bundles and a clear upgrade CTA.",
+    thumbnail: "/emails/2.png",
+    fullImagePath: "/emails/2.png",
     frameType: "browser",
+  },
+  {
+    id: "email-nomly",
+    category: "email",
+    title: "Nomly Porridge Launch Email",
+    description: "Clean, appetite-driven email for a gluten-free porridge brand. Four flavour highlights, trust stats, and a 10% discount hook.",
+    thumbnail: "/emails/3.png",
+    fullImagePath: "/emails/3.png",
+    frameType: "browser",
+  },
+  {
+    id: "email-figma-collection",
+    category: "email",
+    title: "Email Marketing Design Collection",
+    description: "Full collection of email marketing designs crafted in Figma — layouts, brand campaigns, and conversion-focused templates.",
+    thumbnail: "/emails/4.png",
+    fullImagePath: "/emails/4.png",
+    frameType: "browser",
+    figmaUrl: "https://www.figma.com/design/1V2XvcfFrvj5bspX5vvA3t/Email-Marketin-Figma-Designs?node-id=2-537&t=uwH6w3PlgDfdjGWx-0",
   },
 
   // ── AI Videos ─────────────────────────────────────────────────────────────
