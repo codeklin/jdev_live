@@ -71,6 +71,46 @@ export type WorkItem = CatalogItem | SocialItem | EmailItem | WebProjectItem | V
 // ─── Data ────────────────────────────────────────────────────────────────────
 
 export const WORK_ITEMS: WorkItem[] = [
+  // ── Email Designs ─────────────────────────────────────────────────────────
+  {
+    id: "email-h2booster",
+    category: "email",
+    featured: true,
+    title: "H2Booster Product Email",
+    description: "Dutch-language e-commerce email for a hydrogen wellness brand. Product grid, benefit blocks, and a strong CTA — built to convert.",
+    thumbnail: "/emails/1.png",
+    fullImagePath: "/emails/1.png",
+    frameType: "browser",
+  },
+  {
+    id: "email-mammie",
+    category: "email",
+    title: "Mammie Motherhood Email",
+    description: "Warm, story-led product email for a baby gear brand. Leads with emotion, converts with product bundles and a clear upgrade CTA.",
+    thumbnail: "/emails/2.png",
+    fullImagePath: "/emails/2.png",
+    frameType: "browser",
+  },
+  {
+    id: "email-nomly",
+    category: "email",
+    title: "Nomly Porridge Launch Email",
+    description: "Clean, appetite-driven email for a gluten-free porridge brand. Four flavour highlights, trust stats, and a 10% discount hook.",
+    thumbnail: "/emails/3.png",
+    fullImagePath: "/emails/3.png",
+    frameType: "browser",
+  },
+  {
+    id: "email-figma-collection",
+    category: "email",
+    title: "Email Marketing Design Collection",
+    description: "Full collection of email marketing designs crafted in Figma — layouts, brand campaigns, and conversion-focused templates.",
+    thumbnail: "/emails/4.png",
+    fullImagePath: "/emails/4.png",
+    frameType: "browser",
+    figmaUrl: "https://www.figma.com/design/1V2XvcfFrvj5bspX5vvA3t/Email-Marketin-Figma-Designs?node-id=2-537&t=uwH6w3PlgDfdjGWx-0",
+  },
+
   // ── Catalogs ──────────────────────────────────────────────────────────────
   {
     id: "panaceutics-catalog",
@@ -157,46 +197,6 @@ export const WORK_ITEMS: WorkItem[] = [
     ],
     clientName: "Remote30",
     aspectRatio: "1/1",
-  },
-
-  // ── Email Designs ─────────────────────────────────────────────────────────
-  {
-    id: "email-h2booster",
-    category: "email",
-    featured: true,
-    title: "H2Booster Product Email",
-    description: "Dutch-language e-commerce email for a hydrogen wellness brand. Product grid, benefit blocks, and a strong CTA — built to convert.",
-    thumbnail: "/emails/1.png",
-    fullImagePath: "/emails/1.png",
-    frameType: "browser",
-  },
-  {
-    id: "email-mammie",
-    category: "email",
-    title: "Mammie Motherhood Email",
-    description: "Warm, story-led product email for a baby gear brand. Leads with emotion, converts with product bundles and a clear upgrade CTA.",
-    thumbnail: "/emails/2.png",
-    fullImagePath: "/emails/2.png",
-    frameType: "browser",
-  },
-  {
-    id: "email-nomly",
-    category: "email",
-    title: "Nomly Porridge Launch Email",
-    description: "Clean, appetite-driven email for a gluten-free porridge brand. Four flavour highlights, trust stats, and a 10% discount hook.",
-    thumbnail: "/emails/3.png",
-    fullImagePath: "/emails/3.png",
-    frameType: "browser",
-  },
-  {
-    id: "email-figma-collection",
-    category: "email",
-    title: "Email Marketing Design Collection",
-    description: "Full collection of email marketing designs crafted in Figma — layouts, brand campaigns, and conversion-focused templates.",
-    thumbnail: "/emails/4.png",
-    fullImagePath: "/emails/4.png",
-    frameType: "browser",
-    figmaUrl: "https://www.figma.com/design/1V2XvcfFrvj5bspX5vvA3t/Email-Marketin-Figma-Designs?node-id=2-537&t=uwH6w3PlgDfdjGWx-0",
   },
 
   // ── AI Videos ─────────────────────────────────────────────────────────────

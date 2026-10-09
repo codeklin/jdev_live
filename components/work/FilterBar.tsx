@@ -11,9 +11,9 @@ interface FilterBarProps {
 
 const PILLS: { label: string; value: FilterValue }[] = [
   { label: "All",     value: "all"     },
+  { label: "Email",   value: "email"   },
   { label: "Catalog", value: "catalog" },
   { label: "Social",  value: "social"  },
-  { label: "Email",   value: "email"   },
   { label: "Video",   value: "video"   },
   { label: "Web",     value: "web"     },
 ]
