@@ -204,32 +204,7 @@ export default function ScrollPreviewModal({ item, onClose, triggerRef }: Props)
         </div>
 
         {/* ── Footer hint ───────────────────────────────────────────────────── */}
-        <div className="shrink-0 pt-3 flex flex-col items-center gap-2">
-          {item.figmaUrl && (
-            <a
-              href={item.figmaUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-semibold text-teal-400 hover:text-white transition-colors"
-              aria-label={`View ${item.title} in Figma`}
-            >
-              {/* Figma icon */}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 38 57"
-                className="w-3.5 h-3.5"
-                aria-hidden="true"
-                fill="currentColor"
-              >
-                <path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z" />
-                <path d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 0 1-19 0z" />
-                <path d="M19 0v19h9.5a9.5 9.5 0 0 0 0-19H19z" />
-                <path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z" />
-                <path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z" />
-              </svg>
-              View in Figma
-            </a>
-          )}
+        <div className="shrink-0 pt-3 text-center">
           <p className="text-[11px] text-gray-600 select-none">
             Hover or tap to pause. Esc to close.
           </p>

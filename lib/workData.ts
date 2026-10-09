@@ -13,6 +13,8 @@ interface WorkItemBase {
   description: string
   thumbnail: string
   tags?: string[]
+  /** Hero piece — spans full width and gets elevated visual treatment */
+  featured?: boolean
 }
 
 // ─── Catalog ─────────────────────────────────────────────────────────────────
@@ -73,6 +75,7 @@ export const WORK_ITEMS: WorkItem[] = [
   {
     id: "panaceutics-catalog",
     category: "catalog",
+    featured: true,
     title: "Panaceutics Product Catalogue",
     description: "High-end brand catalogue for a biotech wellness company — science-backed design with clean layouts.",
     thumbnail: "/catalogs/panaceutics/pANACEUTICS_final-1_page-0001.jpg",
@@ -131,6 +134,7 @@ export const WORK_ITEMS: WorkItem[] = [
   {
     id: "ashertin-social",
     category: "social",
+    featured: true,
     title: "Ashertin Natural Snacks Pack",
     description: "Product packaging social graphics for Ashertin — a natural snacks brand. Clean, appetite-driven visuals showcasing Chin Chin and Plantain Chips across jar and pouch formats.",
     thumbnail: "/social/food-package/ashertin.png",
@@ -159,6 +163,7 @@ export const WORK_ITEMS: WorkItem[] = [
   {
     id: "email-h2booster",
     category: "email",
+    featured: true,
     title: "H2Booster Product Email",
     description: "Dutch-language e-commerce email for a hydrogen wellness brand. Product grid, benefit blocks, and a strong CTA — built to convert.",
     thumbnail: "/emails/1.png",
@@ -198,6 +203,7 @@ export const WORK_ITEMS: WorkItem[] = [
   {
     id: "daniel-said-no",
     category: "video",
+    featured: true,
     title: "Daniel Said No!",
     description: "AI-generated kids safety video teaching children the rules that keep them safe. Produced entirely with AI visuals, voice, and animation.",
     thumbnail: "/daniel.jpg",
@@ -221,6 +227,7 @@ export const WORK_ITEMS: WorkItem[] = [
   {
     id: "yawdesh",
     category: "web",
+    featured: true,
     title: "Yawdesh",
     description:
       "Designed and developed Yadesh, a digital reading platform that delivers short Christian readings designed for users with limited time.",
