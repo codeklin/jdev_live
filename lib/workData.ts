@@ -29,6 +29,8 @@ export interface SocialItem extends WorkItemBase {
   category: "social"
   slides: string[]
   clientName?: string
+  /** Controls the frame shape in the carousel modal. Defaults to "9/16" (portrait phone) */
+  aspectRatio?: "1/1" | "9/16" | "4/5"
 }
 
 // ─── Email ───────────────────────────────────────────────────────────────────
@@ -127,28 +129,30 @@ export const WORK_ITEMS: WorkItem[] = [
 
   // ── Social Media ──────────────────────────────────────────────────────────
   {
-    id: "social-placeholder-1",
+    id: "ashertin-social",
     category: "social",
-    title: "Brand Social Pack",
-    description: "Social media graphics for a fintech brand — Instagram and Twitter formats.",
-    thumbnail: "/social/placeholder-1/slide-01.jpg",
+    title: "Ashertin Natural Snacks Pack",
+    description: "Product packaging social graphics for Ashertin — a natural snacks brand. Clean, appetite-driven visuals showcasing Chin Chin and Plantain Chips across jar and pouch formats.",
+    thumbnail: "/social/food-package/ashertin.png",
     slides: [
-      "/social/placeholder-1/slide-01.jpg",
-      "/social/placeholder-1/slide-02.jpg",
+      "/social/food-package/ashertin.png",
+      "/social/food-package/food-flier.jpg",
     ],
-    clientName: "Fintech Brand",
+    clientName: "Ashertin Natural Snacks",
+    aspectRatio: "1/1",
   },
   {
-    id: "social-placeholder-2",
+    id: "remote30-social",
     category: "social",
-    title: "Product Launch Campaign",
-    description: "Visual content suite for a product launch across social platforms.",
-    thumbnail: "/social/placeholder-2/slide-01.jpg",
+    title: "Remote30 Challenge Campaign",
+    description: "Bold LinkedIn-focused campaign graphic for the Remote30 Challenge — a 30-day programme helping freelancers land their first 3 international paying clients.",
+    thumbnail: "/social/social-media/soc-.png",
     slides: [
-      "/social/placeholder-2/slide-01.jpg",
-      "/social/placeholder-2/slide-02.jpg",
+      "/social/social-media/soc-.png",
+      "/social/social-media/soc2.png",
     ],
-    clientName: "Product Brand",
+    clientName: "Remote30",
+    aspectRatio: "1/1",
   },
 
   // ── Email Designs ─────────────────────────────────────────────────────────

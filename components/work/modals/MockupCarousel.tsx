@@ -111,6 +111,12 @@ export default function MockupCarousel({ item, onClose, triggerRef }: Props) {
   )
 
   // ── Render ─────────────────────────────────────────────────────────────────
+  const isSquare = item.aspectRatio === "1/1" || item.aspectRatio === "4/5"
+
+  // Square/rect frames: fluid width up to a max, height driven by aspect-ratio CSS.
+  // Phone frames: fixed pixel size (portrait mockup shape).
+  const frameRadius = isSquare ? "0.75rem" : "2.5rem"
+
   return createPortal(
     <div
       className="fixed inset-0 z-50 bg-black/95 flex flex-col"
@@ -199,31 +205,55 @@ export default function MockupCarousel({ item, onClose, triggerRef }: Props) {
                   key={i}
                   className="flex-[0_0_100%] lg:flex-[0_0_calc(33.333%-11px)] flex items-center justify-center"
                 >
-                  {/* Phone frame */}
-                  <div
-                    className="relative mx-auto"
-                    style={{ width: 280, height: 560 }}
-                  >
-                    {/* Phone shell border */}
+                  {/* Phone / square frame */}
+                  {isSquare ? (
+                    // ── Fluid square/rect frame — fills available width on mobile ──
                     <div
-                      className="absolute inset-0 rounded-[2.5rem] border-4 border-white/20
-                                  shadow-[0_0_0_2px_rgba(0,0,0,0.8),0_20px_60px_rgba(0,0,0,0.8)]
-                                  pointer-events-none z-10"
-                    />
-                    {/* Notch */}
+                      className="relative w-full mx-auto overflow-hidden border-2 border-white/20
+                                  shadow-[0_0_0_2px_rgba(0,0,0,0.8),0_20px_60px_rgba(0,0,0,0.8)]"
+                      style={{
+                        aspectRatio: item.aspectRatio ?? "1/1",
+                        maxWidth: "min(80vw, 480px)",
+                        borderRadius: frameRadius,
+                      }}
+                    >
+                      <Image
+                        src={slide}
+                        fill
+                        className="object-cover"
+                        alt={`${item.title}, slide ${i + 1} of ${item.slides.length}`}
+                        sizes="(max-width: 640px) 80vw, 480px"
+                      />
+                    </div>
+                  ) : (
+                    // ── Fixed phone mockup frame ───────────────────────────────────
                     <div
-                      className="absolute top-3 left-1/2 -translate-x-1/2
-                                  w-16 h-5 bg-[#0a0a0a] rounded-full z-20"
-                    />
-                    {/* Slide image */}
-                    <Image
-                      src={slide}
-                      fill
-                      className="object-cover rounded-[2.2rem]"
-                      alt={`${item.title}, slide ${i + 1} of ${item.slides.length}`}
-                      sizes="280px"
-                    />
-                  </div>
+                      className="relative mx-auto"
+                      style={{ width: 280, height: 560 }}
+                    >
+                      {/* Phone shell border */}
+                      <div
+                        className="absolute inset-0 border-4 border-white/20
+                                    shadow-[0_0_0_2px_rgba(0,0,0,0.8),0_20px_60px_rgba(0,0,0,0.8)]
+                                    pointer-events-none z-10"
+                        style={{ borderRadius: frameRadius }}
+                      />
+                      {/* Notch */}
+                      <div
+                        className="absolute top-3 left-1/2 -translate-x-1/2
+                                    w-16 h-5 bg-[#0a0a0a] rounded-full z-20"
+                      />
+                      {/* Slide image */}
+                      <Image
+                        src={slide}
+                        fill
+                        className="object-cover"
+                        style={{ borderRadius: frameRadius }}
+                        alt={`${item.title}, slide ${i + 1} of ${item.slides.length}`}
+                        sizes="280px"
+                      />
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
