@@ -71,6 +71,17 @@ export type WorkItem = CatalogItem | SocialItem | EmailItem | WebProjectItem | V
 // ─── Data ────────────────────────────────────────────────────────────────────
 
 export const WORK_ITEMS: WorkItem[] = [
+  {
+    id: "secquiz",
+    category: "web",
+    featured: true,
+    title: "Secquiz App",
+    description: "10,000+ people are learning cybersecurity on Secquiz. Structured topics, plain-English explanations, and real practice questions across 6+ security domains. No background needed.",
+    thumbnail: "/secquiz.png",
+    liveUrl: "https://secquizz.vercel.app/",
+    tags: ["React", "TypeScript", "Gamification"],
+  },
+
   // ── Email Designs ─────────────────────────────────────────────────────────
   {
     id: "email-h2booster",
@@ -227,7 +238,6 @@ export const WORK_ITEMS: WorkItem[] = [
   {
     id: "yawdesh",
     category: "web",
-    featured: true,
     title: "Yawdesh",
     description:
       "Designed and developed Yadesh, a digital reading platform that delivers short Christian readings designed for users with limited time.",
@@ -285,14 +295,5 @@ export const WORK_ITEMS: WorkItem[] = [
     liveUrl: "https://tizzleshop.vercel.app/",
     tags: ["Next.js", "E-commerce", "Tailwind CSS"],
   },
-  {
-    id: "secquiz",
-    category: "web",
-    title: "Secquiz App",
-    description:
-      "Cybersecurity quiz application for skill testing and certification prep. Gamified learning with leaderboards and topic-based filtering.",
-    thumbnail: "/secquiz.png",
-    liveUrl: "https://secquizz.vercel.app/",
-    tags: ["React", "TypeScript", "Gamification"],
-  },
+
 ]

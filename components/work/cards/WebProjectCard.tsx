@@ -28,44 +28,35 @@ export default function WebProjectCard({ item }: Props) {
   // ── Featured hero layout ────────────────────────────────────────────────────
   if (item.featured) {
     return (
-      <article className="relative rounded-2xl overflow-hidden group border border-white/10 hover:border-teal-500/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(13,148,136,0.15)]">
-        {/* Full-bleed image */}
-        <div className="relative h-72 sm:h-96 w-full overflow-hidden">
+      <article className="rounded-2xl overflow-hidden group border border-white/10 hover:border-teal-500/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(13,148,136,0.15)]">
+        <div className="relative aspect-video w-full overflow-hidden bg-[#f6faef]">
           {!imgError ? (
             <Image
               src={item.thumbnail}
               alt={`${item.title} screenshot`}
               fill
-              sizes="100vw"
-              className="object-cover group-hover:scale-[1.03] transition-transform duration-700"
-              priority
+              sizes="(max-width: 1152px) 100vw, 1152px"
+              className="object-contain"
+              loading="lazy"
               onError={() => setImgError(true)}
             />
           ) : (
-            <div className="w-full h-full bg-white/5" />
+            <div className="w-full h-full bg-white/5" aria-hidden="true" />
           )}
-          {/* Dark gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
-
-          {/* Featured badge */}
-          <span className="absolute top-4 left-4 text-[10px] font-black tracking-widest uppercase px-3 py-1 rounded-full bg-teal-500/20 border border-teal-500/40 text-teal-400">
-            Featured
-          </span>
-
-          {/* Live pulse dot */}
-          <span className="absolute top-4 right-4 flex items-center gap-1.5 text-[10px] font-semibold text-green-400">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400" />
-            </span>
-            Live
-          </span>
         </div>
 
-        {/* Content sits over the gradient */}
-        <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-          {/* Tech tags as eyebrow */}
-          <div className="flex flex-wrap gap-1.5 mb-3">
+        <div className="bg-[#111] p-6 sm:p-8">
+          <div className="flex flex-wrap items-center gap-2 mb-4">
+            <span className="text-[10px] font-black tracking-widest uppercase px-3 py-1 rounded-full bg-teal-500/20 border border-teal-500/40 text-teal-400">
+              Featured
+            </span>
+            <span className="flex items-center gap-1.5 text-[10px] font-semibold text-green-400">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400" />
+              </span>
+              Live
+            </span>
             {item.tags.map((tag) => (
               <span key={tag} className="text-[10px] font-semibold bg-white/10 text-gray-300 px-2 py-0.5 rounded">
                 {tag}
