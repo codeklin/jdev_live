@@ -28,7 +28,7 @@ const HeroSection = () => {
 
             {/* Bio */}
             <p className="text-base sm:text-lg text-gray-500 dark:text-gray-400 max-w-xl leading-relaxed">
-              Most businesses lose revenue because their brand looks unfinished, their copy misses the mark, or their tech stack can&apos;t keep up. I solve all three: visual design that earns immediate trust, search-driven copy that converts, and Next.js engineering built to scale.
+              Most businesses lose revenue because their brand looks unfinished, their copy misses the mark, or their tech stack can&apos;t keep up. I solve all three: visual design that earns immediate trust, search-driven copy &amp; email flows that convert, and modern engineering across Next.js and WordPress built to scale.
             </p>
 
             {/* CTAs */}
@@ -64,8 +64,8 @@ const HeroSection = () => {
 
             {/* Role label */}
             <div className="absolute -top-3 -left-3 bg-white dark:bg-[#111] border border-gray-200 dark:border-white/10 rounded-lg px-3 py-2 shadow-md">
-              <p className="text-[11px] font-black text-[#0a0a0a] dark:text-white leading-none">Design</p>
-              <p className="text-[10px] text-gray-400 mt-0.5">and Dev</p>
+              <p className="text-[11px] font-black text-[#0a0a0a] dark:text-white leading-none">Design &amp; Code</p>
+              <p className="text-[10px] text-gray-400 mt-0.5">Copy · Email · WP · Next.js</p>
             </div>
           </div>
 

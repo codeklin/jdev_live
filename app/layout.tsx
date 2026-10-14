@@ -13,7 +13,7 @@ const inter = Inter({
 export const metadata = {
   title: "Olajide Igbalaye · Designer. Developer. End to end.",
   description:
-    "From visual identity and high-converting copy to full-stack Next.js engineering and technical SEO. Delivering complete digital products from concept to live deployment.",
+    "Visual design, search-driven copy, revenue email systems, and full-stack development across Next.js and WordPress. End-to-end digital execution.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
