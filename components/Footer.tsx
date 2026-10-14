@@ -35,7 +35,7 @@ const Footer = () => {
               href="/portfolio"
               className="text-xs font-bold uppercase tracking-widest text-[#0d9488] hover:text-[#0b7a70] transition-colors"
             >
-              Portfolio ↗
+              Writing ↗
             </Link>
           </nav>
         </div>
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-gray-600">© 2025 Olajide Igbalaye. All rights reserved.</p>
+          <p className="text-xs text-gray-600">© 2026 Olajide Igbalaye. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <a href="https://www.linkedin.com/in/olajide-igbalaye/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <AiOutlineLinkedin size={24} className="text-gray-500 hover:text-[#0d9488] transition-colors" />

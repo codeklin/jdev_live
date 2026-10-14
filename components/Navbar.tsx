@@ -13,7 +13,7 @@ interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   { label: "Work", href: "work" },
-  { label: "Portfolio", href: "/portfolio", isRoute: true },
+  { label: "Writing", href: "/portfolio", isRoute: true },
   { label: "Contact", href: "contact" },
 ]
 

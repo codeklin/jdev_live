@@ -483,8 +483,75 @@ A marketing website that your team cannot quickly edit is an anchor on your comp
 Schedule Your Free 20-Minute Technical Discovery Call. No pressure. No aggressive sales reps. Just practical engineering guidance.`
   },
   {
-    id: "brand-voice-multilingual",
+    id: "apex-commercial-hvac",
     number: "06",
+    title: "Apex Commercial HVAC & Refrigeration Service Page [Sample]",
+    category: "cro",
+    categoryLabel: "Emergency Commercial CRO [Sample]",
+    niche: "Commercial Facilities Maintenance",
+    targetKeyword: "emergency commercial refrigeration repair",
+    searchIntent: "Emergency Transactional / Dispatch",
+    wordCount: "890 words",
+    deliverableType: "High-Urgency Local Direct-Response Landing Page",
+    fileName: "service-page-local-hvac.md",
+    summary: "A high-converting commercial landing page designed to capture emergency facility directors and restaurant managers during refrigeration failures. Features sub-90 minute dispatch proof, trust badges, and direct click-to-call hotline.",
+    strategicTakeaways: [
+      "Above-the-fold emergency trigger with direct 24/7 hotline and arrival time guarantees.",
+      "Clear differentiation between commercial industrial HVAC and residential contractors.",
+      "Equipment breakdown diagnosis matrix and transparent diagnostic pricing protocol."
+    ],
+    metaTitle: "24/7 Emergency Commercial Refrigeration & HVAC Repair [Sample]",
+    metaDescription: "Commercial walk-in cooler or chiller failure? Guaranteed 90-minute emergency arrival for restaurants, warehouses, and grocery facilities across greater metro.",
+    fullBodyText: `# Walk-In Cooler Down or Chiller Failure? We Arrive on Site in Under 90 Minutes. [Sample Client Page]
+
+### Prevent thousands of dollars in spoiled inventory, health code violations, and customer shutdowns. Our EPA-certified commercial technicians are on standby 24/7/365 with fully stocked service trucks.
+
+* Call 24/7 Dispatch: (555) 942-APEX (Direct Line to Live Dispatcher)
+* Request Urgent Field Technician Online
+
+Trust & Credibility: Guaranteed 90-Minute Metro Arrival | Commercial EPA Universal Certified | $5,000,000 General Liability Bonded | 4.9/5 Rating Across 320+ Facilities
+
+---
+
+## The Reality of Commercial Cooling Emergencies: Minutes Mean Lost Inventory
+
+When a commercial compressor or industrial walk-in freezer trips at 11:30 PM on a Friday, calling a standard residential HVAC company is a disaster:
+* They don't stock 3-phase semi-hermetic compressors or commercial refrigerants (R-404A, R-448A, R-507).
+* Their dispatcher puts you on a callback list for 9:00 AM Monday morning.
+* Meanwhile, your $45,000 perishable inventory warms above safe food safety thresholds.
+
+At Apex, we do not service residential homes. Every technician, truck, and diagnostic tool in our fleet is dedicated exclusively to commercial and industrial refrigeration.
+
+---
+
+## Comprehensive Commercial Capabilities
+
+1. Commercial Walk-In Freezers & Coolers: Failed defrost timers, frozen evaporator coils, electronic expansion valves (EEVs), and high-pressure refrigerant leaks repaired on the spot.
+2. Commercial Rooftop HVAC Units (RTUs): We service all major manufacturers (Carrier, Trane, Lennox, York, Daikin) up to 100-ton industrial rooftop packages.
+3. Industrial Chillers & Process Cooling: Air-cooled and water-cooled chiller systems with precision glycol loop calibration for warehouses, laboratories, and microbreweries.
+
+---
+
+## Equipment We Service Daily
+
+| Equipment Type | Common Emergency Failures | Our First-Visit Solution |
+| :--- | :--- | :--- |
+| Walk-In Coolers & Freezers | Blown compressor, frozen coil, fan motor burnout | Coil de-icing, motor replacement from truck inventory |
+| Commercial Ice Machines | Scale buildup, harvest cycle failure, valve clog | Chemical descaling, sanitizer flush, sensor calibration |
+| Rooftop RTU Units | Blower motor seized, refrigerant leak, economizer | Capacitor/motor replacement, electronic leak detection |
+| Glycol Chiller Systems | Pump failure, pressure differential trips, sensor error | Glycol refractometer testing, pump rebuild, control reset |
+
+---
+
+## Don't Let Inventory Spoil. Get an Emergency Commercial Tech Dispatched Now.
+
+### Need Immediate Assistance? Call Right Now:
+(555) 942-APEX
+Lines are open 24 Hours a day, 7 days a week, 365 days a year.`
+  },
+  {
+    id: "brand-voice-multilingual",
+    number: "07",
     title: "Brand Voice Calibration & Tool-Assisted Spanish Localization",
     category: "voice-translation",
     categoryLabel: "Tone Calibration & Localization [Sample]",

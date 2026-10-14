@@ -66,7 +66,7 @@ export default function PortfolioPage() {
 
           <div className="mt-8 flex flex-wrap items-center gap-3 text-xs sm:text-sm font-bold">
             <span className="bg-teal-500/10 text-teal-700 dark:text-teal-300 border border-teal-500/20 px-3.5 py-1.5 rounded-lg">
-              6 Complete Samples
+              7 Complete Samples
             </span>
             <span className="bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/20 px-3.5 py-1.5 rounded-lg">
               3 Industry Niches
@@ -253,9 +253,9 @@ export default function PortfolioPage() {
           </div>
           <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 pb-4 border-b-2 border-gray-200 dark:border-white/10">
             {[
-              { id: "all", label: "All Works (6)" },
+              { id: "all", label: "All Works (7)" },
               { id: "seo", label: "Search Articles (3)" },
-              { id: "cro", label: "Service Pages (1)" },
+              { id: "cro", label: "Service Pages (2)" },
               { id: "editorial", label: "Editorial Overhaul (1)" },
               { id: "voice-translation", label: "Tone & Translation (1)" },
             ].map((cat) => (
