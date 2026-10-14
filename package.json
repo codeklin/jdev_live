@@ -10,6 +10,7 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@microsoft/clarity": "^1.0.2",
     "autoprefixer": "^10.4.20",
     "embla-carousel": "8.5.1",
     "embla-carousel-react": "8.5.1",
