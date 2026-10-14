@@ -20,7 +20,7 @@ const problems = [
   {
     icon: "🤷",
     title: "No Clear Sales Process",
-    desc: "Every conversation starts from scratch. No script, no funnel, no structure — just hoping the client says yes.",
+    desc: "Every conversation starts from scratch. No script, no funnel, no structure - just hoping the client says yes.",
   },
   {
     icon: "😴",

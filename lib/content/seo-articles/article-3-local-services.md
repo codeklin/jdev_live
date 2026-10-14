@@ -18,7 +18,7 @@
 
 # Commercial Plumbing Repair Cost Guide: What Facility Managers and Business Owners Must Know
 
-When a plumbing failure strikes a commercial property, the clock is not just ticking—it is draining revenue.
+When a plumbing failure strikes a commercial property, the clock is not just ticking - it is draining revenue.
 
 Whether you operate a bustling 150-seat restaurant with a backed-up grease trap, manage a multi-tenant corporate office tower with a burst domestic water riser, or oversee an industrial warehouse, plumbing emergencies bring operations to an immediate halt. Health code violations, tenant rent abatements, water damage liability, and brand reputation risks escalate by the minute.
 

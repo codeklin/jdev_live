@@ -17,7 +17,7 @@ import {
   VideoItem,
 } from "../../lib/workData"
 
-// Pull the single Figma URL from data — whichever email item has one
+// Pull the single Figma URL from data - whichever email item has one
 const EMAIL_FIGMA_URL = WORK_ITEMS.find(
   (item): item is EmailItem => item.category === "email" && !!(item as EmailItem).figmaUrl
 )?.figmaUrl
@@ -75,7 +75,7 @@ export default function WorkSection() {
 
         <FilterBar active={activeFilter} onChange={setActiveFilter} />
 
-        {/* Figma portfolio link — shown when email designs are visible */}
+        {/* Figma portfolio link - shown when email designs are visible */}
         {EMAIL_FIGMA_URL && (activeFilter === "all" || activeFilter === "email") && (
           <div className="flex items-center justify-end mb-4">
             <a

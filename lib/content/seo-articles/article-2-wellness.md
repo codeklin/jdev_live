@@ -61,7 +61,7 @@ Magnesium citrate is elemental magnesium bound with **citric acid**, an organic 
 ### How It Interacts With the Body
 * **High Water Affinity (The Osmotic Effect):** Magnesium citrate is water-soluble and exhibits strong osmotic properties. It draws water into your intestinal lumen from surrounding tissues.
 * **The Laxative Trade-Off:** Because of its osmotic action, magnesium citrate acts as an effective, mild laxative. While it delivers absorbable magnesium into the bloodstream, higher doses frequently trigger bowel movements within 4 to 8 hours.
-* **Sleep Impact:** While the absorbed portion does help calm the nervous system, the digestive motility it triggers can cause nighttime bloating, stomach rumbling, or urgent wake-ups—counteracting its sleep-promoting benefits.
+* **Sleep Impact:** While the absorbed portion does help calm the nervous system, the digestive motility it triggers can cause nighttime bloating, stomach rumbling, or urgent wake-ups - counteracting its sleep-promoting benefits.
 
 **Best For:** Individuals struggling with mild chronic constipation who also want basic mineral replenishment, rather than people looking purely for deep sleep optimization.
 

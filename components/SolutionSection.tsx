@@ -5,7 +5,7 @@ const pillars = [
   {
     step: "01",
     title: "Lead Capture System",
-    desc: "A dedicated landing page, lead form, or WhatsApp opt-in that captures every interested prospect — and sends them into your pipeline automatically.",
+    desc: "A dedicated landing page, lead form, or WhatsApp opt-in that captures every interested prospect - and sends them into your pipeline automatically.",
     color: "text-[#0d9488]",
     border: "border-[#0d9488]",
     bg: "bg-[#0d9488]/10",
@@ -13,7 +13,7 @@ const pillars = [
   {
     step: "02",
     title: "WhatsApp Automation",
-    desc: "Auto-replies, broadcast messages, follow-up sequences — running 24/7 on WhatsApp so no lead goes cold while you sleep.",
+    desc: "Auto-replies, broadcast messages, follow-up sequences - running 24/7 on WhatsApp so no lead goes cold while you sleep.",
     color: "text-blue-400",
     border: "border-blue-400",
     bg: "bg-blue-400/10",
@@ -21,7 +21,7 @@ const pillars = [
   {
     step: "03",
     title: "CRM Dashboard",
-    desc: "A visual pipeline where you see every lead, their stage, last contact, and next action — so nothing falls through the cracks.",
+    desc: "A visual pipeline where you see every lead, their stage, last contact, and next action - so nothing falls through the cracks.",
     color: "text-purple-400",
     border: "border-purple-400",
     bg: "bg-purple-400/10",
@@ -48,10 +48,10 @@ const SolutionSection = () => {
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#0a0a0a] dark:text-white leading-tight mb-4">
               I Build{" "}
               <span className="text-[#0d9488]">Customer Acquisition Systems</span>
-              {" "}— Not Just Websites
+              {" "} -  Not Just Websites
             </h2>
             <p className="text-base text-gray-500 dark:text-gray-400 leading-relaxed">
-              A customer acquisition system is a connected set of tools, automations, and processes that consistently brings in leads and converts them into paying customers — without you chasing anyone.
+              A customer acquisition system is a connected set of tools, automations, and processes that consistently brings in leads and converts them into paying customers - without you chasing anyone.
             </p>
           </div>
         </SlideUp>

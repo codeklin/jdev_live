@@ -139,7 +139,7 @@ const ServicesSection = () => {
                   href="#contact"
                   className={`w-full text-center px-6 py-4 ${pkg.btnBg} text-white text-sm font-black uppercase tracking-wider rounded-2xl transition-colors block`}
                 >
-                  Get Started — {pkg.name}
+                  Get Started - {pkg.name}
                 </a>
               </div>
             </SlideUp>

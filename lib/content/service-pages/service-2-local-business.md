@@ -53,7 +53,7 @@ Serving pharmaceutical warehouses, medical laboratories, and microbreweries requ
 ## The Apex Emergency Dispatch Protocol: What Happens When You Call
 
 1. **Live Commercial Dispatcher (Under 60 Seconds):** You never speak to an automated answering service. You speak directly to a technical dispatcher who logs your equipment make, model, error code, and urgency level.
-2. **Mobile Warehouse en Route:** Our service vans carry over \$25,000 in OEM commercial parts, universal contactors, high-pressure switches, fan motors, and recovery cylinders—enabling 84% first-visit fix rates.
+2. **Mobile Warehouse en Route:** Our service vans carry over \$25,000 in OEM commercial parts, universal contactors, high-pressure switches, fan motors, and recovery cylinders - enabling 84% first-visit fix rates.
 3. **Transparent Diagnostic & Digital Invoice:** Before any wrench is turned, our technician provides a clear, itemized breakdown of the problem, required parts, and labor cost. No surprise fees.
 4. **Compliance & Temperature Log Signoff:** We provide certified digital temperature pull-down logs for your insurance records and municipal health inspectors.
 
@@ -73,10 +73,10 @@ Serving pharmaceutical warehouses, medical laboratories, and microbreweries requ
 ## Client Testimonials: Why Facility Directors Keep Apex on Speed Dial
 
 > *"A main refrigerant line ruptured in our primary walk-in cooler on a busy Saturday night before our brunch service. Apex was at our restaurant loading dock within 45 minutes, found the hairline fracture, braze-welded the joint, recharged the system, and saved over $30,000 in prime cuts of beef. Absolutely priceless service."*  
-> — **Marcus Sterling**, Executive Chef & Operations Director, The Grandview Bistro
+> - **Marcus Sterling**, Executive Chef & Operations Director, The Grandview Bistro
 
 > *"Managing a 40,000 sq. ft. cold-storage warehouse requires zero downtime. Apex maintains our quarterly preventative contract and their emergency response is faster than any contractor we've hired in 15 years."*  
-> — **Elena Rodriguez**, Regional Facilities Director, Logistics One
+> - **Elena Rodriguez**, Regional Facilities Director, Logistics One
 
 ---
 
@@ -89,7 +89,7 @@ We dispatch from four regional hubs across the metropolitan and surrounding indu
 Yes. 100% of our field technicians hold EPA Universal Section 608 Certification and undergo mandatory bi-annual manufacturer diagnostic training.
 
 #### "Do you offer preventative maintenance agreements?"
-Yes. Our commercial preventative maintenance programs include quarterly coil cleanings, electrical terminal torque checks, vibration analysis, and refrigerant charge optimization—reducing unexpected emergency breakdowns by up to 65%.
+Yes. Our commercial preventative maintenance programs include quarterly coil cleanings, electrical terminal torque checks, vibration analysis, and refrigerant charge optimization - reducing unexpected emergency breakdowns by up to 65%.
 
 ---
 

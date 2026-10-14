@@ -85,7 +85,7 @@ export default function SocialCard({ item, onOpen }: Props) {
     )
   }
 
-  // ── Regular card — tilted thumbnail prints effect ───────────────────────────
+  // ── Regular card - tilted thumbnail prints effect ───────────────────────────
   return (
     <article
       {...sharedInteraction}
@@ -93,7 +93,7 @@ export default function SocialCard({ item, onOpen }: Props) {
     >
       {/* Thumbnail with rotated layer behind to suggest a stack of prints */}
       <div className="h-44 relative overflow-visible">
-        {/* Back print — slightly rotated */}
+        {/* Back print - slightly rotated */}
         <div
           className="absolute inset-2 rounded-lg bg-white/[0.04] border border-white/[0.06] -z-10 group-hover:rotate-3 transition-transform duration-500"
           aria-hidden="true"

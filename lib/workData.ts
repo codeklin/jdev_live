@@ -1,4 +1,4 @@
-// lib/workData.ts — Single source of truth for all WorkItem data
+// lib/workData.ts - Single source of truth for all WorkItem data
 
 // ─── Category ─────────────────────────────────────────────────────────────────
 
@@ -13,7 +13,7 @@ interface WorkItemBase {
   description: string
   thumbnail: string
   tags?: string[]
-  /** Hero piece — spans full width and gets elevated visual treatment */
+  /** Hero piece - spans full width and gets elevated visual treatment */
   featured?: boolean
 }
 
@@ -57,9 +57,9 @@ export interface WebProjectItem extends WorkItemBase {
 
 export interface VideoItem extends WorkItemBase {
   category: "video"
-  /** Local file path e.g. /videos/ad.mp4 — use this OR youtubeId, not both */
+  /** Local file path e.g. /videos/ad.mp4 - use this OR youtubeId, not both */
   videoSrc?: string
-  /** YouTube video ID (the part after ?v=) — embed player shown in modal */
+  /** YouTube video ID (the part after ?v=) - embed player shown in modal */
   youtubeId?: string
   aspectRatio?: "16/9" | "9/16" | "1/1"
 }

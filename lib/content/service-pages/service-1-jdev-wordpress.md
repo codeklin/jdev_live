@@ -16,7 +16,7 @@
 **Over-title:** MODERN WORDPRESS ENGINEERING FOR HIGH-GROWTH BRANDS  
 # Stop Letting a Slow, Bloated WordPress Site Choke Your Revenue and Marketing Velocity.
 
-### We build custom, ultra-fast WordPress websites engineered with clean code, modular Gutenberg blocks, and sub-second page loads—so your marketing team can ship pages in minutes without calling a developer.
+### We build custom, ultra-fast WordPress websites engineered with clean code, modular Gutenberg blocks, and sub-second page loads - so your marketing team can ship pages in minutes without calling a developer.
 
 * **[Primary CTA Button]:** **Book a 20-Minute Technical Discovery Call $\rightarrow$**  
 * **[Secondary CTA Link]:** View Live Performance Benchmarks (95+ PageSpeed)
@@ -42,7 +42,7 @@ You hired an agency or freelancer who promised a "turnkey website." Instead, you
 At J/Dev, we treat WordPress as an enterprise software platform, not a template warehouse. We throw out bloated visual builders (Elementor, Divi, WP Bakery) and build custom, clean architectures from the ground up:
 
 ### 1. Custom Modular Block Systems (ACF & Native Gutenberg)
-We build a bespoke design system directly into your WordPress editor. Your marketing team gets pre-approved, responsive components (heroes, testimonial sliders, pricing tables, feature grids) that they can drag, drop, and publish in 15 minutes—with zero risk of breaking global typography or site layouts.
+We build a bespoke design system directly into your WordPress editor. Your marketing team gets pre-approved, responsive components (heroes, testimonial sliders, pricing tables, feature grids) that they can drag, drop, and publish in 15 minutes - with zero risk of breaking global typography or site layouts.
 
 ### 2. Radical Speed & Clean Code Standards
 We write semantic PHP, SCSS/Tailwind, and lightweight modern vanilla JavaScript. No unnecessary frameworks loaded in the browser. The result? Your site loads instantly, scores green on Google Core Web Vitals, and captures the search traffic you deserve.

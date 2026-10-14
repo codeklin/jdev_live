@@ -15,11 +15,11 @@ To demonstrate the ability to capture, adopt, and consistently execute radically
 
 In commercial enterprise and corporate governance, the distinction between strategic foresight and retrospective remediation is measured in millions of dollars of enterprise value. 
 
-Too frequently, executive leadership conceptualizes regulatory compliance and infrastructure audits as friction points—discretionary expenditures to be deferred in favor of short-term quarterly EBITDA optimization. This posture represents a fundamental misunderstanding of statutory liability.
+Too frequently, executive leadership conceptualizes regulatory compliance and infrastructure audits as friction points - discretionary expenditures to be deferred in favor of short-term quarterly EBITDA optimization. This posture represents a fundamental misunderstanding of statutory liability.
 
 When a critical structural, technological, or contractual failure materializes, the enterprise incurs not merely the direct capital cost of physical restoration. It exposes officers, directors, and institutional shareholders to secondary liabilities: breach of fiduciary oversight, severe regulatory discovery penalties, and contractual default damages under commercial master service agreements.
 
-Preemptive governance is not an operational luxury. It is an indispensable legal firewall. Conducting scheduled, rigorous third-party audits isolates systemic vulnerabilities while they remain routine internal adjustments—preventing them from becoming subpoena-compelled disclosures in federal or appellate litigation.
+Preemptive governance is not an operational luxury. It is an indispensable legal firewall. Conducting scheduled, rigorous third-party audits isolates systemic vulnerabilities while they remain routine internal adjustments - preventing them from becoming subpoena-compelled disclosures in federal or appellate litigation.
 
 ### Style Guide & Editorial Rules (Vanguard & Sterling LLP)
 

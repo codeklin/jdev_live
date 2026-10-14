@@ -7,7 +7,7 @@ import { EmailItem } from "../../../lib/workData"
 interface Props {
   item: EmailItem
   onClose: () => void
-  /** Ref to the element that triggered opening — focus returns here on close */
+  /** Ref to the element that triggered opening - focus returns here on close */
   triggerRef?: RefObject<HTMLElement>
 }
 
@@ -34,7 +34,7 @@ export default function ScrollPreviewModal({ item, onClose, triggerRef }: Props)
     if (el.scrollTop >= maxScroll) {
       hasEndedRef.current = true
       setHasEnded(true) // trigger re-render to show indicator
-      return // stop — do not loop (requirement 5.5)
+      return // stop - do not loop (requirement 5.5)
     }
     el.scrollTop += SCROLL_SPEED
     animFrameRef.current = requestAnimationFrame(animate)
@@ -54,7 +54,7 @@ export default function ScrollPreviewModal({ item, onClose, triggerRef }: Props)
   const handleTouchStart = () => { isPausedRef.current = true }
   const handleTouchEnd   = () => { isPausedRef.current = false }
 
-  // ── Close handler — returns focus to trigger ───────────────────────────────
+  // ── Close handler - returns focus to trigger ───────────────────────────────
   const handleClose = useCallback(() => {
     onClose()
     setTimeout(() => triggerRef?.current?.focus(), 0)
@@ -90,7 +90,7 @@ export default function ScrollPreviewModal({ item, onClose, triggerRef }: Props)
     return () => document.removeEventListener("keydown", handleFocusTrap)
   }, [])
 
-  // ── Keyboard navigation (Escape only — no arrows needed for this modal) ───
+  // ── Keyboard navigation (Escape only - no arrows needed for this modal) ───
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") handleClose()
@@ -118,7 +118,7 @@ export default function ScrollPreviewModal({ item, onClose, triggerRef }: Props)
       aria-label={item.title}
       onClick={handleBackdropClick}
     >
-      {/* Inner container — stops backdrop-click propagation */}
+      {/* Inner container - stops backdrop-click propagation */}
       <div
         ref={modalRef}
         className="relative flex flex-col w-full max-w-lg mx-4"
@@ -130,7 +130,7 @@ export default function ScrollPreviewModal({ item, onClose, triggerRef }: Props)
             {item.title}
           </h2>
 
-          {/* Close button — receives initial focus */}
+          {/* Close button - receives initial focus */}
           <button
             ref={closeButtonRef}
             type="button"
@@ -167,7 +167,7 @@ export default function ScrollPreviewModal({ item, onClose, triggerRef }: Props)
             </span>
           </div>
 
-          {/* Scroll viewport — overflow-y-auto so scrollTop is tracked; clipped visually by outer overflow-hidden */}
+          {/* Scroll viewport - overflow-y-auto so scrollTop is tracked; clipped visually by outer overflow-hidden */}
           <div
             className="relative overflow-hidden"
             style={{ height: "70vh" }}
@@ -180,7 +180,7 @@ export default function ScrollPreviewModal({ item, onClose, triggerRef }: Props)
               onTouchStart={handleTouchStart}
               onTouchEnd={handleTouchEnd}
             >
-              {/* Email image — natural height, width fills container */}
+              {/* Email image - natural height, width fills container */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={item.fullImagePath}
@@ -190,7 +190,7 @@ export default function ScrollPreviewModal({ item, onClose, triggerRef }: Props)
               />
             </div>
 
-            {/* "End of email" indicator — fade in when scroll reaches bottom */}
+            {/* "End of email" indicator - fade in when scroll reaches bottom */}
             {hasEnded && (
               <div
                 className="absolute bottom-0 left-0 right-0 text-center py-3

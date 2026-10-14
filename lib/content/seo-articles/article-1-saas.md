@@ -43,7 +43,7 @@ Next.js offers exceptional performance capabilities out of the box:
 ### How WordPress Performs
 WordPress has a reputation for sluggish performance, but that reputation is largely a byproduct of cheap shared hosting and visual page builders (like Elementor or Divi):
 * **Modern Headless or Block-Based WordPress:** A clean WordPress installation using native Gutenberg blocks or custom Advanced Custom Fields (ACF) with object caching (Redis) consistently hits 90+ mobile Core Web Vitals scores.
-* **The SEO Advantage:** WordPress still boasts the world's most mature SEO ecosystem. Native plugins like RankMath or Yoast handle canonical URLs, XML sitemaps, OpenGraph cards, and schema markup automatically—features that require manual custom coding in Next.js.
+* **The SEO Advantage:** WordPress still boasts the world's most mature SEO ecosystem. Native plugins like RankMath or Yoast handle canonical URLs, XML sitemaps, OpenGraph cards, and schema markup automatically - features that require manual custom coding in Next.js.
 
 **Winner:** **Tie.** Next.js wins on raw speed ceiling and custom routing; WordPress wins on out-of-the-box technical SEO automation.
 

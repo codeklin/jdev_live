@@ -63,7 +63,7 @@ function MobileViewer({
     onReady({ flipNext: next, flipPrev: prev })
   }, [next, prev, onReady])
 
-  // Flip keyframes via inline style — avoids needing new Tailwind config
+  // Flip keyframes via inline style - avoids needing new Tailwind config
   const flipStyle: React.CSSProperties = flipDir === null ? {
     boxShadow: "0 4px 24px rgba(0,0,0,0.4)",
   } : {
@@ -82,7 +82,7 @@ function MobileViewer({
         touchStartX.current = null
       }}
     >
-      {/* Page curl keyframes — skew + scale + shadow simulates paper bending */}
+      {/* Page curl keyframes - skew + scale + shadow simulates paper bending */}
       <style>{`
         @keyframes pageCurlForward {
           0%   { transform: perspective(1200px) rotateY(0deg)   skewY(0deg)   scaleX(1);    box-shadow: 0 4px 24px rgba(0,0,0,0.4); }

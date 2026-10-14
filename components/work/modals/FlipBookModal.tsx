@@ -132,7 +132,7 @@ export default function FlipBookModal({ item, onClose, triggerRef }: Props) {
             </svg>
           </button>
 
-          {/* FlipBookInner — only mounted after layout has settled */}
+          {/* FlipBookInner - only mounted after layout has settled */}
           <div className="w-full flex items-center justify-center">
             {mounted ? (
               <FlipBookInner

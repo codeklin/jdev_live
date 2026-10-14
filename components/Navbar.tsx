@@ -118,7 +118,7 @@ export default function Navbar() {
               {mounted && (currentTheme === "dark" ? <RiSunLine size={17} className="text-white" /> : <RiMoonFill size={17} />)}
             </button>
 
-            {/* Hamburger — 3 lines that animate to X */}
+            {/* Hamburger - 3 lines that animate to X */}
             <button
               onClick={() => setOpen(true)}
               className="p-2 flex flex-col justify-center items-center gap-1.5 w-9 h-9 rounded-md hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
@@ -157,7 +157,7 @@ export default function Navbar() {
           <span className="text-sm font-black text-[#0a0a0a] dark:text-white tracking-tight">
             {"<J/Dev>"}
           </span>
-          {/* Close button — clean X, not an icon import */}
+          {/* Close button - clean X, not an icon import */}
           <button
             onClick={() => setOpen(false)}
             className="w-8 h-8 flex items-center justify-center rounded-md text-gray-400 hover:text-[#0a0a0a] dark:hover:text-white hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
@@ -212,7 +212,7 @@ export default function Navbar() {
 
         </nav>
 
-        {/* Panel footer — CTA */}
+        {/* Panel footer - CTA */}
         <div className="px-6 py-6 border-t border-gray-100 dark:border-white/10 flex-shrink-0 space-y-3">
           <a
             href={getHref("contact")}

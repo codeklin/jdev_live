@@ -45,7 +45,7 @@ export default function EmailCard({ item, onOpen }: Props) {
           </span>
         </div>
 
-        {/* Tall image — lets the email content breathe */}
+        {/* Tall image - lets the email content breathe */}
         <div className="relative h-64 sm:h-80 w-full overflow-hidden">
           {!imgError ? (
             <Image

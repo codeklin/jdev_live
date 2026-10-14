@@ -55,7 +55,7 @@ export default function VideoCard({ item, onOpen }: Props) {
     },
   }
 
-  // ── Featured — cinematic dark hero ─────────────────────────────────────────
+  // ── Featured - cinematic dark hero ─────────────────────────────────────────
   if (item.featured) {
     return (
       <article

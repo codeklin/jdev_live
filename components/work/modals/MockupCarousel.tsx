@@ -9,7 +9,7 @@ import { SocialItem } from "../../../lib/workData"
 interface Props {
   item: SocialItem
   onClose: () => void
-  /** Ref to the element that triggered opening — focus returns here on close */
+  /** Ref to the element that triggered opening - focus returns here on close */
   triggerRef?: RefObject<HTMLElement>
 }
 
@@ -23,7 +23,7 @@ export default function MockupCarousel({ item, onClose, triggerRef }: Props) {
   const [canScrollPrev, setCanScrollPrev] = useState(false)
   const [canScrollNext, setCanScrollNext] = useState(false)
 
-  // ── Close handler — returns focus to trigger ───────────────────────────────
+  // ── Close handler - returns focus to trigger ───────────────────────────────
   const handleClose = useCallback(() => {
     onClose()
     setTimeout(() => triggerRef?.current?.focus(), 0)
@@ -125,7 +125,7 @@ export default function MockupCarousel({ item, onClose, triggerRef }: Props) {
       aria-label={item.title}
       onClick={handleBackdropClick}
     >
-      {/* Inner container — stops backdrop-click propagation for non-backdrop clicks */}
+      {/* Inner container - stops backdrop-click propagation for non-backdrop clicks */}
       <div
         ref={modalRef}
         className="relative flex flex-col flex-1 overflow-hidden"
@@ -142,7 +142,7 @@ export default function MockupCarousel({ item, onClose, triggerRef }: Props) {
             )}
           </div>
 
-          {/* Close button — receives initial focus */}
+          {/* Close button - receives initial focus */}
           <button
             ref={closeButtonRef}
             type="button"
@@ -207,7 +207,7 @@ export default function MockupCarousel({ item, onClose, triggerRef }: Props) {
                 >
                   {/* Phone / square frame */}
                   {isSquare ? (
-                    // ── Fluid square/rect frame — fills available width on mobile ──
+                    // ── Fluid square/rect frame - fills available width on mobile ──
                     <div
                       className="relative w-full mx-auto overflow-hidden border-2 border-white/20
                                   shadow-[0_0_0_2px_rgba(0,0,0,0.8),0_20px_60px_rgba(0,0,0,0.8)]"
