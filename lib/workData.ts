@@ -290,10 +290,19 @@ export const WORK_ITEMS: WorkItem[] = [
     category: "web",
     title: "Tizzle Shop",
     description:
-      "E-commerce platform with an integrated talent marketplace. Product catalogue, checkout flow, and seller onboarding built from scratch.",
+      "Multivendor e-commerce platform and talent marketplace built on WordPress and WooCommerce. Vendor dashboards, custom product catalogs, and automated checkout flows.",
     thumbnail: "/tizzle.png",
-    liveUrl: "https://tizzleshop.vercel.app/",
-    tags: ["Next.js", "E-commerce", "Tailwind CSS"],
+    liveUrl: "https://tizzleshop.com",
+    tags: ["WordPress", "WooCommerce", "Multivendor", "PHP"],
   },
-
+  {
+    id: "dazzling-grit",
+    category: "web",
+    title: "Dazzling Grit",
+    description:
+      "Corporate consulting and advisory website built on WordPress with custom brand architecture, lead capture funnels, and optimized search performance.",
+    thumbnail: "/home.png",
+    liveUrl: "https://dazzlinggrit.com/",
+    tags: ["WordPress", "Custom Design", "SEO", "Lead Gen"],
+  },
 ]

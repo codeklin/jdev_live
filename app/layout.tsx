@@ -11,9 +11,9 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: "Olajide Igbalaye · Email Systems Designer & Fullstack Developer",
+  title: "Olajide Igbalaye · Designer. Developer. End to end.",
   description:
-    "I design and build email marketing systems that drive revenue, using Klaviyo, Figma, and fullstack development. Available remotely worldwide.",
+    "From visual identity and high-converting copy to full-stack Next.js engineering and technical SEO. Delivering complete digital products from concept to live deployment.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",

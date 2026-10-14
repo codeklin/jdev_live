@@ -1,6 +1,7 @@
 "use client"
 import React from "react"
 import Image from "next/image"
+import Link from "next/link"
 
 const HeroSection = () => {
   return (
@@ -26,20 +27,24 @@ const HeroSection = () => {
             </h1>
 
             {/* Bio */}
-            <p className="text-base text-gray-500 dark:text-gray-400 max-w-xl leading-relaxed">
-              Most businesses lose clients because their brand looks unfinished or their tech
-              stack can&apos;t keep up. I fix both. Visual design that earns trust on first glance,
-              built on Next.js so it actually scales.
+            <p className="text-base sm:text-lg text-gray-500 dark:text-gray-400 max-w-xl leading-relaxed">
+              Most businesses lose revenue because their brand looks unfinished, their copy misses the mark, or their tech stack can&apos;t keep up. I solve all three: visual design that earns immediate trust, search-driven copy that converts, and Next.js engineering built to scale.
             </p>
 
-            {/* Single CTA */}
-            <div className="flex flex-wrap gap-3 pt-1">
+            {/* CTAs */}
+            <div className="flex flex-wrap items-center gap-3 pt-2">
               <a
                 href="#work"
                 className="px-6 py-3 bg-[#0d9488] text-white font-bold rounded-lg hover:bg-[#0b7a70] transition-colors text-sm tracking-wide"
               >
                 See My Work ↓
               </a>
+              <Link
+                href="/portfolio"
+                className="px-6 py-3 border border-gray-300 dark:border-white/20 text-gray-900 dark:text-white font-bold rounded-lg hover:border-[#0d9488] hover:text-[#0d9488] transition-colors text-sm tracking-wide"
+              >
+                Writing &amp; Strategy Samples →
+              </Link>
             </div>
           </div>
 
