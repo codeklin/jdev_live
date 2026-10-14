@@ -7,12 +7,14 @@ import { RiMoonFill, RiSunLine } from "react-icons/ri"
 
 interface NavItem {
   label: string
-  page: string
+  href: string
+  isRoute?: boolean
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { label: "Work",    page: "work"    },
-  { label: "Contact", page: "contact" },
+  { label: "Work", href: "work" },
+  { label: "Portfolio", href: "/portfolio", isRoute: true },
+  { label: "Contact", href: "contact" },
 ]
 
 export default function Navbar() {
@@ -64,15 +66,29 @@ export default function Navbar() {
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-8">
-            {NAV_ITEMS.map((item) => (
-              <a
-                key={item.page}
-                href={getHref(item.page)}
-                className="text-xs font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400 hover:text-[#0a0a0a] dark:hover:text-white transition-colors"
-              >
-                {item.label}
-              </a>
-            ))}
+            {NAV_ITEMS.map((item) =>
+              item.isRoute ? (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className={`text-xs font-semibold uppercase tracking-widest transition-colors ${
+                    pathname === item.href
+                      ? "text-[#0d9488]"
+                      : "text-gray-500 dark:text-gray-400 hover:text-[#0a0a0a] dark:hover:text-white"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <a
+                  key={item.label}
+                  href={getHref(item.href)}
+                  className="text-xs font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400 hover:text-[#0a0a0a] dark:hover:text-white transition-colors"
+                >
+                  {item.label}
+                </a>
+              )
+            )}
           </nav>
 
           {/* Desktop right controls */}
@@ -166,17 +182,33 @@ export default function Navbar() {
             <span className="text-xs text-gray-300 dark:text-gray-600 group-hover:text-[#0d9488] transition-colors">→</span>
           </a>
 
-          {NAV_ITEMS.map((item) => (
-            <a
-              key={item.page}
-              href={getHref(item.page)}
-              onClick={() => setOpen(false)}
-              className="flex items-center justify-between py-3 text-sm font-semibold text-gray-500 dark:text-gray-400 hover:text-[#0a0a0a] dark:hover:text-white border-b border-gray-100 dark:border-white/10 transition-colors group"
-            >
-              {item.label}
-              <span className="text-xs text-gray-300 dark:text-gray-600 group-hover:text-[#0d9488] transition-colors">→</span>
-            </a>
-          ))}
+          {NAV_ITEMS.map((item) =>
+            item.isRoute ? (
+              <Link
+                key={item.label}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                className={`flex items-center justify-between py-3 text-sm font-semibold border-b border-gray-100 dark:border-white/10 transition-colors group ${
+                  pathname === item.href
+                    ? "text-[#0d9488]"
+                    : "text-gray-500 dark:text-gray-400 hover:text-[#0a0a0a] dark:hover:text-white"
+                }`}
+              >
+                {item.label}
+                <span className="text-xs text-gray-300 dark:text-gray-600 group-hover:text-[#0d9488] transition-colors">→</span>
+              </Link>
+            ) : (
+              <a
+                key={item.label}
+                href={getHref(item.href)}
+                onClick={() => setOpen(false)}
+                className="flex items-center justify-between py-3 text-sm font-semibold text-gray-500 dark:text-gray-400 hover:text-[#0a0a0a] dark:hover:text-white border-b border-gray-100 dark:border-white/10 transition-colors group"
+              >
+                {item.label}
+                <span className="text-xs text-gray-300 dark:text-gray-600 group-hover:text-[#0d9488] transition-colors">→</span>
+              </a>
+            )
+          )}
 
         </nav>
 
