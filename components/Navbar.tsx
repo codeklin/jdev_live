@@ -64,6 +64,16 @@ export default function Navbar() {
             </span>
           </Link>
 
+          {/* Mobile direct Writing CTA button (between logo and hamburger) */}
+          <div className="flex items-center md:hidden">
+            <Link
+              href="/portfolio"
+              className="px-3 py-1.5 rounded-full text-xs font-bold tracking-wide transition-all bg-[#0d9488]/15 text-[#0d9488] dark:text-[#2dd4bf] border border-[#0d9488]/30 hover:bg-[#0d9488] hover:text-white shadow-sm"
+            >
+              Writing
+            </Link>
+          </div>
+
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-8">
             {NAV_ITEMS.map((item) =>

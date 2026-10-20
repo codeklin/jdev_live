@@ -236,6 +236,16 @@ export const WORK_ITEMS: WorkItem[] = [
 
   // ── Web Projects ──────────────────────────────────────────────────────────
   {
+    id: "remosus",
+    category: "web",
+    title: "Remosus",
+    description:
+      "Remote job search and application platform designed for Nigerian and African talent. Centralizes cross-border remote listings, verifies location eligibility, and organizes application workflows.",
+    thumbnail: "/remosus.png",
+    liveUrl: "https://remosus.vercel.app",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Job Board"],
+  },
+  {
     id: "yawdesh",
     category: "web",
     title: "Yawdesh",
