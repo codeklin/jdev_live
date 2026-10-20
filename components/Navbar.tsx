@@ -13,6 +13,7 @@ interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   { label: "Work", href: "work" },
+  { label: "Launch", href: "/launch", isRoute: true },
   { label: "Writing", href: "/portfolio", isRoute: true },
   { label: "Contact", href: "contact" },
 ]
@@ -198,7 +199,7 @@ export default function Navbar() {
                 key={item.label}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className={`flex items-center justify-between py-3 text-sm font-semibold border-b border-gray-100 dark:border-white/10 transition-colors group ${
+                  className={`flex items-center justify-between py-3 text-sm font-semibold border-b border-gray-100 dark:border-white/10 transition-colors group ${
                   pathname === item.href
                     ? "text-[#0d9488]"
                     : "text-gray-500 dark:text-gray-400 hover:text-[#0a0a0a] dark:hover:text-white"

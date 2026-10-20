@@ -1,0 +1,201 @@
+{
+  "version": 1,
+  "historyId": "d7f35fe2-f874-41b3-a9f5-92ee64827f05",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5",
+      "content": "/home/tizzleshop-dev/.cache/hyperframes/history/d7f35fe2-f874-41b3-a9f5-92ee64827f05/blobs/1d/1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5"
+    },
+    "CLAUDE.md": {
+      "hash": "1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5",
+      "content": "/home/tizzleshop-dev/.cache/hyperframes/history/d7f35fe2-f874-41b3-a9f5-92ee64827f05/blobs/1d/1d4f0c8ca2507b94fd7c9df709fff01416adbd51a0f922b9d6ed2f40129147d5"
+    },
+    "assets/images/secquiz.png": {
+      "hash": "c0efa9ac91f6e1a122766c4ffd906d7d0c32c7784f6e57195e4564a9e42ee595",
+      "content": "/home/tizzleshop-dev/.cache/hyperframes/history/d7f35fe2-f874-41b3-a9f5-92ee64827f05/blobs/c0/c0efa9ac91f6e1a122766c4ffd906d7d0c32c7784f6e57195e4564a9e42ee595"
+    },
+    "assets/sfx/impact/impactSoft_medium_001.ogg": {
+      "hash": "7642a4fd43e547afe4f7adfadb3dabb681c0ff512f52c1674bae30a726841faf",
+      "content": "/home/tizzleshop-dev/.cache/hyperframes/history/d7f35fe2-f874-41b3-a9f5-92ee64827f05/blobs/76/7642a4fd43e547afe4f7adfadb3dabb681c0ff512f52c1674bae30a726841faf"
+    },
+    "assets/sfx/interface/click_003.ogg": {
+      "hash": "2fa929138bc3a0f432696588f66eac94b8f6d463905ec8808c6461ce4b054292",
+      "content": "/home/tizzleshop-dev/.cache/hyperframes/history/d7f35fe2-f874-41b3-a9f5-92ee64827f05/blobs/2f/2fa929138bc3a0f432696588f66eac94b8f6d463905ec8808c6461ce4b054292"
+    },
+    "hyperframes.json": {
+      "hash": "3af6ecb4d7f8c0cf28a50880f71291f27406c4548e5db2ea2d57430abd99e0e1",
+      "content": "/home/tizzleshop-dev/.cache/hyperframes/history/d7f35fe2-f874-41b3-a9f5-92ee64827f05/blobs/3a/3af6ecb4d7f8c0cf28a50880f71291f27406c4548e5db2ea2d57430abd99e0e1"
+    },
+    "index.html": {
+      "hash": "5adafa2f107b322abe85a65426889198c4fbb553d5a6b1283f82c87ad3016917",
+      "content": "/home/tizzleshop-dev/.cache/hyperframes/history/d7f35fe2-f874-41b3-a9f5-92ee64827f05/blobs/5a/5adafa2f107b322abe85a65426889198c4fbb553d5a6b1283f82c87ad3016917"
+    },
+    "meta.json": {
+      "hash": "80c2fc60e416ca7a6154b03da95221d5d98638a233e60c0f6a164f4c118a0f20",
+      "content": "/home/tizzleshop-dev/.cache/hyperframes/history/d7f35fe2-f874-41b3-a9f5-92ee64827f05/blobs/80/80c2fc60e416ca7a6154b03da95221d5d98638a233e60c0f6a164f4c118a0f20"
+    },
+    "package.json": {
+      "hash": "2be1fac5eda99a017d6c3def947bc5c501e8c0b1c4d25881d79144142a9ef689",
+      "content": "/home/tizzleshop-dev/.cache/hyperframes/history/d7f35fe2-f874-41b3-a9f5-92ee64827f05/blobs/2b/2be1fac5eda99a017d6c3def947bc5c501e8c0b1c4d25881d79144142a9ef689"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "589cfb5d-5783-444e-a44c-b4afa8dab396"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "589cfb5d-5783-444e-a44c-b4afa8dab396",
+        "scope": "project",
+        "report": "/home/tizzleshop-dev/Documents/Github-Projects/jdev_live/brag-output-2026-10-20-164822/composition/.hyperframes/artifacts/checks/589cfb5d-5783-444e-a44c-b4afa8dab396.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1792513708649,
+        "contentHash": "6ba830d70b8d066cc806279aa3b7a32588d2d24d63495712ee60cad2f777d3ed",
+        "revision": null,
+        "inputFingerprint": "9a057e31d60aad4e27f8f1c5eaa97d3a2a8c77abfa4857f8c09ed23a529bfd09",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "53ea3d64-8af1-4456-84e4-78da98a0b835-4"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "53ea3d64-8af1-4456-84e4-78da98a0b835-0",
+        "image": "/home/tizzleshop-dev/Documents/Github-Projects/jdev_live/brag-output-2026-10-20-164822/composition/.hyperframes/artifacts/snapshots/b132df7f-653d-4e3c-ad9e-f321cc0b99ea/frame-00-at-1.8s.png",
+        "time": 1.8,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792513771261,
+        "contentHash": "6f8425a8095b3b7b0dd0d67e49d082bd359bc2b799efb043ce1d635ab284915b",
+        "revision": null,
+        "inputFingerprint": "9a057e31d60aad4e27f8f1c5eaa97d3a2a8c77abfa4857f8c09ed23a529bfd09",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "53ea3d64-8af1-4456-84e4-78da98a0b835-1",
+        "image": "/home/tizzleshop-dev/Documents/Github-Projects/jdev_live/brag-output-2026-10-20-164822/composition/.hyperframes/artifacts/snapshots/b132df7f-653d-4e3c-ad9e-f321cc0b99ea/frame-01-at-5.2s.png",
+        "time": 5.2,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792513771262,
+        "contentHash": "92868e240a23ec3c8e80c5b5dd0bc7eef1735ade44050a5cbe3bcb5e57202ffc",
+        "revision": null,
+        "inputFingerprint": "9a057e31d60aad4e27f8f1c5eaa97d3a2a8c77abfa4857f8c09ed23a529bfd09",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "53ea3d64-8af1-4456-84e4-78da98a0b835-2",
+        "image": "/home/tizzleshop-dev/Documents/Github-Projects/jdev_live/brag-output-2026-10-20-164822/composition/.hyperframes/artifacts/snapshots/b132df7f-653d-4e3c-ad9e-f321cc0b99ea/frame-02-at-10.2s.png",
+        "time": 10.2,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792513771262,
+        "contentHash": "1a943e1609ab397ecad992eddc2ac539f51e8adf94d36421444c551e058c9ceb",
+        "revision": null,
+        "inputFingerprint": "9a057e31d60aad4e27f8f1c5eaa97d3a2a8c77abfa4857f8c09ed23a529bfd09",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "53ea3d64-8af1-4456-84e4-78da98a0b835-3",
+        "image": "/home/tizzleshop-dev/Documents/Github-Projects/jdev_live/brag-output-2026-10-20-164822/composition/.hyperframes/artifacts/snapshots/b132df7f-653d-4e3c-ad9e-f321cc0b99ea/frame-03-at-16.5s.png",
+        "time": 16.5,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792513771262,
+        "contentHash": "af29a952c98b7d79d595bd0459fb8d5b308663833aa4d42b9498d836b3599b29",
+        "revision": null,
+        "inputFingerprint": "9a057e31d60aad4e27f8f1c5eaa97d3a2a8c77abfa4857f8c09ed23a529bfd09",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "53ea3d64-8af1-4456-84e4-78da98a0b835-4",
+        "image": "/home/tizzleshop-dev/Documents/Github-Projects/jdev_live/brag-output-2026-10-20-164822/composition/.hyperframes/artifacts/snapshots/b132df7f-653d-4e3c-ad9e-f321cc0b99ea/frame-04-at-17.46s.png",
+        "time": 17.46,
+        "metadata": {
+          "width": 1920,
+          "height": 1080,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1792513771262,
+        "contentHash": "af29a952c98b7d79d595bd0459fb8d5b308663833aa4d42b9498d836b3599b29",
+        "revision": null,
+        "inputFingerprint": "9a057e31d60aad4e27f8f1c5eaa97d3a2a8c77abfa4857f8c09ed23a529bfd09",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "renders": {
+    "latest": {
+      "id": "012f970e-a236-477e-8c72-83a432808f80",
+      "completedAt": 1792514075792,
+      "output": "/home/tizzleshop-dev/Documents/Github-Projects/jdev_live/brag-output-2026-10-20-164822/brag.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}
