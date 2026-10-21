@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <template>
+      <div id="scene-four-root" data-composition-id="scene-four" data-width="1920" data-height="1080">
+        <section id="scene-four" class="clip scene closing">
+          <div data-hf-id="hf-5607" class="ambient-ring" aria-hidden="true"></div>
+          <div data-hf-id="hf-mbmd" class="closing-content">
+            <p data-hf-id="hf-jot3" id="closing-mark" class="closing-mark">&lt;J/Dev&gt;</p>
+            <h2 data-hf-id="hf-hocj" id="closing-title" class="closing-title">End to <span data-hf-id="hf-4qam" class="accent">end.</span></h2>
+            <p data-hf-id="hf-z7er" id="closing-cta" class="closing-cta">See My Work <span data-hf-id="hf-2kau" aria-hidden="true">↗</span></p>
+          </div>
+          <p data-hf-id="hf-uz1l" class="scene-index">04 / 04</p>
+        </section>
+      </div>
+      <script>
+        const root = document.getElementById("scene-four-root");
+        const select = gsap.utils.selector(root);
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo(select("#closing-mark"), { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 0.22);
+        tl.fromTo(select("#closing-title"), { opacity: 0, x: -42 }, { opacity: 1, x: 0, duration: 0.64, ease: "power3.out" }, 0.66);
+        tl.fromTo(select("#closing-cta"), { opacity: 0, y: 22, scale: 0.96 }, { opacity: 1, y: 0, scale: 1, duration: 0.48, ease: "back.out(1.1)" }, 1.64);
+        tl.to(select(".ambient-ring"), { scale: 1.045, opacity: 0.72, duration: 1.5, ease: "sine.inOut", yoyo: true, repeat: 5 }, 0);
+        window.__timelines["scene-four"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

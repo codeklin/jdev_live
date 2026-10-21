@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <template>
+      <div id="scene-three-root" data-composition-id="scene-three" data-width="1920" data-height="1080">
+        <section id="scene-three" class="clip scene">
+          <div data-hf-id="hf-w0y2" class="work-layout">
+            <div data-hf-id="hf-hb44" id="work-copy">
+              <p data-hf-id="hf-bnvi" class="eyebrow">Selected work / 01</p>
+              <h2 data-hf-id="hf-3m8d" class="work-title">Making cybersecurity easier to start.</h2>
+              <p data-hf-id="hf-nbdx" class="work-description">Secquiz turns security topics into plain-English lessons and practice.</p>
+              <p data-hf-id="hf-fzcw" class="work-stat">10,000+ people learning</p>
+            </div>
+            <div data-hf-id="hf-4b6m" id="work-browser" class="browser">
+              <div data-hf-id="hf-t0t7" class="browser-bar" aria-hidden="true">
+                <span data-hf-id="hf-v0ed" class="browser-dot"></span>
+                <span data-hf-id="hf-fztl" class="browser-dot"></span>
+                <span data-hf-id="hf-h6qo" class="browser-dot"></span>
+                <span data-hf-id="hf-e9tx" class="browser-label">SECQUIZ / LEARN</span>
+              </div>
+              <img
+                data-hf-id="hf-t0i5"
+                class="work-image"
+                src="assets/images/secquiz.png"
+                alt="Secquiz home page preview showing cybersecurity lessons and learning statistics"
+              />
+            </div>
+          </div>
+          <p data-hf-id="hf-ydz2" class="scene-index">03 / 04</p>
+        </section>
+      </div>
+      <script>
+        const root = document.getElementById("scene-three-root");
+        const select = gsap.utils.selector(root);
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo(select("#work-copy"), { opacity: 0, x: -48 }, { opacity: 1, x: 0, duration: 0.68, ease: "power3.out" }, 0.24);
+        tl.fromTo(select("#work-browser"), { opacity: 0, x: 72, scale: 0.97 }, { opacity: 1, x: 0, scale: 1, duration: 0.76, ease: "power3.out" }, 0.38);
+        window.__timelines["scene-three"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

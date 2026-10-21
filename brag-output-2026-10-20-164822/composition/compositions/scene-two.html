@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <template>
+      <div id="scene-two-root" data-composition-id="scene-two" data-width="1920" data-height="1080">
+        <section id="scene-two" class="clip scene">
+          <div data-hf-id="hf-4rp6" class="ambient-ring" aria-hidden="true"></div>
+          <p data-hf-id="hf-el6d" class="eyebrow">From first thought to finished product</p>
+          <div data-hf-id="hf-cv2q" class="range-layout">
+            <h2 data-hf-id="hf-0qzy" id="range-heading" class="range-heading">Good work connects every part.</h2>
+            <div data-hf-id="hf-x03k" class="range-list">
+              <article data-hf-id="hf-vxlo" id="range-design" class="range-item">
+                <p data-hf-id="hf-b66b" class="range-number">01</p>
+                <h3 data-hf-id="hf-zcgn" class="range-name">Design</h3>
+              </article>
+              <article data-hf-id="hf-vp39" id="range-copy" class="range-item">
+                <p data-hf-id="hf-arva" class="range-number">02</p>
+                <h3 data-hf-id="hf-0bws" class="range-name">Copy</h3>
+              </article>
+              <article data-hf-id="hf-57vp" id="range-code" class="range-item">
+                <p data-hf-id="hf-adk9" class="range-number">03</p>
+                <h3 data-hf-id="hf-hpos" class="range-name">Code</h3>
+              </article>
+            </div>
+          </div>
+          <p data-hf-id="hf-yp2n" class="scene-index">02 / 04</p>
+        </section>
+      </div>
+      <script>
+        const root = document.getElementById("scene-two-root");
+        const select = gsap.utils.selector(root);
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo(select("#range-heading"), { opacity: 0, y: 34 }, { opacity: 1, y: 0, duration: 0.56, ease: "power3.out" }, 0.22);
+        tl.fromTo(select("#range-design"), { opacity: 0, y: 48, rotation: -2 }, { opacity: 1, y: 0, rotation: 0, duration: 0.55, ease: "power3.out" }, 0.86);
+        tl.fromTo(select("#range-copy"), { opacity: 0, y: 48, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "back.out(1.15)" }, 1.07);
+        tl.fromTo(select("#range-code"), { opacity: 0, x: 56 }, { opacity: 1, x: 0, duration: 0.55, ease: "power2.out" }, 1.28);
+        tl.to(select(".ambient-ring"), { scale: 1.045, opacity: 0.72, duration: 1.5, ease: "sine.inOut", yoyo: true, repeat: 5 }, 0);
+        window.__timelines["scene-two"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

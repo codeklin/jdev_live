@@ -28,6 +28,11 @@
         font-family: Poppins, ui-sans-serif, system-ui, sans-serif;
       }
 
+      #root > div[data-composition-src] {
+        position: absolute;
+        inset: 0;
+      }
+
       .clip {
         position: absolute;
         inset: 0;
@@ -281,7 +286,7 @@
     </style>
   </head>
   <body>
-    <div
+    <div data-hf-id="hf-dcwt"
       id="root"
       data-composition-id="main"
       data-start="0"
@@ -289,93 +294,34 @@
       data-width="1920"
       data-height="1080"
     >
-      <section id="scene-one" class="clip scene" data-start="0" data-duration="3.5" data-track-index="0">
-        <div class="ambient-ring" aria-hidden="true"></div>
-        <p class="signature">J/DEV</p>
-        <div class="hero-copy">
-          <p class="eyebrow">A portfolio in three parts</p>
-          <h1 class="display">
-            <span id="word-designer">Designer.</span><br />
-            <span id="word-developer" class="accent">Developer.</span>
-          </h1>
-          <span id="headline-rule" class="rule" aria-hidden="true"></span>
-        </div>
-        <p class="scene-index">01 / 04</p>
-      </section>
+      <div id="scene-one-slot" data-hf-id="hf-i0tr" data-composition-id="scene-one" data-composition-src="compositions/scene-one.html" data-start="0" data-duration="3.5" data-track-index="0" data-width="1920" data-height="1080"></div>
+      <div id="scene-two-slot" data-hf-id="hf-qez4" data-composition-id="scene-two" data-composition-src="compositions/scene-two.html" data-start="3.5" data-duration="4.5" data-track-index="0" data-width="1920" data-height="1080"></div>
+      <div id="scene-three-slot" data-hf-id="hf-sdnd" data-composition-id="scene-three" data-composition-src="compositions/scene-three.html" data-start="8" data-duration="5.5" data-track-index="0" data-width="1920" data-height="1080"></div>
+      <div id="scene-four-slot" data-hf-id="hf-62j6" data-composition-id="scene-four" data-composition-src="compositions/scene-four.html" data-start="13.5" data-duration="4.5" data-track-index="0" data-width="1920" data-height="1080"></div>
 
-      <section id="scene-two" class="clip scene" data-start="3.5" data-duration="4.5" data-track-index="0">
-        <div class="ambient-ring" aria-hidden="true"></div>
-        <p class="eyebrow">From first thought to finished product</p>
-        <div class="range-layout">
-          <h2 id="range-heading" class="range-heading">Good work connects every part.</h2>
-          <div class="range-list">
-            <article id="range-design" class="range-item">
-              <p class="range-number">01</p>
-              <h3 class="range-name">Design</h3>
-            </article>
-            <article id="range-copy" class="range-item">
-              <p class="range-number">02</p>
-              <h3 class="range-name">Copy</h3>
-            </article>
-            <article id="range-code" class="range-item">
-              <p class="range-number">03</p>
-              <h3 class="range-name">Code</h3>
-            </article>
-          </div>
-        </div>
-        <p class="scene-index">02 / 04</p>
-      </section>
-
-      <section id="scene-three" class="clip scene" data-start="8" data-duration="5.5" data-track-index="0">
-        <div class="work-layout">
-          <div id="work-copy">
-            <p class="eyebrow">Selected work / 01</p>
-            <h2 class="work-title">Making cybersecurity easier to start.</h2>
-            <p class="work-description">Secquiz turns security topics into plain-English lessons and practice.</p>
-            <p class="work-stat">10,000+ people learning</p>
-          </div>
-          <div id="work-browser" class="browser">
-            <div class="browser-bar" aria-hidden="true">
-              <span class="browser-dot"></span>
-              <span class="browser-dot"></span>
-              <span class="browser-dot"></span>
-              <span class="browser-label">SECQUIZ / LEARN</span>
-            </div>
-            <img
-              class="work-image"
-              src="assets/images/secquiz.png"
-              alt="Secquiz home page preview showing cybersecurity lessons and learning statistics"
-            />
-          </div>
-        </div>
-        <p class="scene-index">03 / 04</p>
-      </section>
-
-      <section id="scene-four" class="clip scene closing" data-start="13.5" data-duration="4.5" data-track-index="0">
-        <div class="ambient-ring" aria-hidden="true"></div>
-        <div class="closing-content">
-          <p id="closing-mark" class="closing-mark">&lt;J/Dev&gt;</p>
-          <h2 id="closing-title" class="closing-title">End to <span class="accent">end.</span></h2>
-          <p id="closing-cta" class="closing-cta">See My Work <span aria-hidden="true">↗</span></p>
-        </div>
-        <p class="scene-index">04 / 04</p>
-      </section>
-
-      <audio
+      <audio data-hf-id="hf-rau1"
+        id="music-bed"
+        src="assets/audio/soundtrack.mp3"
+        data-start="0"
+        data-duration="18"
+        data-track-index="4"
+        data-volume="0.25"
+      ></audio>
+      <audio data-hf-id="hf-glks"
         id="headline-accent"
         src="assets/sfx/interface/click_003.ogg"
         data-start="1.15"
         data-track-index="5"
         data-volume="0.36"
       ></audio>
-      <audio
+      <audio data-hf-id="hf-heg6"
         id="work-accent"
         src="assets/sfx/impact/impactSoft_medium_001.ogg"
         data-start="8.45"
         data-track-index="6"
         data-volume="0.42"
       ></audio>
-      <audio
+      <audio data-hf-id="hf-ppwg"
         id="closing-accent"
         src="assets/sfx/impact/impactSoft_medium_001.ogg"
         data-start="16.1"
@@ -384,23 +330,7 @@
       ></audio>
     </div>
     <script>
-      const tl = gsap.timeline({ paused: true });
-      tl.fromTo(".signature", { opacity: 0, y: -18 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 0.1);
-      tl.fromTo(".eyebrow", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.15);
-      tl.fromTo("#word-designer", { opacity: 0, x: -76 }, { opacity: 1, x: 0, duration: 0.72, ease: "power3.out" }, 0.38);
-      tl.fromTo("#word-developer", { opacity: 0, x: 88 }, { opacity: 1, x: 0, duration: 0.72, ease: "back.out(1.3)" }, 1.05);
-      tl.fromTo("#headline-rule", { scaleX: 0 }, { scaleX: 1, duration: 0.48, ease: "power2.inOut" }, 2.02);
-      tl.fromTo("#range-heading", { opacity: 0, y: 34 }, { opacity: 1, y: 0, duration: 0.56, ease: "power3.out" }, 3.72);
-      tl.fromTo("#range-design", { opacity: 0, y: 48, rotation: -2 }, { opacity: 1, y: 0, rotation: 0, duration: 0.55, ease: "power3.out" }, 4.36);
-      tl.fromTo("#range-copy", { opacity: 0, y: 48, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "back.out(1.15)" }, 4.57);
-      tl.fromTo("#range-code", { opacity: 0, x: 56 }, { opacity: 1, x: 0, duration: 0.55, ease: "power2.out" }, 4.78);
-      tl.fromTo("#work-copy", { opacity: 0, x: -48 }, { opacity: 1, x: 0, duration: 0.68, ease: "power3.out" }, 8.24);
-      tl.fromTo("#work-browser", { opacity: 0, x: 72, scale: 0.97 }, { opacity: 1, x: 0, scale: 1, duration: 0.76, ease: "power3.out" }, 8.38);
-      tl.fromTo("#closing-mark", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 13.72);
-      tl.fromTo("#closing-title", { opacity: 0, x: -42 }, { opacity: 1, x: 0, duration: 0.64, ease: "power3.out" }, 14.16);
-      tl.fromTo("#closing-cta", { opacity: 0, y: 22, scale: 0.96 }, { opacity: 1, y: 0, scale: 1, duration: 0.48, ease: "back.out(1.1)" }, 15.14);
-      tl.to(".ambient-ring", { scale: 1.045, opacity: 0.72, duration: 1.5, ease: "sine.inOut", yoyo: true, repeat: 5 }, 0);
-      window.__timelines["main"] = tl;
+      window.__timelines["main"] = gsap.timeline({ paused: true });
     </script>
   </body>
 </html>
