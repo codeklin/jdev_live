@@ -210,11 +210,22 @@ export const WORK_ITEMS: WorkItem[] = [
     aspectRatio: "1/1",
   },
 
-  // ── AI Videos ─────────────────────────────────────────────────────────────
+  // ── AI & Motion Videos ────────────────────────────────────────────────────
+  {
+    id: "portfolio-reel",
+    category: "video",
+    featured: true,
+    title: "Portfolio in Motion",
+    description: "18-second brand motion showcase highlighting end-to-end craft across visual design, conversion copy, and fullstack engineering with Secquiz.",
+    thumbnail: "/videos/portfolio-launch-poster.jpg",
+    videoSrc: "/videos/portfolio-launch.mp4",
+    aspectRatio: "16/9",
+    tags: ["Motion Graphics", "Video Tour", "Brand Identity"],
+  },
+
   {
     id: "daniel-said-no",
     category: "video",
-    featured: true,
     title: "Daniel Said No!",
     description: "AI-generated kids safety video teaching children the rules that keep them safe. Produced entirely with AI visuals, voice, and animation.",
     thumbnail: "/daniel.jpg",
