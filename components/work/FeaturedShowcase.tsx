@@ -2,6 +2,8 @@
 
 import { useEffect, useRef } from "react"
 import Image from "next/image"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 interface ShowcaseProject {
   id: string
@@ -29,6 +31,18 @@ const FEATURED: ShowcaseProject[] = [
     badgeLabel: "Live Product",
   },
   {
+    id: "panaceutics",
+    title: "Panaceutics",
+    description:
+      "Biotech platform advancing wellness through science-backed, plant-based formulations. Built with maximum performance, fluid responsiveness, and organic search ranking in mind.",
+    thumbnail: "/panaceutics1.png",
+    liveUrl: "https://panaceutics.org",
+    tags: ["Next.js", "Tailwind CSS", "SEO"],
+    accentColor: "#f9a8d4", // pink-300
+    shadowColor: "#0a0a0a",
+    badgeLabel: "Biotech",
+  },
+  {
     id: "phytogenix",
     title: "Phytogenix",
     description:
@@ -40,18 +54,6 @@ const FEATURED: ShowcaseProject[] = [
     shadowColor: "#0a0a0a",
     badgeLabel: "Published",
   },
-  {
-    id: "tizzle-shop",
-    title: "Tizzle Shop",
-    description:
-      "Multivendor e-commerce and talent marketplace. Custom vendor dashboards, product catalogs, and automated WooCommerce checkout flows.",
-    thumbnail: "/tizzle.png",
-    liveUrl: "https://tizzleshop.com",
-    tags: ["WordPress", "WooCommerce", "Multivendor"],
-    accentColor: "#f9a8d4", // pink-300
-    shadowColor: "#0a0a0a",
-    badgeLabel: "E-commerce",
-  },
 ]
 
 export default function FeaturedShowcase() {
@@ -61,55 +63,41 @@ export default function FeaturedShowcase() {
   useEffect(() => {
     if (typeof window === "undefined") return
 
-    let ctx: { revert: () => void } | null = null
+    gsap.registerPlugin(ScrollTrigger)
 
-    const initGSAP = async () => {
-      const { default: gsap } = await import("gsap")
-      const { ScrollTrigger } = await import("gsap/ScrollTrigger")
+    const section = sectionRef.current
+    const track = trackRef.current
+    if (!section || !track) return
 
-      gsap.registerPlugin(ScrollTrigger)
+    const getScrollAmount = () => -(track.scrollWidth - window.innerWidth + 60)
 
-      const section = sectionRef.current
-      const track = trackRef.current
-      if (!section || !track) return
+    const ctx = gsap.context(() => {
+      gsap.to(track, {
+        x: getScrollAmount,
+        ease: "none",
+        scrollTrigger: {
+          trigger: section,
+          start: "top top",
+          end: () => `+=${Math.max(track.scrollWidth - window.innerWidth + 150, 600)}`,
+          scrub: 1,
+          pin: true,
+          pinSpacing: true,
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
+        },
+      })
+    }, section)
 
-      const totalWidth = track.scrollWidth - track.offsetWidth
+    // Force recalculation after layout settles and images start loading
+    const timer = setTimeout(() => {
+      ScrollTrigger.refresh()
+    }, 250)
 
-      ctx = gsap.context(() => {
-        gsap.to(track, {
-          x: () => -totalWidth,
-          ease: "none",
-          scrollTrigger: {
-            trigger: section,
-            start: "top top",
-            end: () => `+=${totalWidth + 200}`,
-            scrub: 1.2,
-            pin: true,
-            anticipatePin: 1,
-            invalidateOnRefresh: true,
-          },
-        })
-
-        // Subtle card entrance stagger on first pin
-        gsap.from(".showcase-card", {
-          opacity: 0,
-          y: 40,
-          stagger: 0.15,
-          duration: 0.7,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: section,
-            start: "top 80%",
-            toggleActions: "play none none none",
-          },
-        })
-      }, section)
-    }
-
-    initGSAP()
+    window.addEventListener("resize", () => ScrollTrigger.refresh())
 
     return () => {
-      ctx?.revert()
+      clearTimeout(timer)
+      ctx.revert()
     }
   }, [])
 
