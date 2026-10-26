@@ -4,6 +4,7 @@ import { useState, useRef, useCallback, MutableRefObject, RefObject } from "reac
 import SlideUp from "../SlideUp"
 import FilterBar from "./FilterBar"
 import WorkGrid from "./WorkGrid"
+import FeaturedShowcase from "./FeaturedShowcase"
 import FlipBookModal from "./modals/FlipBookModal"
 import MockupCarousel from "./modals/MockupCarousel"
 import ScrollPreviewModal from "./modals/ScrollPreviewModal"
@@ -56,7 +57,11 @@ export default function WorkSection() {
   }, [videoTriggerRef])
 
   return (
-    <section id="work" className="bg-[#0a0a0a] py-24 px-4 sm:px-6">
+    <>
+      {/* GSAP Pinned Featured Works Showcase */}
+      <FeaturedShowcase />
+
+      <section id="work" className="bg-[#0a0a0a] py-24 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <SlideUp>
           <div className="mb-10">
@@ -154,5 +159,6 @@ export default function WorkSection() {
         />
       )}
     </section>
+    </>
   )
 }
