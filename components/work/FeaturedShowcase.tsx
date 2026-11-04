@@ -19,6 +19,30 @@ interface ShowcaseProject {
 
 const FEATURED: ShowcaseProject[] = [
   {
+    id: "eehu",
+    title: "eehu!",
+    description:
+      "Most businesses lose leads inside chat. eehu! captures enquiries, qualifies buyer needs before WhatsApp, and gives your team a clear follow-up queue so no sale slips through.",
+    thumbnail: "/eehu.png",
+    liveUrl: "https://eehu.app",
+    tags: ["Next.js", "TypeScript", "SaaS"],
+    accentColor: "#4ade80", // green-400
+    shadowColor: "#0a0a0a",
+    badgeLabel: "Live Product",
+  },
+  {
+    id: "secquiz",
+    title: "Secquiz App",
+    description:
+      "10,000+ people learning cybersecurity on Secquiz. Structured topics, plain-English explanations, and real practice questions across 6+ security domains. No background needed.",
+    thumbnail: "/secquiz.png",
+    liveUrl: "https://secquizz.vercel.app/",
+    tags: ["React", "TypeScript", "Gamification"],
+    accentColor: "#facc15", // yellow-400
+    shadowColor: "#0a0a0a",
+    badgeLabel: "Live Product",
+  },
+  {
     id: "remosus",
     title: "Remosus",
     description:
@@ -26,33 +50,21 @@ const FEATURED: ShowcaseProject[] = [
     thumbnail: "/remosus.png",
     liveUrl: "https://remosus.vercel.app",
     tags: ["Next.js", "TypeScript", "Job Board"],
-    accentColor: "#facc15", // yellow-400
+    accentColor: "#c084fc", // purple-400
     shadowColor: "#0a0a0a",
     badgeLabel: "Live Product",
   },
   {
-    id: "panaceutics",
-    title: "Panaceutics",
+    id: "yawdesh",
+    title: "Yawdesh",
     description:
-      "Biotech platform advancing wellness through science-backed, plant-based formulations. Built with maximum performance, fluid responsiveness, and organic search ranking in mind.",
-    thumbnail: "/panaceutics1.png",
-    liveUrl: "https://panaceutics.org",
-    tags: ["Next.js", "Tailwind CSS", "SEO"],
-    accentColor: "#f9a8d4", // pink-300
+      "A digital reading platform that delivers short Christian readings for people with limited time. Clean, distraction-free, and built to keep users coming back daily.",
+    thumbnail: "/yadesh.png",
+    liveUrl: "https://yadesh.vercel.app",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    accentColor: "#fb923c", // orange-400
     shadowColor: "#0a0a0a",
-    badgeLabel: "Biotech",
-  },
-  {
-    id: "phytogenix",
-    title: "Phytogenix",
-    description:
-      "Digital herbal clinical research platform connecting university labs to medical institutions. Peer review, research submission, and publication flows.",
-    thumbnail: "/phyto.png",
-    liveUrl: "https://phytogenix.org",
-    tags: ["Next.js", "TypeScript", "Research Platform"],
-    accentColor: "#6ee7b7", // teal-300
-    shadowColor: "#0a0a0a",
-    badgeLabel: "Published",
+    badgeLabel: "Live Product",
   },
 ]
 
@@ -120,7 +132,7 @@ export default function FeaturedShowcase() {
             </h3>
           </div>
           <p className="hidden sm:block text-xs font-bold text-gray-600 uppercase tracking-widest pb-1">
-            3 Projects
+            4 Projects
           </p>
         </div>
       </div>

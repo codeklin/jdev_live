@@ -71,17 +71,6 @@ export type WorkItem = CatalogItem | SocialItem | EmailItem | WebProjectItem | V
 // ─── Data ────────────────────────────────────────────────────────────────────
 
 export const WORK_ITEMS: WorkItem[] = [
-  {
-    id: "secquiz",
-    category: "web",
-    featured: true,
-    title: "Secquiz App",
-    description: "10,000+ people are learning cybersecurity on Secquiz. Structured topics, plain-English explanations, and real practice questions across 6+ security domains. No background needed.",
-    thumbnail: "/secquiz.png",
-    liveUrl: "https://secquizz.vercel.app/",
-    tags: ["React", "TypeScript", "Gamification"],
-  },
-
   // ── Email Designs ─────────────────────────────────────────────────────────
   {
     id: "email-h2booster",
@@ -246,6 +235,25 @@ export const WORK_ITEMS: WorkItem[] = [
   },
 
   // ── Web Projects ──────────────────────────────────────────────────────────
+  {
+    id: "eehu",
+    category: "web",
+    featured: true,
+    title: "eehu!",
+    description: "Most businesses lose leads inside chat. eehu! fixes that by capturing enquiries, qualifying buyer needs before they hit WhatsApp, and giving your team a clear follow-up queue so no sale slips through.",
+    thumbnail: "/eehu.png",
+    liveUrl: "https://eehu.app",
+    tags: ["Next.js", "TypeScript", "SaaS"],
+  },
+  {
+    id: "secquiz",
+    category: "web",
+    title: "Secquiz App",
+    description: "10,000+ people are learning cybersecurity on Secquiz. Structured topics, plain-English explanations, and real practice questions across 6+ security domains. No background needed.",
+    thumbnail: "/secquiz.png",
+    liveUrl: "https://secquizz.vercel.app/",
+    tags: ["React", "TypeScript", "Gamification"],
+  },
   {
     id: "remosus",
     category: "web",
