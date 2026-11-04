@@ -213,6 +213,27 @@ export const WORK_ITEMS: WorkItem[] = [
   },
 
   {
+    id: "eehu-commercial",
+    category: "video",
+    featured: true,
+    title: "eehu! Product Commercial",
+    description: "A short-form video commercial for eehu! showing how businesses stop losing leads inside chat. Shot and produced using AI video tools.",
+    thumbnail: "/eehupromo.png",
+    youtubeId: "wRpSSGQhuD0",
+    aspectRatio: "9/16",
+    tags: ["AI Video", "Commercial", "Short"],
+  },
+  {
+    id: "ai-2027",
+    category: "video",
+    title: "Are You Ready for 2027?",
+    description: "A straight-talking short about why most people are sleeping on AI and what you should actually be doing right now to prepare. Featuring an AI clone of me.",
+    thumbnail: "/Stop Just Watching AI. Learn a Skill You Can Sell..jpg",
+    youtubeId: "aGFTA1E84TI",
+    aspectRatio: "9/16",
+    tags: ["AI Video", "AI Clone", "Short"],
+  },
+  {
     id: "daniel-said-no",
     category: "video",
     title: "Daniel Said No!",
@@ -222,7 +243,6 @@ export const WORK_ITEMS: WorkItem[] = [
     aspectRatio: "16/9",
     tags: ["AI Video", "YouTube", "Kids Content"],
   },
-
   {
     id: "ai-income-class",
     category: "video",

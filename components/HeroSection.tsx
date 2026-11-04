@@ -99,7 +99,7 @@ const HeroSection = () => {
                     Olajide Igbalaye
                   </p>
                   <p className="text-xs font-bold text-gray-500 dark:text-gray-400 mt-1">
-                    Design &bull; Code &bull; Copy
+                    Design &bull; Code &bull; Write
                   </p>
                 </div>
                 <span className="text-[10px] font-black uppercase px-2 py-1 rounded bg-[#0d9488] text-white border border-black shadow-[1px_1px_0px_#000]">
