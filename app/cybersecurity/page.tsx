@@ -15,92 +15,74 @@ const EXPERTISE = [
     full: "Governance, Risk & Compliance",
     description:
       "Helping organisations build security policies that actually get followed. Risk frameworks, compliance mapping, and security governance without the jargon.",
-    color: "text-teal-400",
-    border: "border-teal-500/30",
-    bg: "bg-teal-500/10",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-      </svg>
-    ),
+    blob: "from-teal-500/30 via-teal-400/10 to-transparent",
+    labelColor: "text-teal-400",
+    numBg: "bg-teal-500/20",
+    numColor: "text-teal-300",
+    num: "01",
   },
   {
     title: "Penetration Testing",
     full: "Finding the holes before attackers do",
     description:
       "Methodical offensive security testing across networks, web apps, and systems. Finding vulnerabilities and reporting them in a way clients can actually act on.",
-    color: "text-red-400",
-    border: "border-red-500/30",
-    bg: "bg-red-500/10",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
-      </svg>
-    ),
+    blob: "from-red-500/30 via-rose-400/10 to-transparent",
+    labelColor: "text-red-400",
+    numBg: "bg-red-500/20",
+    numColor: "text-red-300",
+    num: "02",
   },
   {
     title: "Ethical Hacking",
     full: "Authorised, structured, documented",
     description:
       "Full ethical hacking engagements from scoping through to reporting. Every test is scoped, authorised, and documented to a professional standard.",
-    color: "text-orange-400",
-    border: "border-orange-500/30",
-    bg: "bg-orange-500/10",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
-      </svg>
-    ),
+    blob: "from-orange-500/30 via-amber-400/10 to-transparent",
+    labelColor: "text-orange-400",
+    numBg: "bg-orange-500/20",
+    numColor: "text-orange-300",
+    num: "03",
   },
   {
     title: "Vulnerability Scanning",
     full: "Know your attack surface",
     description:
       "Systematic scanning using industry tools to map exposure across infrastructure. Clear, prioritised findings so teams know exactly what to fix first.",
-    color: "text-yellow-400",
-    border: "border-yellow-500/30",
-    bg: "bg-yellow-500/10",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 15.803 7.5 7.5 0 0015.803 15.803z" />
-      </svg>
-    ),
+    blob: "from-yellow-500/30 via-yellow-400/10 to-transparent",
+    labelColor: "text-yellow-400",
+    numBg: "bg-yellow-500/20",
+    numColor: "text-yellow-300",
+    num: "04",
   },
   {
     title: "Incident Response",
     full: "When things go wrong, move fast",
     description:
       "Structured response to security incidents. Containment, eradication, recovery, and post-incident review so organisations learn from every breach attempt.",
-    color: "text-purple-400",
-    border: "border-purple-500/30",
-    bg: "bg-purple-500/10",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
-      </svg>
-    ),
+    blob: "from-purple-500/30 via-violet-400/10 to-transparent",
+    labelColor: "text-purple-400",
+    numBg: "bg-purple-500/20",
+    numColor: "text-purple-300",
+    num: "05",
   },
   {
     title: "Security Awareness Training",
     full: "Your people are the perimeter",
     description:
       "Training non-technical staff to spot phishing, handle data responsibly, and follow security protocols. Over 200 students trained and counting.",
-    color: "text-blue-400",
-    border: "border-blue-500/30",
-    bg: "bg-blue-500/10",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
-      </svg>
-    ),
+    blob: "from-blue-500/30 via-sky-400/10 to-transparent",
+    labelColor: "text-blue-400",
+    numBg: "bg-blue-500/20",
+    numColor: "text-blue-300",
+    num: "06",
   },
 ]
 
 const STATS = [
-  { value: "200+", label: "Students trained" },
-  { value: "ISC2", label: "Certified" },
-  { value: "2024", label: "Lead Instructor" },
-  { value: "GRC", label: "to Pentesting" },
+  { value: "200+", label: "Students trained", blob: "from-teal-500/20 to-transparent" },
+  { value: "ISC2", label: "Certified", blob: "from-purple-500/20 to-transparent" },
+  { value: "2024", label: "Lead Instructor", blob: "from-orange-500/20 to-transparent" },
+  { value: "GRC", label: "to Pentesting", blob: "from-blue-500/20 to-transparent" },
 ]
 
 const EXPERIENCE = [
@@ -108,9 +90,10 @@ const EXPERIENCE = [
     role: "Cybersecurity Lead Instructor",
     org: "NextGen Tech Training Project",
     period: "2024 - 2025",
-    color: "border-teal-500",
-    badge: "bg-teal-500/10 text-teal-400 border-teal-500/30",
+    blob: "from-teal-500/20 via-teal-400/5 to-transparent",
+    badgeColor: "bg-teal-500/20 text-teal-300",
     badgeText: "Instructor",
+    dotColor: "bg-teal-400",
     points: [
       "Delivered hands-on cybersecurity training to 200+ students across GRC, penetration testing, ethical hacking, and vulnerability scanning.",
       "Designed learning platforms and assessment experiences with gamification for better knowledge retention.",
@@ -122,9 +105,10 @@ const EXPERIENCE = [
     role: "Assistant Tech Lead",
     org: "Dexterhub",
     period: "Current",
-    color: "border-purple-500",
-    badge: "bg-purple-500/10 text-purple-400 border-purple-500/30",
+    blob: "from-purple-500/20 via-violet-400/5 to-transparent",
+    badgeColor: "bg-purple-500/20 text-purple-300",
     badgeText: "Current Role",
+    dotColor: "bg-purple-400",
     points: [
       "Supporting technical leadership across security operations and digital infrastructure.",
       "Bridging the gap between security requirements and practical implementation for the team.",
@@ -137,20 +121,53 @@ const CERTS = [
   {
     name: "ISC2 Cybersecurity Certificate",
     issuer: "ISC2",
-    color: "text-teal-400",
-    bg: "bg-teal-500/10 border-teal-500/30",
+    numBg: "bg-teal-500/20",
+    numColor: "text-teal-300",
+    blob: "from-teal-500/25 via-teal-400/10 to-transparent",
+    num: "01",
   },
   {
     name: "Prompt Engineering for Developers",
     issuer: "OpenAI / DeepLearning.AI",
-    color: "text-orange-400",
-    bg: "bg-orange-500/10 border-orange-500/30",
+    numBg: "bg-orange-500/20",
+    numColor: "text-orange-300",
+    blob: "from-orange-500/25 via-amber-400/10 to-transparent",
+    num: "02",
   },
   {
     name: "Full-Stack Web Development",
     issuer: "freeCodeCamp",
-    color: "text-blue-400",
-    bg: "bg-blue-500/10 border-blue-500/30",
+    numBg: "bg-blue-500/20",
+    numColor: "text-blue-300",
+    blob: "from-blue-500/25 via-sky-400/10 to-transparent",
+    num: "03",
+  },
+]
+
+const TEACHING = [
+  {
+    title: "Hands-on from day one",
+    body: "Students do not spend weeks reading slides. They get into tools, scenarios, and real environments from the first session.",
+    blob: "from-teal-500/20 to-transparent",
+    dot: "bg-teal-400",
+  },
+  {
+    title: "Plain language, not buzzwords",
+    body: "I have trained 200+ people with different backgrounds. The clearest explanation always wins over the most technical one.",
+    blob: "from-blue-500/20 to-transparent",
+    dot: "bg-blue-400",
+  },
+  {
+    title: "Real threat scenarios",
+    body: "Every module is built around something that actually happens in the wild. No made-up examples that fall apart under real conditions.",
+    blob: "from-orange-500/20 to-transparent",
+    dot: "bg-orange-400",
+  },
+  {
+    title: "Built for people, not just analysts",
+    body: "Half of security is human behaviour. Training works best when it connects to how people actually think and make decisions.",
+    blob: "from-purple-500/20 to-transparent",
+    dot: "bg-purple-400",
   },
 ]
 
@@ -161,43 +178,34 @@ export default function CybersecurityPage() {
     <main className="bg-[#0a0a0a] min-h-screen text-white pt-16">
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden px-4 sm:px-6 py-20 sm:py-28 border-b border-white/10">
-        {/* Grid background */}
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage: "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)",
-            backgroundSize: "40px 40px",
-          }}
-          aria-hidden="true"
-        />
-        {/* Green ambient glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-teal-500/10 blur-[100px] pointer-events-none" aria-hidden="true" />
+      <section className="relative overflow-hidden px-4 sm:px-6 py-20 sm:py-28">
+        {/* Blobs */}
+        <div className="absolute top-0 left-1/3 w-[500px] h-[400px] rounded-full bg-teal-500/10 blur-[120px] pointer-events-none" aria-hidden="true" />
+        <div className="absolute bottom-0 right-1/4 w-[400px] h-[300px] rounded-full bg-purple-500/10 blur-[100px] pointer-events-none" aria-hidden="true" />
 
         <div className="max-w-4xl mx-auto relative">
-          <span className="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-teal-400 border border-teal-500/30 bg-teal-500/10 px-3 py-1.5 rounded-full mb-6">
-            <span className="relative flex h-1.5 w-1.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75" />
-              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-teal-400" />
-            </span>
-            Cybersecurity
-          </span>
-
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-6">
-            Security is not just<br className="hidden sm:block" />
+            Cybersecurity is not just<br className="hidden sm:block" />
             <span className="text-teal-400"> a tech problem.</span>
           </h1>
 
-          <p className="text-gray-300 text-lg sm:text-xl leading-relaxed max-w-2xl mb-8">
-            Most breaches happen because someone clicked the wrong link, left a port open, or never had a policy to begin with. I teach people and organisations how to close those gaps — from GRC frameworks to hands-on penetration testing.
+          <p className="text-gray-300 text-lg sm:text-xl leading-relaxed max-w-2xl mb-10">
+            Most breaches happen because someone clicked the wrong link, left a port open, or never had a policy to begin with. I teach people and organisations how to close those gaps, from GRC frameworks to hands-on penetration testing.
           </p>
 
           {/* Stats row */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             {STATS.map((s) => (
-              <div key={s.label} className="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
-                <p className="text-2xl sm:text-3xl font-black text-teal-400">{s.value}</p>
-                <p className="text-xs text-gray-500 mt-1 font-medium">{s.label}</p>
+              <div
+                key={s.label}
+                className={`relative overflow-hidden rounded-2xl p-5 text-center bg-gradient-radial ${s.blob}`}
+                style={{ background: `radial-gradient(circle at 30% 30%, var(--tw-gradient-stops))` }}
+              >
+                <div className={`absolute inset-0 bg-gradient-to-br ${s.blob} opacity-60`} aria-hidden="true" />
+                <div className="relative">
+                  <p className="text-2xl sm:text-3xl font-black text-white">{s.value}</p>
+                  <p className="text-xs text-gray-400 mt-1 font-semibold">{s.label}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -214,7 +222,7 @@ export default function CybersecurityPage() {
             </a>
             <Link
               href="/#work"
-              className="inline-flex items-center gap-2 border border-white/20 hover:border-white/40 text-gray-300 hover:text-white font-bold text-sm px-6 py-3 rounded-xl transition-colors"
+              className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 text-gray-300 hover:text-white font-bold text-sm px-6 py-3 rounded-xl transition-colors"
             >
               See my work
             </Link>
@@ -223,14 +231,13 @@ export default function CybersecurityPage() {
       </section>
 
       {/* ── Expertise Grid ─────────────────────────────────────────────────── */}
-      <section className="px-4 sm:px-6 py-20 border-b border-white/10">
-        <div className="max-w-6xl mx-auto">
+      <section className="relative px-4 sm:px-6 py-20 overflow-hidden">
+        <div className="absolute top-1/2 left-0 w-[350px] h-[350px] rounded-full bg-blue-500/8 blur-[100px] pointer-events-none" aria-hidden="true" />
+        <div className="max-w-6xl mx-auto relative">
           <div className="mb-12">
             <p className="text-xs font-black uppercase tracking-widest text-teal-400 mb-3">What I teach and do</p>
-            <h2 className="text-3xl sm:text-4xl font-black text-white">
-              Six areas. One goal.
-            </h2>
-            <p className="text-gray-400 mt-3 max-w-xl">
+            <h2 className="text-3xl sm:text-4xl font-black text-white">Six areas. One goal.</h2>
+            <p className="text-gray-400 mt-3 max-w-xl text-base leading-relaxed">
               Keep people and organisations safe by understanding how attacks happen, building the right defences, and knowing what to do when something breaks through.
             </p>
           </div>
@@ -239,14 +246,19 @@ export default function CybersecurityPage() {
             {EXPERTISE.map((item) => (
               <div
                 key={item.title}
-                className={`bg-white/5 border ${item.border} rounded-2xl p-6 hover:bg-white/[0.07] transition-colors group`}
+                className="relative overflow-hidden rounded-2xl p-6 group hover:scale-[1.02] transition-transform duration-300"
               >
-                <div className={`w-11 h-11 rounded-xl ${item.bg} border ${item.border} flex items-center justify-center mb-4 ${item.color}`}>
-                  {item.icon}
+                <div className={`absolute inset-0 bg-gradient-to-br ${item.blob}`} aria-hidden="true" />
+                <div className="absolute inset-0 bg-[#0a0a0a]/60" aria-hidden="true" />
+
+                <div className="relative">
+                  <div className={`w-10 h-10 rounded-xl ${item.numBg} flex items-center justify-center mb-4`}>
+                    <span className={`text-sm font-black tabular-nums ${item.numColor}`}>{item.num}</span>
+                  </div>
+                  <p className={`text-[10px] font-black uppercase tracking-widest mb-1 ${item.labelColor}`}>{item.full}</p>
+                  <h3 className="text-lg font-black text-white mb-3">{item.title}</h3>
+                  <p className="text-sm text-gray-400 leading-relaxed">{item.description}</p>
                 </div>
-                <p className="text-[10px] font-black uppercase tracking-widest text-gray-500 mb-1">{item.full}</p>
-                <h3 className="text-lg font-black text-white mb-3">{item.title}</h3>
-                <p className="text-sm text-gray-400 leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -254,32 +266,32 @@ export default function CybersecurityPage() {
       </section>
 
       {/* ── Experience ─────────────────────────────────────────────────────── */}
-      <section className="px-4 sm:px-6 py-20 border-b border-white/10">
-        <div className="max-w-4xl mx-auto">
+      <section className="relative px-4 sm:px-6 py-20 overflow-hidden">
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-teal-500/8 blur-[120px] pointer-events-none" aria-hidden="true" />
+        <div className="max-w-4xl mx-auto relative">
           <div className="mb-12">
             <p className="text-xs font-black uppercase tracking-widest text-teal-400 mb-3">Experience</p>
-            <h2 className="text-3xl sm:text-4xl font-black text-white">
-              Where I have done the work.
-            </h2>
+            <h2 className="text-3xl sm:text-4xl font-black text-white">Where I have done the work.</h2>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-5">
             {EXPERIENCE.map((exp) => (
-              <div
-                key={exp.role}
-                className={`bg-white/5 border-l-4 ${exp.color} border border-white/10 rounded-2xl overflow-hidden`}
-              >
-                <div className="p-6 sm:p-8">
+              <div key={exp.role} className="relative overflow-hidden rounded-2xl p-6 sm:p-8">
+                {/* Blob */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${exp.blob}`} aria-hidden="true" />
+                <div className="absolute inset-0 bg-[#0a0a0a]/65" aria-hidden="true" />
+
+                <div className="relative">
                   <div className="flex flex-wrap items-start justify-between gap-3 mb-5">
                     <div>
                       <h3 className="text-xl font-black text-white">{exp.role}</h3>
                       <p className="text-gray-400 text-sm font-semibold mt-0.5">{exp.org}</p>
                     </div>
                     <div className="flex items-center gap-2 flex-shrink-0">
-                      <span className={`text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full border ${exp.badge}`}>
+                      <span className={`text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full ${exp.badgeColor}`}>
                         {exp.badgeText}
                       </span>
-                      <span className="text-[10px] font-bold text-gray-500 bg-white/5 border border-white/10 px-3 py-1 rounded-full">
+                      <span className="text-[10px] font-bold text-gray-500 bg-white/5 px-3 py-1 rounded-full">
                         {exp.period}
                       </span>
                     </div>
@@ -287,7 +299,7 @@ export default function CybersecurityPage() {
                   <ul className="space-y-3">
                     {exp.points.map((pt, i) => (
                       <li key={i} className="flex items-start gap-3">
-                        <span className="mt-2 w-1.5 h-1.5 rounded-full bg-teal-400 flex-shrink-0" />
+                        <span className={`mt-2 w-1.5 h-1.5 rounded-full flex-shrink-0 ${exp.dotColor}`} />
                         <p className="text-sm text-gray-300 leading-relaxed">{pt}</p>
                       </li>
                     ))}
@@ -300,23 +312,26 @@ export default function CybersecurityPage() {
       </section>
 
       {/* ── Certifications ─────────────────────────────────────────────────── */}
-      <section className="px-4 sm:px-6 py-20 border-b border-white/10">
-        <div className="max-w-4xl mx-auto">
+      <section className="relative px-4 sm:px-6 py-20 overflow-hidden">
+        <div className="absolute top-0 left-1/2 w-[500px] h-[250px] rounded-full bg-orange-500/8 blur-[100px] pointer-events-none" aria-hidden="true" />
+        <div className="max-w-4xl mx-auto relative">
           <div className="mb-10">
             <p className="text-xs font-black uppercase tracking-widest text-teal-400 mb-3">Certifications</p>
-            <h2 className="text-3xl sm:text-4xl font-black text-white">
-              Backed by credentials.
-            </h2>
+            <h2 className="text-3xl sm:text-4xl font-black text-white">Backed by credentials.</h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {CERTS.map((cert) => (
-              <div key={cert.name} className={`border rounded-2xl p-5 ${cert.bg}`}>
-                <svg xmlns="http://www.w3.org/2000/svg" className={`w-6 h-6 mb-3 ${cert.color}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
-                </svg>
-                <p className="text-xs font-black uppercase tracking-widest text-gray-500 mb-1">{cert.issuer}</p>
-                <p className="text-sm font-bold text-white leading-snug">{cert.name}</p>
+              <div key={cert.name} className="relative overflow-hidden rounded-2xl p-6">
+                <div className={`absolute inset-0 bg-gradient-to-br ${cert.blob}`} aria-hidden="true" />
+                <div className="absolute inset-0 bg-[#0a0a0a]/60" aria-hidden="true" />
+                <div className="relative">
+                  <div className={`w-10 h-10 rounded-xl ${cert.numBg} flex items-center justify-center mb-4`}>
+                    <span className={`text-sm font-black tabular-nums ${cert.numColor}`}>{cert.num}</span>
+                  </div>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-gray-500 mb-1">{cert.issuer}</p>
+                  <p className="text-sm font-bold text-white leading-snug">{cert.name}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -324,51 +339,40 @@ export default function CybersecurityPage() {
       </section>
 
       {/* ── Teaching philosophy ────────────────────────────────────────────── */}
-      <section className="px-4 sm:px-6 py-20 border-b border-white/10">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-teal-500/10 to-purple-500/5 border border-teal-500/20 rounded-2xl p-8 sm:p-12">
-            <p className="text-xs font-black uppercase tracking-widest text-teal-400 mb-4">How I teach</p>
-            <h2 className="text-2xl sm:text-3xl font-black text-white mb-6 leading-tight">
-              Security training that sticks because it is practical, not theoretical.
+      <section className="relative px-4 sm:px-6 py-20 overflow-hidden">
+        <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] rounded-full bg-purple-500/10 blur-[120px] pointer-events-none" aria-hidden="true" />
+        <div className="max-w-4xl mx-auto relative">
+          <div className="mb-10">
+            <p className="text-xs font-black uppercase tracking-widest text-teal-400 mb-3">Cybersecurity</p>
+            <h2 className="text-3xl sm:text-4xl font-black text-white leading-tight">
+              Cybersecurity training that sticks because it is practical, not theoretical.
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {[
-                {
-                  title: "Hands-on from day one",
-                  body: "Students do not spend weeks reading slides. They get into tools, scenarios, and real environments from the first session.",
-                },
-                {
-                  title: "Plain language, not buzzwords",
-                  body: "I have trained 200+ people with different backgrounds. The clearest explanation always wins over the most technical one.",
-                },
-                {
-                  title: "Real threat scenarios",
-                  body: "Every module is built around something that actually happens in the wild. No made-up examples that fall apart under real conditions.",
-                },
-                {
-                  title: "Built for people, not just analysts",
-                  body: "Half of security is human behaviour. Training works best when it connects to how people actually think and make decisions.",
-                },
-              ].map((item) => (
-                <div key={item.title} className="flex items-start gap-3">
-                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-teal-400 flex-shrink-0" />
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {TEACHING.map((item) => (
+              <div key={item.title} className="relative overflow-hidden rounded-2xl p-6">
+                <div className={`absolute inset-0 bg-gradient-to-br ${item.blob}`} aria-hidden="true" />
+                <div className="absolute inset-0 bg-[#0a0a0a]/65" aria-hidden="true" />
+                <div className="relative flex items-start gap-4">
+                  <span className={`mt-1.5 w-2 h-2 rounded-full flex-shrink-0 ${item.dot}`} />
                   <div>
-                    <p className="text-sm font-black text-white mb-1">{item.title}</p>
+                    <p className="text-base font-black text-white mb-2">{item.title}</p>
                     <p className="text-sm text-gray-400 leading-relaxed">{item.body}</p>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* ── CTA ────────────────────────────────────────────────────────────── */}
-      <section className="px-4 sm:px-6 py-20">
-        <div className="max-w-3xl mx-auto text-center">
+      <section className="relative px-4 sm:px-6 py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-teal-500/10 via-transparent to-purple-500/10 pointer-events-none" aria-hidden="true" />
+        <div className="max-w-3xl mx-auto text-center relative">
           <p className="text-xs font-black uppercase tracking-widest text-teal-400 mb-4">Let us work together</p>
           <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 leading-tight">
-            Need a security trainer or consultant?
+            Need a cybersecurity trainer or consultant?
           </h2>
           <p className="text-gray-400 text-base sm:text-lg leading-relaxed mb-8 max-w-xl mx-auto">
             Whether you need to train a team, run an assessment, or build a security policy from scratch, let us talk about what your organisation actually needs.
@@ -387,7 +391,7 @@ export default function CybersecurityPage() {
               href="/Olajide_CV_Tech.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-white/20 hover:border-white/40 text-gray-300 hover:text-white font-bold text-sm px-8 py-3.5 rounded-xl transition-colors"
+              className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 text-gray-300 hover:text-white font-bold text-sm px-8 py-3.5 rounded-xl transition-colors"
             >
               Download CV
               <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

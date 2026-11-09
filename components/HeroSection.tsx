@@ -38,6 +38,23 @@ const HeroSection = () => {
               Most businesses lose revenue because their brand looks unfinished, their copy misses the mark, or their tech stack cannot keep up. I solve all three: visual design that earns immediate trust, search-driven copy &amp; email flows that convert, and modern engineering across Next.js and WordPress built to scale.
             </p>
 
+            {/* Cybersecurity callout */}
+            <Link
+              href="/cybersecurity"
+              className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-teal-500/10 hover:bg-teal-500/20 transition-colors group w-fit"
+            >
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-teal-400" />
+              </span>
+              <span className="text-sm font-bold text-teal-400 group-hover:text-teal-300 transition-colors">
+                Also a cybersecurity instructor. 200+ students trained.
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5 text-teal-400 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
+
             {/* Tilted Neo-Brutalist Sticker Badges */}
             <div className="flex flex-wrap items-center gap-2.5 pt-1">
               <span className="px-3 py-1 rounded-lg text-xs font-black uppercase tracking-wider bg-yellow-300 text-black border-2 border-black shadow-[2px_2px_0px_#000] rotate-[-2deg]">
